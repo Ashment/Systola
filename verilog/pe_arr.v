@@ -6,11 +6,28 @@ module PE_ARR
     input clk, 
     input rstn,
     input fire,
-    input[7:0] in_w [0:rows-1],
-    input[7:0] in_a [0:cols-1],
-    output wire [11:0] outs [0:(rows*cols)-1]);
+    input[0 : 8*(rows)-1] in_w_port,
+    input[0 : 8*(cols)-1] in_a_port,
+    output wire [0 : 32*(rows*cols)-1] outs_port;
+
+    reg [7:0] in_w [0 : rows-1];
+    reg [7:0] in_a [0 : cols-1];
+    reg [31:0] outs [0 : (rows*cols)-1)];
 
     genvar i, j;
+
+    generate
+        for (i=0; i<rows; i=i+1) begin
+            assign in_w[i] = in_w_port[8*i : 8*(i+1)-1];
+        end
+        for (i=0; i<cols; i=i+1) begin
+            assign in_a[i] = in_a_port[8*i : 8*(i+1)-1];
+        end
+        for (i=0; i<rows*cols; i=i+1) begin
+            assign outs_port[32*i : 32*(i+1)-1] = outs[i];
+        end
+    endgenerate
+
     generate
         wire [11:0] res_o [0:(rows * cols)-1];
         wire [7:0] w_o [0:(rows * cols)-1];
