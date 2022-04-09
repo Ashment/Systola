@@ -11,9 +11,9 @@ module PE_ARR
     output wire [0 : 32*(rows*cols)-1] outs_port);
 
 
-    reg [7:0] in_w [0 : rows-1];
-    reg [7:0] in_a [0 : cols-1];
-    reg [31:0] outs [0 : (rows*cols)-1];
+    wire [7:0] in_w [0:rows-1];
+    wire [7:0] in_a [0:cols-1];
+    wire [31:0] outs [0:(rows*cols)-1];
 
     genvar i, j;
     generate
@@ -29,13 +29,10 @@ module PE_ARR
     endgenerate
 
     generate
-        wire [11:0] res_o [0:(rows * cols)-1];
-        wire [7:0] w_o [0:(rows * cols)-1];
-        wire [7:0] a_o [0:(rows * cols)-1];
-        wire f_o [0:(rows * cols)-1];
-
-        // may need to change
-        assign outs = res_o;
+        wire [31:0] res_o [0:(rows*cols)-1];
+        wire [7:0] w_o [0:(rows*cols)-1];
+        wire [7:0] a_o [0:(rows*cols)-1];
+        wire f_o [0:(rows*cols)-1];
 
         for (i=0; i<rows; i=i+1) begin
             for (j=0; j<cols; j=j+1) begin
@@ -49,7 +46,7 @@ module PE_ARR
                         .out_f(f_o[0]), 
                         .out_a(a_o[0]), 
                         .out_w(w_o[0]), 
-                        .out(res_o[0]));
+                        .out(outs[0]));
                     end else begin  // Rest of first column
                         PE PEL (.clk(clk), .rstn(rstn), 
                         .fire(f_o[j + (i-1)*cols]), 
@@ -58,7 +55,7 @@ module PE_ARR
                         .out_f(f_o[j + i*cols]), 
                         .out_a(a_o[j + i*cols]), 
                         .out_w(w_o[j + i*cols]), 
-                        .out(res_o[j + i*cols]));
+                        .out(outs[j + i*cols]));
                     end
 
                 end else begin // Not first column
@@ -70,7 +67,7 @@ module PE_ARR
                         .out_f(f_o[j + i*cols]), 
                         .out_a(a_o[j + i*cols]), 
                         .out_w(w_o[j + i*cols]), 
-                        .out(res_o[j + i*cols]));
+                        .out(outs[j + i*cols]));
                     end else begin // Not first row, not first column
                         PE PER (.clk(clk), .rstn(rstn), 
                         .fire(f_o[j + i*cols - 1]), 
@@ -79,7 +76,7 @@ module PE_ARR
                         .out_f(f_o[j + i*cols]), 
                         .out_a(a_o[j + i*cols]), 
                         .out_w(w_o[j + i*cols]), 
-                        .out(res_o[j + i*cols]));
+                        .out(outs[j + i*cols]));
                     end
                 end
 
