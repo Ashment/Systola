@@ -9,7 +9,7 @@ module PE (
 	output reg out_f,
 	output reg [7:0] out_a,
 	output reg [7:0] out_w,
-	output reg [11:0] out);
+	output reg [31:0] out);
 	
 	always @ (posedge clk) begin
 		if (!rstn) begin

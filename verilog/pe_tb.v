@@ -6,7 +6,7 @@
 module PE_TB();
 	reg clk, rstn, fire;
 	reg [7:0] w, a;
-	wire [11:0] out;
+	wire [31:0] out;
 	wire out_f;
 	wire [7:0] out_a, out_w;
 	reg [7:0] cnt;
