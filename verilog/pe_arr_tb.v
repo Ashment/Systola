@@ -1,7 +1,7 @@
 `timescale 1ns/100ps
 `define HALF_CLOCK #10
 
-m`define WEIGHTS_IN_FN "weights.in"
+`define WEIGHTS_IN_FN "weights.in"
 `define ACTIVATIONS_IN_FN "activations.in"
 `define QSIM_OUT_FN "qsim.out"
 `define PYTHON_OUT_FN "./python.out"
