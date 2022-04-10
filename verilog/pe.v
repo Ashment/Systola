@@ -6,23 +6,31 @@ module PE (
 	input fire, 
 	input [7:0] in_w, 
 	input [7:0] in_a, 
-	output reg out_f,
-	output reg [7:0] out_a,
-	output reg [7:0] out_w,
-	output reg [31:0] out);
-	
+	output out_f,
+	output [7:0] out_a,
+	output [7:0] out_w,
+	output [31:0] out);
+
+	reg out_f_reg;
+	reg[7:0] out_a_reg, out_w_reg;
+	reg [31:0] out_reg;
+	assign out_f = out_f_reg;
+	assign out_a = out_a_reg;
+	assign out_w = out_w_reg;
+	assign out = out_reg;
+
 	always @ (posedge clk) begin
 		if (!rstn) begin
-			out_a <= 0;
-			out_w <= 0;
-			out_f <= 0;
-			out <= 0;
+			out_a_reg <= 0;
+			out_w_reg <= 0;
+			out_f_reg <= 0;
+			out_reg <= 0;
 		end else begin
 			out_f <= fire;
 			if (fire) begin
-				out <= out + (in_w * in_a);
-				out_a <= in_a;
-				out_w <= in_w;
+				out_reg <= out_reg + (in_w * in_a);
+				out_a_reg <= in_a;
+				out_w_reg <= in_w;
 			end
 		end
 	end
