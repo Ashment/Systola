@@ -1,8 +1,8 @@
 module PE_ARR
     #(
     parameter rows = 16,
-    parameter cols = 16) 
-    (
+    parameter cols = 16
+    )(
     input clk, 
     input rstn,
     input fire,
@@ -12,7 +12,7 @@ module PE_ARR
 
     wire [7:0] in_w [0:rows-1];
     wire [7:0] in_a [0:cols-1];
-    wire [31:0] outs [0:(rows*cols)-1];
+    reg [31:0] outs [0:(rows*cols)-1];
 
     genvar i, j;
     generate
@@ -28,6 +28,7 @@ module PE_ARR
     endgenerate
 
     generate
+        // Inter-PE signals
         wire [31:0] res_o [0:(rows*cols)-1];
         wire [7:0] w_o [0:(rows*cols)-1];
         wire [7:0] a_o [0:(rows*cols)-1];
