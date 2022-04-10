@@ -1,7 +1,7 @@
 module PE_ARR
     #(
-    parameter rows = 4,
-    parameter cols = 4) 
+    parameter rows = 16,
+    parameter cols = 16) 
     (
     input clk, 
     input rstn,
