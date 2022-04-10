@@ -5,7 +5,7 @@
 module pe_arr_test();
     parameter ROWS = 16;
     parameter COLS = 16;
-    parameter test_count = (2*COLS)-1;
+    parameter test_count = 32;
 
     reg clk;
     reg rstn;
@@ -62,8 +62,8 @@ module pe_arr_test();
         @(posedge clk)
 	
 	for(inti=0; inti<test_count; inti=inti+1) begin
-            for (inti=0; inti<ROWS; inti=inti+1) begin
-                in_w[inti] = in_w[inti] + 1;
+            for (intj=0; intj<ROWS; intj=intj+1) begin
+                in_w[intj] = in_w[intj] + 1;
             end
             @(posedge clk);
 	end
