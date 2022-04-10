@@ -12,7 +12,7 @@ module PE_ARR
 
     wire [7:0] in_w [0:rows-1];
     wire [7:0] in_a [0:cols-1];
-    reg [31:0] outs [0:(rows*cols)-1];
+    wire [31:0] outs [0:(rows*cols)-1];
 
     genvar i, j;
     generate
