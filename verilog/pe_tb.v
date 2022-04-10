@@ -3,6 +3,7 @@
 `define INPUT_FN "./input.txt"
 `define OUTPUT_FN "./qsim.out"
 `define HALF_CLOCK_PERIOD #10
+
 module PE_TB();
 	reg clk, rstn, fire;
 	reg [7:0] w, a;
