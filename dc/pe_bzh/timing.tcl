@@ -8,7 +8,7 @@
 ################################################## 
 
 # Variables for clock
-set clk_period 4
+set clk_period 10
 set clk_uncertainty 0.01
 set clk_transition 0.01
 
@@ -71,7 +71,7 @@ set_ideal_network      $clk_port
 # Varaibles for input/output delay
 set typical_input_delay 0.1
 set typical_output_delay 0.1
-set typical_wire_load 0.005
+set typical_wire_load 0.01
 
 # Specifiy drive characteristics on ports that are driven by cells in the technology library
 set_driving_cell -lib_cell INVX1TS [all_inputs]
@@ -90,4 +90,4 @@ remove_input_delay -clock $clk_name [find port $clk_port]
 set_output_delay $typical_output_delay [all_outputs] -clock $clk_name
 
 # Set a capacitive load value on input and output ports of the design
-set_load 0.005 [all_outputs] 
+set_load 0.01 [all_outputs] 
