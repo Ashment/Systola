@@ -1,0 +1,36 @@
+/homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe_arr.v {1 {vlog -work work -vopt -stats=none /homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe_arr.v
+QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+-- Compiling module PE_ARR
+
+Top level modules:
+	PE_ARR
+
+} {} {}} /homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe.v {1 {vlog -work work -vopt -stats=none /homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe.v
+QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+-- Compiling module PE
+
+Top level modules:
+	PE
+
+} {} {}} /homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe_arr_tb.v {1 {vlog -work work -vopt -stats=none /homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe_arr_tb.v
+QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+-- Compiling module pe_arr_tb
+
+Top level modules:
+	pe_arr_tb
+
+} {} {}} /homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe_tb.v {1 {vlog -work work -vopt -stats=none /homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe_tb.v
+QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+-- Compiling module PE_TB
+
+Top level modules:
+	PE_TB
+
+} {} {}} /homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe_arr_test.v {1 {vlog -work work -vopt -stats=none /homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe_arr_test.v
+QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+-- Compiling module pe_arr_test
+
+Top level modules:
+	pe_arr_test
+
+} {} {}}
