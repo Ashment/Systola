@@ -18,78 +18,52 @@
 # vmap work work 
 # Modifying modelsim.ini
 # QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
-# Start time: 22:59:26 on Apr 09,2022
+# Start time: 00:31:13 on Apr 10,2022
 # vlog -reportprogress 300 "+acc" -incr ../../verilog/pe.v 
-# -- Skipping module PE
-# 
-# Top level modules:
-# 	PE
-# End time: 22:59:26 on Apr 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
-# Start time: 22:59:26 on Apr 09,2022
-# vlog -reportprogress 300 "+acc" -incr ../../verilog/pe_arr.v 
-# -- Skipping module PE_ARR
-# 
-# Top level modules:
-# 	PE_ARR
-# End time: 22:59:27 on Apr 09,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
-# Start time: 22:59:27 on Apr 09,2022
-# vlog -reportprogress 300 "+acc" -incr ./pe_arr_test.v 
-# -- Compiling module pe_arr_test
-# 
-# Top level modules:
-# 	pe_arr_test
-# End time: 22:59:27 on Apr 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# ** Warning: (vsim-8689) Ignoring plusarg '+acc'.  Did you mean '-voptargs=+acc'?
-# vsim "+acc" -t ps -lib work pe_arr_test 
-# Start time: 22:59:27 on Apr 09,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.pe_arr_test(fast)
-# Loading work.PE_ARR(fast)
-# Loading work.PE(fast)
-# Break key hit
-# Break at ./pe_arr_test.v line 33
+# -- Compiling module PE
+# ** Error: ../../verilog/pe.v(29): (vlog-2110) Illegal reference to net "out_f".
+# End time: 00:31:13 on Apr 10,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /tools/mentor/questa_10.7b_1/questasim/linux/vlog failed.
+# Error in macro ./runsim.do line 10
+# /tools/mentor/questa_10.7b_1/questasim/linux/vlog failed.
+#     while executing
+# "vlog +acc -incr ../../verilog/pe.v"
 do runsim.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # QuestaSim vmap 10.7b_1 Lib Mapping Utility 2018.07 Jul 26 2018
 # vmap work work 
 # Modifying modelsim.ini
 # QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
-# Start time: 23:01:14 on Apr 09,2022
+# Start time: 00:31:50 on Apr 10,2022
 # vlog -reportprogress 300 "+acc" -incr ../../verilog/pe.v 
-# -- Skipping module PE
+# -- Compiling module PE
 # 
 # Top level modules:
 # 	PE
-# End time: 23:01:14 on Apr 09,2022, Elapsed time: 0:00:00
+# End time: 00:31:50 on Apr 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
-# Start time: 23:01:14 on Apr 09,2022
+# Start time: 00:31:50 on Apr 10,2022
 # vlog -reportprogress 300 "+acc" -incr ../../verilog/pe_arr.v 
-# -- Skipping module PE_ARR
+# -- Compiling module PE_ARR
 # 
 # Top level modules:
 # 	PE_ARR
-# End time: 23:01:15 on Apr 09,2022, Elapsed time: 0:00:01
+# End time: 00:31:50 on Apr 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
-# Start time: 23:01:15 on Apr 09,2022
+# Start time: 00:31:50 on Apr 10,2022
 # vlog -reportprogress 300 "+acc" -incr ./pe_arr_test.v 
-# -- Compiling module pe_arr_test
+# -- Skipping module pe_arr_test
 # 
 # Top level modules:
 # 	pe_arr_test
-# End time: 23:01:15 on Apr 09,2022, Elapsed time: 0:00:00
+# End time: 00:31:51 on Apr 10,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# End time: 23:01:16 on Apr 09,2022, Elapsed time: 0:01:49
-# Errors: 0, Warnings: 1
 # ** Warning: (vsim-8689) Ignoring plusarg '+acc'.  Did you mean '-voptargs=+acc'?
 # vsim "+acc" -t ps -lib work pe_arr_test 
-# Start time: 23:01:16 on Apr 09,2022
+# Start time: 00:31:51 on Apr 10,2022
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading work.pe_arr_test(fast)
 # Loading work.PE_ARR(fast)
@@ -98,5 +72,5 @@ do runsim.do
 #    Time: 1 us  Iteration: 1  Instance: /pe_arr_test
 # 1
 # Break in Module pe_arr_test at ./pe_arr_test.v line 75
-# End time: 23:06:50 on Apr 09,2022, Elapsed time: 0:05:34
+# End time: 00:32:55 on Apr 10,2022, Elapsed time: 0:01:04
 # Errors: 0, Warnings: 1

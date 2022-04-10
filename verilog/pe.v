@@ -26,7 +26,7 @@ module PE (
 			out_f_reg <= 0;
 			out_reg <= 0;
 		end else begin
-			out_f <= fire;
+			out_f_reg <= fire;
 			if (fire) begin
 				out_reg <= out_reg + (in_w * in_a);
 				out_a_reg <= in_a;
