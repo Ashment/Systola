@@ -1,0 +1,276 @@
+
+
+==================================================================================
+=== CALIBRE::ERC-H SUMMARY REPORT
+===
+Execution Date/Time:          Sat Apr  9 15:43:51 2022
+Calibre Version:              v2018.1_36.27    Tue Apr 3 12:54:13 PDT 2018
+Rule File Pathname:           /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/lvs_run/_cmrf8sf.lvs.cal_
+Rule File Title:              
+Layout System:                GDSII
+Layout Path(s):               PE.calibre.db
+Layout Primary Cell:          PE
+Current Directory:            /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/lvs_run
+User Name:                    mz2878
+Maximum Results/ERC Check:    1000
+Maximum ERC Result Vertices:  4096
+ERC Results Database:         PE.erc.results (ASCII)
+ERC PATHCHK Results Database: svdb/PE.pathchk.erc
+ERC PATHCHK Report:           svdb/PE.pathchk.rep
+Layout Depth:                 ALL
+Text Depth:                   PRIMARY
+Summary Report File:          PE.erc.summary (REPLACE)
+Geometry Flagging:            ACUTE = YES  SKEW = YES  ANGLED = NO  OFFGRID = YES
+                              NONSIMPLE POLYGON = YES  NONSIMPLE PATH = NO
+Excluded Cells:              
+CheckText Mapping:            COMMENT TEXT + RULE FILE INFORMATION
+Layers:                       MEMORY-BASED
+Keep Empty Checks:            YES
+----------------------------------------------------------------------------------
+--- RUNTIME WARNINGS
+---
+EXPAND CELL efuse not located or not allowed.
+There is no data for layout net name VDD:P.
+There is no data for layout net name DVDD.
+There is no data for layout net name DVDD:P.
+There is no data for layout net name VDD!.
+There is no data for layout net name VCC.
+There is no data for layout net name ?VCC?.
+There is no data for layout net name vcc?.
+There is no data for layout net name vddd.
+There is no data for layout net name vdd_33!.
+There is no data for layout net name vdda_33!.
+There is no data for layout net name VDDI.
+There is no data for layout net name VDDO.
+There is no data for layout net name PI.
+----------------------------------------------------------------------------------
+--- ORIGINAL LAYER STATISTICS
+---
+LAYER PI .............. TOTAL Original Geometry Count = 0    (0)
+LAYER T3 .............. TOTAL Original Geometry Count = 0    (0)
+LAYER GRLOGIC ......... TOTAL Original Geometry Count = 94   (1041)
+LAYER IND_FILT ........ TOTAL Original Geometry Count = 0    (0)
+LAYER IND ............. TOTAL Original Geometry Count = 0    (0)
+LAYER BB .............. TOTAL Original Geometry Count = 0    (0)
+LAYER BONDPAD ......... TOTAL Original Geometry Count = 0    (0)
+LAYER BFMOAT .......... TOTAL Original Geometry Count = 0    (0)
+LAYER DIODE ........... TOTAL Original Geometry Count = 0    (0)
+LAYER VAR ............. TOTAL Original Geometry Count = 0    (0)
+LAYER DI .............. TOTAL Original Geometry Count = 0    (0)
+LAYER OP .............. TOTAL Original Geometry Count = 0    (0)
+LAYER RP .............. TOTAL Original Geometry Count = 0    (0)
+LAYER RR .............. TOTAL Original Geometry Count = 0    (0)
+LAYER PD .............. TOTAL Original Geometry Count = 0    (0)
+LAYER XF .............. TOTAL Original Geometry Count = 0    (0)
+LAYER XE .............. TOTAL Original Geometry Count = 0    (0)
+LAYER PC .............. TOTAL Original Geometry Count = 459  (4161)
+LAYER DG .............. TOTAL Original Geometry Count = 0    (0)
+LAYER NV .............. TOTAL Original Geometry Count = 93   (1040)
+LAYER PV .............. TOTAL Original Geometry Count = 93   (1040)
+LAYER XW .............. TOTAL Original Geometry Count = 0    (0)
+LAYER LW .............. TOTAL Original Geometry Count = 0    (0)
+LAYER RX .............. TOTAL Original Geometry Count = 370  (3635)
+LAYER BP .............. TOTAL Original Geometry Count = 186  (2080)
+LAYER JD .............. TOTAL Original Geometry Count = 0    (0)
+LAYER ESDIODE ......... TOTAL Original Geometry Count = 0    (0)
+LAYER ESD_CDM ......... TOTAL Original Geometry Count = 0    (0)
+LAYER ESDUMMY ......... TOTAL Original Geometry Count = 0    (0)
+LAYER NW .............. TOTAL Original Geometry Count = 93   (1040)
+LAYER DI_PNP .......... TOTAL Original Geometry Count = 0    (0)
+LAYER SILPCRES ........ TOTAL Original Geometry Count = 0    (0)
+LAYER EFUSE ........... TOTAL Original Geometry Count = 0    (0)
+LAYER OUTLINE_RF ...... TOTAL Original Geometry Count = 0    (0)
+LAYER PC_RES .......... TOTAL Original Geometry Count = 0    (0)
+LAYER SBLK ............ TOTAL Original Geometry Count = 0    (0)
+LAYER JP .............. TOTAL Original Geometry Count = 0    (0)
+LAYER JN .............. TOTAL Original Geometry Count = 0    (0)
+LAYER UT .............. TOTAL Original Geometry Count = 0    (0)
+LAYER OUTLINE_SCHKY ... TOTAL Original Geometry Count = 0    (0)
+LAYER ZEROVT .......... TOTAL Original Geometry Count = 0    (0)
+LAYER IBLK ............ TOTAL Original Geometry Count = 0    (0)
+LAYER DUALPOLY ........ TOTAL Original Geometry Count = 0    (0)
+LAYER M1PIN ........... TOTAL Original Geometry Count = 0    (0)
+LAYER M1TRANS ......... TOTAL Original Geometry Count = 0    (0)
+LAYER M1_RES .......... TOTAL Original Geometry Count = 0    (0)
+LAYER M1 .............. TOTAL Original Geometry Count = 3631 (9128)
+LAYER VNCAPM1 ......... TOTAL Original Geometry Count = 0    (0)
+LAYER CABAR ........... TOTAL Original Geometry Count = 0    (0)
+LAYER CA .............. TOTAL Original Geometry Count = 2743 (23538)
+LAYER V1BAR ........... TOTAL Original Geometry Count = 0    (0)
+LAYER V1 .............. TOTAL Original Geometry Count = 3742 (3742)
+LAYER V2BAR ........... TOTAL Original Geometry Count = 0    (0)
+LAYER V2 .............. TOTAL Original Geometry Count = 5355 (5355)
+LAYER V3BAR ........... TOTAL Original Geometry Count = 0    (0)
+LAYER V3 .............. TOTAL Original Geometry Count = 0    (0)
+LAYER V4BAR ........... TOTAL Original Geometry Count = 0    (0)
+LAYER V4 .............. TOTAL Original Geometry Count = 0    (0)
+LAYER V5BAR ........... TOTAL Original Geometry Count = 0    (0)
+LAYER V5 .............. TOTAL Original Geometry Count = 0    (0)
+LAYER VLBAR ........... TOTAL Original Geometry Count = 0    (0)
+LAYER VL .............. TOTAL Original Geometry Count = 0    (0)
+LAYER VQBAR ........... TOTAL Original Geometry Count = 0    (0)
+LAYER VQ .............. TOTAL Original Geometry Count = 0    (0)
+LAYER VGBAR ........... TOTAL Original Geometry Count = 0    (0)
+LAYER VG .............. TOTAL Original Geometry Count = 0    (0)
+LAYER FYBAR ........... TOTAL Original Geometry Count = 0    (0)
+LAYER FY .............. TOTAL Original Geometry Count = 0    (0)
+LAYER FTBAR ........... TOTAL Original Geometry Count = 0    (0)
+LAYER FT .............. TOTAL Original Geometry Count = 0    (0)
+LAYER F1BAR ........... TOTAL Original Geometry Count = 0    (0)
+LAYER F1 .............. TOTAL Original Geometry Count = 0    (0)
+LAYER JTBAR ........... TOTAL Original Geometry Count = 0    (0)
+LAYER JT .............. TOTAL Original Geometry Count = 0    (0)
+LAYER FQBAR ........... TOTAL Original Geometry Count = 0    (0)
+LAYER FQ .............. TOTAL Original Geometry Count = 0    (0)
+LAYER VVBAR ........... TOTAL Original Geometry Count = 0    (0)
+LAYER VV .............. TOTAL Original Geometry Count = 0    (0)
+LAYER RXEXCLUD ........ TOTAL Original Geometry Count = 0    (0)
+LAYER NW_RES .......... TOTAL Original Geometry Count = 0    (0)
+LAYER M2_RES .......... TOTAL Original Geometry Count = 0    (0)
+LAYER M2 .............. TOTAL Original Geometry Count = 9531 (9531)
+LAYER M2PIN ........... TOTAL Original Geometry Count = 0    (0)
+LAYER M2TRANS ......... TOTAL Original Geometry Count = 0    (0)
+LAYER VNCAPM2 ......... TOTAL Original Geometry Count = 0    (0)
+LAYER SXCUT ........... TOTAL Original Geometry Count = 0    (0)
+LAYER M3PIN ........... TOTAL Original Geometry Count = 0    (0)
+LAYER M3TRANS ......... TOTAL Original Geometry Count = 0    (0)
+LAYER M3_RES .......... TOTAL Original Geometry Count = 0    (0)
+LAYER M3 .............. TOTAL Original Geometry Count = 5436 (5436)
+LAYER VNCAPM3 ......... TOTAL Original Geometry Count = 0    (0)
+LAYER M4PIN ........... TOTAL Original Geometry Count = 0    (0)
+LAYER M4TRANS ......... TOTAL Original Geometry Count = 0    (0)
+LAYER M4_RES .......... TOTAL Original Geometry Count = 0    (0)
+LAYER M4 .............. TOTAL Original Geometry Count = 0    (0)
+LAYER VNCAPM4 ......... TOTAL Original Geometry Count = 0    (0)
+LAYER M5PIN ........... TOTAL Original Geometry Count = 0    (0)
+LAYER M5TRANS ......... TOTAL Original Geometry Count = 0    (0)
+LAYER M5_RES .......... TOTAL Original Geometry Count = 0    (0)
+LAYER M5 .............. TOTAL Original Geometry Count = 0    (0)
+LAYER VNCAPM5 ......... TOTAL Original Geometry Count = 0    (0)
+LAYER M6PIN ........... TOTAL Original Geometry Count = 0    (0)
+LAYER M6TRANS ......... TOTAL Original Geometry Count = 0    (0)
+LAYER M6_RES .......... TOTAL Original Geometry Count = 0    (0)
+LAYER M6 .............. TOTAL Original Geometry Count = 0    (0)
+LAYER VNCAPM6 ......... TOTAL Original Geometry Count = 0    (0)
+LAYER MQPIN ........... TOTAL Original Geometry Count = 0    (0)
+LAYER MQTRANS ......... TOTAL Original Geometry Count = 0    (0)
+LAYER MQ_RES .......... TOTAL Original Geometry Count = 0    (0)
+LAYER MQ .............. TOTAL Original Geometry Count = 0    (0)
+LAYER MATLINE_IND ..... TOTAL Original Geometry Count = 0    (0)
+LAYER LMTLINE_IND ..... TOTAL Original Geometry Count = 0    (0)
+LAYER MGPIN ........... TOTAL Original Geometry Count = 0    (0)
+LAYER MGTRANS ......... TOTAL Original Geometry Count = 0    (0)
+LAYER MG_RES .......... TOTAL Original Geometry Count = 0    (0)
+LAYER MG .............. TOTAL Original Geometry Count = 0    (0)
+LAYER QY .............. TOTAL Original Geometry Count = 0    (0)
+LAYER LYPIN ........... TOTAL Original Geometry Count = 0    (0)
+LAYER LYTRANS ......... TOTAL Original Geometry Count = 0    (0)
+LAYER LY_RES .......... TOTAL Original Geometry Count = 0    (0)
+LAYER LY .............. TOTAL Original Geometry Count = 0    (0)
+LAYER E1PIN ........... TOTAL Original Geometry Count = 0    (0)
+LAYER E1TRANS ......... TOTAL Original Geometry Count = 0    (0)
+LAYER E1_RES .......... TOTAL Original Geometry Count = 0    (0)
+LAYER E1 .............. TOTAL Original Geometry Count = 0    (0)
+LAYER LMPIN ........... TOTAL Original Geometry Count = 0    (0)
+LAYER LM_RFLINE ....... TOTAL Original Geometry Count = 0    (0)
+LAYER LMTRANS ......... TOTAL Original Geometry Count = 0    (0)
+LAYER LM_RES .......... TOTAL Original Geometry Count = 0    (0)
+LAYER LM .............. TOTAL Original Geometry Count = 0    (0)
+LAYER MAPIN ........... TOTAL Original Geometry Count = 0    (0)
+LAYER MA_RFLINE ....... TOTAL Original Geometry Count = 0    (0)
+LAYER MATRANS ......... TOTAL Original Geometry Count = 0    (0)
+LAYER MA_RES .......... TOTAL Original Geometry Count = 0    (0)
+LAYER MA .............. TOTAL Original Geometry Count = 0    (0)
+LAYER OLPIN ........... TOTAL Original Geometry Count = 0    (0)
+LAYER OL_RES .......... TOTAL Original Geometry Count = 0    (0)
+LAYER OL .............. TOTAL Original Geometry Count = 0    (0)
+LAYER LDPIN ........... TOTAL Original Geometry Count = 0    (0)
+LAYER LDTRANS ......... TOTAL Original Geometry Count = 0    (0)
+LAYER LD_RES .......... TOTAL Original Geometry Count = 0    (0)
+LAYER LD .............. TOTAL Original Geometry Count = 0    (0)
+LAYER AMPIN ........... TOTAL Original Geometry Count = 0    (0)
+LAYER AM_RES .......... TOTAL Original Geometry Count = 0    (0)
+LAYER AM .............. TOTAL Original Geometry Count = 0    (0)
+LAYER LVS_DRAWING3 .... TOTAL Original Geometry Count = 0    (0)
+LAYER LVS1_DRAWING5 ... TOTAL Original Geometry Count = 0    (0)
+LAYER TEXT_DEV ........ TOTAL Original Geometry Count = 0    (0)
+LAYER LVS_DRAWING1 .... TOTAL Original Geometry Count = 0    (0)
+LAYER AN .............. TOTAL Original Geometry Count = 0    (0)
+LAYER RN .............. TOTAL Original Geometry Count = 0    (0)
+LAYER NS .............. TOTAL Original Geometry Count = 0    (0)
+LAYER L1 .............. TOTAL Original Geometry Count = 0    (0)
+LAYER K6 .............. TOTAL Original Geometry Count = 0    (0)
+LAYER K5 .............. TOTAL Original Geometry Count = 0    (0)
+LAYER K4 .............. TOTAL Original Geometry Count = 0    (0)
+LAYER K3 .............. TOTAL Original Geometry Count = 0    (0)
+LAYER K2 .............. TOTAL Original Geometry Count = 0    (0)
+LAYER EDGELAYER ....... TOTAL Original Geometry Count = 0    (0)
+LAYER LVS_DRAWING6 .... TOTAL Original Geometry Count = 0    (0)
+LAYER LVS1_DRAWING8 ... TOTAL Original Geometry Count = 0    (0)
+LAYER HY .............. TOTAL Original Geometry Count = 0    (0)
+LAYER LVS1_DRAWING7 ... TOTAL Original Geometry Count = 0    (0)
+LAYER MIM_NI .......... TOTAL Original Geometry Count = 0    (0)
+LAYER QT .............. TOTAL Original Geometry Count = 0    (0)
+LAYER HT .............. TOTAL Original Geometry Count = 0    (0)
+LAYER KT .............. TOTAL Original Geometry Count = 0    (0)
+LAYER LVS_DRAWING7 .... TOTAL Original Geometry Count = 0    (0)
+LAYER MIM_HK .......... TOTAL Original Geometry Count = 0    (0)
+LAYER QQ .............. TOTAL Original Geometry Count = 0    (0)
+LAYER HQ .............. TOTAL Original Geometry Count = 0    (0)
+LAYER MULTY ........... TOTAL Original Geometry Count = 0    (0)
+LAYER LVS1_DRAWING .... TOTAL Original Geometry Count = 0    (0)
+LAYER DV .............. TOTAL Original Geometry Count = 0    (0)
+LAYER TD .............. TOTAL Original Geometry Count = 0    (0)
+LAYER FV .............. TOTAL Original Geometry Count = 0    (0)
+LAYER TV .............. TOTAL Original Geometry Count = 0    (0)
+LAYER BFMOATIND ....... TOTAL Original Geometry Count = 0    (0)
+LAYER PADNUM .......... TOTAL Original Geometry Count = 0    (0)
+LAYER PAD ............. TOTAL Original Geometry Count = 0    (0)
+LAYER LV .............. TOTAL Original Geometry Count = 0    (0)
+LAYER PCFUSE .......... TOTAL Original Geometry Count = 0    (0)
+LAYER LD_IND .......... TOTAL Original Geometry Count = 0    (0)
+LAYER OL_IND .......... TOTAL Original Geometry Count = 0    (0)
+LAYER TRANSMIS ........ TOTAL Original Geometry Count = 0    (0)
+LAYER OUTLINE_WAVE .... TOTAL Original Geometry Count = 0    (0)
+LAYER CORRPNT ......... TOTAL Original Geometry Count = 0    (0)
+LAYER ERC_DRAWING ..... TOTAL Original Geometry Count = 0    (0)
+LAYER ERC_DRAWING9 .... TOTAL Original Geometry Count = 0    (0)
+LAYER EDGELAYERPIN .... TOTAL Original Geometry Count = 0    (0)
+----------------------------------------------------------------------------------
+--- RULECHECK RESULTS STATISTICS
+---
+RULECHECK nfet33_err001 .... TOTAL Result Count = 0  (0)
+RULECHECK hvtnfet_err001 ... NOT EXECUTED
+RULECHECK lvtnfet_err001 ... TOTAL Result Count = 0  (0)
+RULECHECK lpnfet_err001 .... TOTAL Result Count = 0  (0)
+RULECHECK nfet33_err002 .... TOTAL Result Count = 0  (0)
+RULECHECK lvtnfet_err002 ... TOTAL Result Count = 0  (0)
+RULECHECK lpnfet_err002 .... TOTAL Result Count = 0  (0)
+RULECHECK silres_err001 .... TOTAL Result Count = 0  (0)
+RULECHECK sbd_err001 ....... TOTAL Result Count = 0  (0)
+RULECHECK FLOATING_NW ...... TOTAL Result Count = 0  (0)
+----------------------------------------------------------------------------------
+--- ERC RULECHECK RESULTS STATISTICS (BY CELL)
+---
+----------------------------------------------------------------------------------
+--- ERC PATHCHK RESULTS STATISTICS
+---
+  PATHCHK GROUND && ! POWER:
+  PATHCHK POWER && ! GROUND:
+  PATHCHK ! POWER && ! GROUND:
+    TOTAL POLYGON Results: 1000
+    TOTAL NET Results:     1031
+  PATHCHK ! LABELED:
+    TOTAL POLYGON Results: 1000
+    TOTAL NET Results:     1031
+----------------------------------------------------------------------------------
+--- SUMMARY
+---
+TOTAL CPU Time:                              9
+TOTAL REAL Time:                             11
+TOTAL Original Layer Geometries:             31826 (70767)
+TOTAL ERC RuleChecks Executed:               9
+TOTAL ERC RuleCheck Results Generated:       0 (0)
+TOTAL ERC PATHCHK Operations Executed:       4
+TOTAL ERC PATHCHK POLYGON Results Generated: 2000 (31040)
+TOTAL ERC PATHCHK NET Results Generated:     2062

@@ -1,0 +1,68 @@
+catch { setDesignMode -flowEffort standard }
+catch { setDesignMode -process 130 }
+catch { setAnalysisMode -analysisType onChipVariation }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation sdcControl }
+catch { setAnalysisMode -cppr both }
+catch { setAnalysisMode -usefulSkew true }
+catch { setAnalysisMode -virtualIPO false }
+catch { setOptMode -activeHoldViews { typical  } }
+catch { setOptMode -activeSetupViews { typical } }
+catch { setOptMode -autoHoldViews { typical } }
+catch { setOptMode -autoSetupViews { typical} }
+catch { setOptMode -autoTDGRSetupViews { typical} }
+catch { setOptMode -autoViewHoldTargetSlack 2000 }
+catch { setOptMode -deleteInst true }
+catch { setOptMode -drcMargin 0 }
+catch { setOptMode -effort high }
+catch { setOptMode -fixCap true }
+catch { setOptMode -fixDrc true }
+catch { setOptMode -fixFanoutLoad true }
+catch { setOptMode -holdTargetSlack 0.2 }
+catch { setOptMode -moveInst true }
+catch { setOptMode -optimizeFF true }
+catch { setOptMode -reclaimArea true }
+catch { setOptMode -setupTargetSlack 0 }
+catch { setOptMode -simplifyNetlist false }
+catch { setOptMode -usefulSkew false }
+catch { setOptMode -yieldEffort none }
+catch { setExtractRCMode  -effortLevel low -engine postRoute -total_c_th 0 -relative_c_th 1 -coupling_c_th 0.4 -minNetTermNrToBeInMem 50 }
+catch {setNanoRouteMode -quiet -drouteAntennaFactor 1.000000}
+catch {setNanoRouteMode -quiet -drouteFixAntenna true}
+catch {setNanoRouteMode -quiet -droutePostRouteSpreadWire "auto"}
+catch {setNanoRouteMode -quiet -droutePostRouteSwapVia "none"}
+catch {setNanoRouteMode -quiet -drouteStartIteration 0}
+catch {setNanoRouteMode -quiet -drouteUseMultiCutViaEffort "high"}
+catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
+catch {setNanoRouteMode -quiet -grouteExpTdStdDelay 55.600000}
+catch {setNanoRouteMode -quiet -routeBottomRoutingLayer 1}
+catch {setNanoRouteMode -quiet -routeSiEffort "high"}
+catch {setNanoRouteMode -quiet -routeSiLengthLimit 200.000000}
+catch {setNanoRouteMode -quiet -routeTdrEffort 10}
+catch {setNanoRouteMode -quiet -routeTopRoutingLayer 3}
+catch {setNanoRouteMode -quiet -routeWithSiDriven true}
+catch {setNanoRouteMode -quiet -routeWithSiPostRouteFix false}
+catch {setNanoRouteMode -quiet -routeWithTimingDriven true}
+catch {setNanoRouteMode -quiet -routeWithViaInPin "true"}
+catch {setNanoRouteMode -quiet -routeWithViaOnlyForStandardCellPin "false"}
+
+catch { setPlaceMode -place_global_cong_effort high }
+catch { setPlaceMode -timingDriven true }
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepFlatten true }
+catch { setDelayCalMode -enable_high_fanout true }
+catch { setDelayCalMode -eng_copyNetPropToNewNet true }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setDelayCalMode -SIAware true }
+catch { setPinAssignMode -maxLayer 3 }
+catch { setHierMode -disableArt false }
+catch { setHierMode -reportPostRouteArtTiming false }
+catch { setHierMode -trialRouteHonorReadOnly false }
+catch { setImportMode -keepEmptyModule true }
+catch { setImportMode -treatUndefinedCellAsBbox false }
+catch { setSIMode -separate_delta_delay_on_data true }
+catch { setRouteMode -earlyGlobalMaxRouteLayer 3 }
+catch { setRouteMode -earlyGlobalRouteSecondPG false }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -powerRailLayer {} }

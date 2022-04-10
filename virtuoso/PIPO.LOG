@@ -1,0 +1,258 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.8-64b 05/28/2019 20:08 (cpgbld01) $
+          : sub-version  IC6.1.8-64b.500.4 
+Started at: 09-Apr-2022  15:43:49
+User Name : mz2878
+Host Name : cadpc15
+Directory : /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+INFO (XSTRM-217): Reading the layer map file, /courses/ee6321/share/IBM_PDK/cmrf8sf/V1.8.0.4DM/cdslib/cmrf8sf/cmrf8sf.layermap
+WARNING (XSTRM-32): The layer map file '/courses/ee6321/share/IBM_PDK/cmrf8sf/V1.8.0.4DM/cdslib/cmrf8sf/cmrf8sf.layermap' contains unknown layer 'BNCON' at line number '61' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/courses/ee6321/share/IBM_PDK/cmrf8sf/V1.8.0.4DM/cdslib/cmrf8sf/cmrf8sf.layermap' contains unknown layer 'VIA_CAP' at line number '439' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+WARNING (XSTRM-32): The layer map file '/courses/ee6321/share/IBM_PDK/cmrf8sf/V1.8.0.4DM/cdslib/cmrf8sf/cmrf8sf.layermap' contains unknown layer 'DN_NET' at line number '441' and will be ignored. This is because the layer name specified in the layer map file is not defined in the technology file. Ensure that the layer name specified in the layer map file is both valid and defined in the technology file.
+INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options :
+library                                 6321_proj
+strmFile                                /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/lvs_run/PE.calibre.db
+topCell                                 PE
+view                                    layout
+logFile                                 ./PIPO.LOG
+summaryFile                             PIPO.SUM.PE
+hierDepth                               20
+layerMap                                /courses/ee6321/share/IBM_PDK/cmrf8sf/V1.8.0.4DM/cdslib/cmrf8sf/cmrf8sf.layermap
+case                                    Preserve
+convertDot                              node
+
+INFO (XSTRM-223): 1. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_649533429040.
+INFO (XSTRM-223): 2. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_649533429041.
+INFO (XSTRM-223): 3. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_649533429042.
+INFO (XSTRM-223): 4. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_649533429043.
+INFO (XSTRM-223): 5. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_649533429044.
+INFO (XSTRM-223): 6. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_649533429045.
+INFO (XSTRM-223): 7. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_649533429046.
+INFO (XSTRM-223): 8. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_649533429047.
+INFO (XSTRM-223): 9. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_649533429048.
+INFO (XSTRM-223): 10. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_649533429049.
+INFO (XSTRM-223): 11. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_6495334290410.
+INFO (XSTRM-223): 12. Translating stdVia cmrf8sf/VM2_M3/layout as STRUCTURE VM2_M3_CDNS_6495334290411.
+INFO (XSTRM-223): 13. Translating stdVia cmrf8sf/VM1_M2/layout as STRUCTURE VM1_M2_CDNS_6495334290412.
+INFO (XSTRM-223): 14. Translating cellView ibm13rflpvt/BUFX6TS5ww0wwwww52amsly/layout as STRUCTURE BUFX6TS5ww0wwwww52amsly.
+INFO (XSTRM-223): 15. Translating cellView ibm13rflpvt/BUFX6TS/layout as STRUCTURE BUFX6TS.
+INFO (XSTRM-223): 16. Translating cellView ibm13rflpvt/CLKBUFX2TS5wwdwwwww7fihtqy/layout as STRUCTURE CLKBUFX2TS5wwdwwwww7fihtqy.
+INFO (XSTRM-223): 17. Translating cellView ibm13rflpvt/CLKBUFX2TS/layout as STRUCTURE CLKBUFX2TS.
+INFO (XSTRM-223): 18. Translating cellView ibm13rflpvt/BUFX4TS5ww7wwwwwrq87nay/layout as STRUCTURE BUFX4TS5ww7wwwwwrq87nay.
+INFO (XSTRM-223): 19. Translating cellView ibm13rflpvt/BUFX4TS/layout as STRUCTURE BUFX4TS.
+INFO (XSTRM-223): 20. Translating cellView ibm13rflpvt/BUFX2TS5ww2wwwww7vqz40y/layout as STRUCTURE BUFX2TS5ww2wwwww7vqz40y.
+INFO (XSTRM-223): 21. Translating cellView ibm13rflpvt/BUFX2TS/layout as STRUCTURE BUFX2TS.
+INFO (XSTRM-223): 22. Translating cellView ibm13rflpvt/XNOR2X2TS5wwewwwwwolapway/layout as STRUCTURE XNOR2X2TS5wwewwwwwolapway.
+INFO (XSTRM-223): 23. Translating cellView ibm13rflpvt/XNOR2X2TS/layout as STRUCTURE XNOR2X2TS.
+INFO (XSTRM-223): 24. Translating cellView ibm13rflpvt/AOI21X4TS5wwswwwwwoy139jy/layout as STRUCTURE AOI21X4TS5wwswwwwwoy139jy.
+INFO (XSTRM-223): 25. Translating cellView ibm13rflpvt/AOI21X4TS/layout as STRUCTURE AOI21X4TS.
+INFO (XSTRM-223): 26. Translating cellView ibm13rflpvt/INVX2TS5wwiwwwwwk9lnbmy/layout as STRUCTURE INVX2TS5wwiwwwwwk9lnbmy.
+INFO (XSTRM-223): 27. Translating cellView ibm13rflpvt/INVX2TS/layout as STRUCTURE INVX2TS.
+INFO (XSTRM-223): 28. Translating cellView ibm13rflpvt/OAI2BB1X2TS5ww0wwwwwm25y7uy/layout as STRUCTURE OAI2BB1X2TS5ww0wwwwwm25y7uy.
+INFO (XSTRM-223): 29. Translating cellView ibm13rflpvt/OAI2BB1X2TS/layout as STRUCTURE OAI2BB1X2TS.
+INFO (XSTRM-223): 30. Translating cellView ibm13rflpvt/AOI21X2TS5wwqwwwwwq9insjy/layout as STRUCTURE AOI21X2TS5wwqwwwwwq9insjy.
+INFO (XSTRM-223): 31. Translating cellView ibm13rflpvt/AOI21X2TS/layout as STRUCTURE AOI21X2TS.
+INFO (XSTRM-223): 32. Translating cellView ibm13rflpvt/XOR2X4TS5wwxwwwwwe40hmjy/layout as STRUCTURE XOR2X4TS5wwxwwwwwe40hmjy.
+INFO (XSTRM-223): 33. Translating cellView ibm13rflpvt/XOR2X4TS/layout as STRUCTURE XOR2X4TS.
+INFO (XSTRM-223): 34. Translating cellView ibm13rflpvt/XNOR2X4TS5wwzwwwwwbznojry/layout as STRUCTURE XNOR2X4TS5wwzwwwwwbznojry.
+INFO (XSTRM-223): 35. Translating cellView ibm13rflpvt/XNOR2X4TS/layout as STRUCTURE XNOR2X4TS.
+INFO (XSTRM-223): 36. Translating cellView ibm13rflpvt/OAI21X2TS5wwqwwwwwwhqxz0y/layout as STRUCTURE OAI21X2TS5wwqwwwwwwhqxz0y.
+INFO (XSTRM-223): 37. Translating cellView ibm13rflpvt/OAI21X2TS/layout as STRUCTURE OAI21X2TS.
+INFO (XSTRM-223): 38. Translating cellView ibm13rflpvt/OAI21X1TS5ww2wwwwwwqrz47y/layout as STRUCTURE OAI21X1TS5ww2wwwwwwqrz47y.
+INFO (XSTRM-223): 39. Translating cellView ibm13rflpvt/OAI21X1TS/layout as STRUCTURE OAI21X1TS.
+INFO (XSTRM-223): 40. Translating cellView ibm13rflpvt/NAND2X1TS5wwdwwwwwvns2hry/layout as STRUCTURE NAND2X1TS5wwdwwwwwvns2hry.
+INFO (XSTRM-223): 41. Translating cellView ibm13rflpvt/NAND2X1TS/layout as STRUCTURE NAND2X1TS.
+INFO (XSTRM-223): 42. Translating cellView ibm13rflpvt/NAND2X4TS5ww0wwwwwzf02zdy/layout as STRUCTURE NAND2X4TS5ww0wwwwwzf02zdy.
+INFO (XSTRM-223): 43. Translating cellView ibm13rflpvt/NAND2X4TS/layout as STRUCTURE NAND2X4TS.
+INFO (XSTRM-223): 44. Translating cellView ibm13rflpvt/CLKINVX2TS5wwiwwwwwcd45tty/layout as STRUCTURE CLKINVX2TS5wwiwwwwwcd45tty.
+INFO (XSTRM-223): 45. Translating cellView ibm13rflpvt/CLKINVX2TS/layout as STRUCTURE CLKINVX2TS.
+INFO (XSTRM-223): 46. Translating cellView ibm13rflpvt/NAND2BX4TS5wwawwwww1qv3myy/layout as STRUCTURE NAND2BX4TS5wwawwwww1qv3myy.
+INFO (XSTRM-223): 47. Translating cellView ibm13rflpvt/NAND2BX4TS/layout as STRUCTURE NAND2BX4TS.
+INFO (XSTRM-223): 48. Translating cellView ibm13rflpvt/NOR2BX1TS5ww2wwwwwgmcj2sy/layout as STRUCTURE NOR2BX1TS5ww2wwwwwgmcj2sy.
+INFO (XSTRM-223): 49. Translating cellView ibm13rflpvt/NOR2BX1TS/layout as STRUCTURE NOR2BX1TS.
+INFO (XSTRM-223): 50. Translating cellView ibm13rflpvt/NOR2BX2TS5wwlwwwwwbvd79sy/layout as STRUCTURE NOR2BX2TS5wwlwwwwwbvd79sy.
+INFO (XSTRM-223): 51. Translating cellView ibm13rflpvt/NOR2BX2TS/layout as STRUCTURE NOR2BX2TS.
+INFO (XSTRM-223): 52. Translating cellView ibm13rflpvt/NAND2X6TS5wwawwwwwai4ajuy/layout as STRUCTURE NAND2X6TS5wwawwwwwai4ajuy.
+INFO (XSTRM-223): 53. Translating cellView ibm13rflpvt/NAND2X6TS/layout as STRUCTURE NAND2X6TS.
+INFO (XSTRM-223): 54. Translating cellView ibm13rflpvt/INVX3TS5wwdwwwwwq27iwjy/layout as STRUCTURE INVX3TS5wwdwwwwwq27iwjy.
+INFO (XSTRM-223): 55. Translating cellView ibm13rflpvt/INVX3TS/layout as STRUCTURE INVX3TS.
+INFO (XSTRM-223): 56. Translating cellView ibm13rflpvt/OAI22X2TS5ww6wwwww8a6tjay/layout as STRUCTURE OAI22X2TS5ww6wwwww8a6tjay.
+INFO (XSTRM-223): 57. Translating cellView ibm13rflpvt/OAI22X2TS/layout as STRUCTURE OAI22X2TS.
+INFO (XSTRM-223): 58. Translating cellView ibm13rflpvt/INVX8TS5wwlwwwwwuoeek2y/layout as STRUCTURE INVX8TS5wwlwwwwwuoeek2y.
+INFO (XSTRM-223): 59. Translating cellView ibm13rflpvt/INVX8TS/layout as STRUCTURE INVX8TS.
+INFO (XSTRM-223): 60. Translating cellView ibm13rflpvt/INVX6TS5ww7wwwwwhn6rjyy/layout as STRUCTURE INVX6TS5ww7wwwwwhn6rjyy.
+INFO (XSTRM-223): 61. Translating cellView ibm13rflpvt/INVX6TS/layout as STRUCTURE INVX6TS.
+INFO (XSTRM-223): 62. Translating cellView ibm13rflpvt/CLKINVX4TS5wwdwwwwwx2kypsy/layout as STRUCTURE CLKINVX4TS5wwdwwwwwx2kypsy.
+INFO (XSTRM-223): 63. Translating cellView ibm13rflpvt/CLKINVX4TS/layout as STRUCTURE CLKINVX4TS.
+INFO (XSTRM-223): 64. Translating cellView ibm13rflpvt/BUFX8TS5wwqwwwww983b4iy/layout as STRUCTURE BUFX8TS5wwqwwwww983b4iy.
+INFO (XSTRM-223): 65. Translating cellView ibm13rflpvt/BUFX8TS/layout as STRUCTURE BUFX8TS.
+INFO (XSTRM-223): 66. Translating cellView ibm13rflpvt/OAI22X1TS5ww7wwwww6lwqady/layout as STRUCTURE OAI22X1TS5ww7wwwww6lwqady.
+INFO (XSTRM-223): 67. Translating cellView ibm13rflpvt/OAI22X1TS/layout as STRUCTURE OAI22X1TS.
+INFO (XSTRM-223): 68. Translating cellView ibm13rflpvt/NAND2BX1TS5ww2wwwww5equvdy/layout as STRUCTURE NAND2BX1TS5ww2wwwww5equvdy.
+INFO (XSTRM-223): 69. Translating cellView ibm13rflpvt/NAND2BX1TS/layout as STRUCTURE NAND2BX1TS.
+INFO (XSTRM-223): 70. Translating cellView ibm13rflpvt/NAND3BX2TS5ww0wwwwwqce842y/layout as STRUCTURE NAND3BX2TS5ww0wwwwwqce842y.
+INFO (XSTRM-223): 71. Translating cellView ibm13rflpvt/NAND3BX2TS/layout as STRUCTURE NAND3BX2TS.
+INFO (XSTRM-223): 72. Translating cellView ibm13rflpvt/INVX4TS5wwdwwwww3lu8pry/layout as STRUCTURE INVX4TS5wwdwwwww3lu8pry.
+INFO (XSTRM-223): 73. Translating cellView ibm13rflpvt/INVX4TS/layout as STRUCTURE INVX4TS.
+INFO (XSTRM-223): 74. Translating cellView ibm13rflpvt/NAND2X2TS5ww2wwwwwmv6wsmy/layout as STRUCTURE NAND2X2TS5ww2wwwwwmv6wsmy.
+INFO (XSTRM-223): 75. Translating cellView ibm13rflpvt/NAND2X2TS/layout as STRUCTURE NAND2X2TS.
+INFO (XSTRM-223): 76. Translating cellView ibm13rflpvt/OAI21X4TS5wwswwwwwulzd40y/layout as STRUCTURE OAI21X4TS5wwswwwwwulzd40y.
+INFO (XSTRM-223): 77. Translating cellView ibm13rflpvt/OAI21X4TS/layout as STRUCTURE OAI21X4TS.
+INFO (XSTRM-223): 78. Translating cellView ibm13rflpvt/OR2X2TS5ww2wwwwwk84w0ly/layout as STRUCTURE OR2X2TS5ww2wwwwwk84w0ly.
+INFO (XSTRM-223): 79. Translating cellView ibm13rflpvt/OR2X2TS/layout as STRUCTURE OR2X2TS.
+INFO (XSTRM-223): 80. Translating cellView ibm13rflpvt/CLKINVX6TS5ww2wwwwwx1wqyuy/layout as STRUCTURE CLKINVX6TS5ww2wwwwwx1wqyuy.
+INFO (XSTRM-223): 81. Translating cellView ibm13rflpvt/CLKINVX6TS/layout as STRUCTURE CLKINVX6TS.
+INFO (XSTRM-223): 82. Translating cellView ibm13rflpvt/NOR2X2TS5ww2wwwww9lr89ty/layout as STRUCTURE NOR2X2TS5ww2wwwww9lr89ty.
+INFO (XSTRM-223): 83. Translating cellView ibm13rflpvt/NOR2X2TS/layout as STRUCTURE NOR2X2TS.
+INFO (XSTRM-223): 84. Translating cellView ibm13rflpvt/OAI2BB1X4TS5wwawwwwwb5l73jy/layout as STRUCTURE OAI2BB1X4TS5wwawwwwwb5l73jy.
+INFO (XSTRM-223): 85. Translating cellView ibm13rflpvt/OAI2BB1X4TS/layout as STRUCTURE OAI2BB1X4TS.
+INFO (XSTRM-223): 86. Translating cellView ibm13rflpvt/BUFX3TS5ww2wwwwwxbj75ty/layout as STRUCTURE BUFX3TS5ww2wwwwwxbj75ty.
+INFO (XSTRM-223): 87. Translating cellView ibm13rflpvt/BUFX3TS/layout as STRUCTURE BUFX3TS.
+INFO (XSTRM-223): 88. Translating cellView ibm13rflpvt/OAI22X4TS5ww9wwwwwi261cjy/layout as STRUCTURE OAI22X4TS5ww9wwwwwi261cjy.
+INFO (XSTRM-223): 89. Translating cellView ibm13rflpvt/OAI22X4TS/layout as STRUCTURE OAI22X4TS.
+INFO (XSTRM-223): 90. Translating cellView ibm13rflpvt/OR3X2TS5wwlwwwww3yvptay/layout as STRUCTURE OR3X2TS5wwlwwwww3yvptay.
+INFO (XSTRM-223): 91. Translating cellView ibm13rflpvt/OR3X2TS/layout as STRUCTURE OR3X2TS.
+INFO (XSTRM-223): 92. Translating cellView ibm13rflpvt/CLKAND2X2TS5ww2wwwwwjp5upty/layout as STRUCTURE CLKAND2X2TS5ww2wwwwwjp5upty.
+INFO (XSTRM-223): 93. Translating cellView ibm13rflpvt/CLKAND2X2TS/layout as STRUCTURE CLKAND2X2TS.
+INFO (XSTRM-223): 94. Translating cellView ibm13rflpvt/NOR2X1TS5wwdwwwww2tdxcyy/layout as STRUCTURE NOR2X1TS5wwdwwwww2tdxcyy.
+INFO (XSTRM-223): 95. Translating cellView ibm13rflpvt/NOR2X1TS/layout as STRUCTURE NOR2X1TS.
+INFO (XSTRM-223): 96. Translating cellView ibm13rflpvt/NAND2BX2TS5wwlwwwwwpt1rm2y/layout as STRUCTURE NAND2BX2TS5wwlwwwwwpt1rm2y.
+INFO (XSTRM-223): 97. Translating cellView ibm13rflpvt/NAND2BX2TS/layout as STRUCTURE NAND2BX2TS.
+INFO (XSTRM-223): 98. Translating cellView ibm13rflpvt/AND2X1TS5ww2wwwww47ypvmy/layout as STRUCTURE AND2X1TS5ww2wwwww47ypvmy.
+INFO (XSTRM-223): 99. Translating cellView ibm13rflpvt/AND2X1TS/layout as STRUCTURE AND2X1TS.
+INFO (XSTRM-223): 100. Translating cellView ibm13rflpvt/OR2X4TS5wwlwwwwwnlrq1yy/layout as STRUCTURE OR2X4TS5wwlwwwwwnlrq1yy.
+INFO (XSTRM-223): 101. Translating cellView ibm13rflpvt/OR2X4TS/layout as STRUCTURE OR2X4TS.
+INFO (XSTRM-223): 102. Translating cellView ibm13rflpvt/CLKINVX1TS5wwiwwwww1ch2q0y/layout as STRUCTURE CLKINVX1TS5wwiwwwww1ch2q0y.
+INFO (XSTRM-223): 103. Translating cellView ibm13rflpvt/CLKINVX1TS/layout as STRUCTURE CLKINVX1TS.
+INFO (XSTRM-223): 104. Translating cellView ibm13rflpvt/INVX1TS5wwiwwwww8rmvqwy/layout as STRUCTURE INVX1TS5wwiwwwww8rmvqwy.
+INFO (XSTRM-223): 105. Translating cellView ibm13rflpvt/INVX1TS/layout as STRUCTURE INVX1TS.
+INFO (XSTRM-223): 106. Translating cellView ibm13rflpvt/CLKINVX12TS5wwawwwwwedwlmry/layout as STRUCTURE CLKINVX12TS5wwawwwwwedwlmry.
+INFO (XSTRM-223): 107. Translating cellView ibm13rflpvt/CLKINVX12TS/layout as STRUCTURE CLKINVX12TS.
+INFO (XSTRM-223): 108. Translating cellView ibm13rflpvt/OAI2BB1X1TS5ww7wwwwwm6kncdy/layout as STRUCTURE OAI2BB1X1TS5ww7wwwwwm6kncdy.
+INFO (XSTRM-223): 109. Translating cellView ibm13rflpvt/OAI2BB1X1TS/layout as STRUCTURE OAI2BB1X1TS.
+INFO (XSTRM-223): 110. Translating cellView ibm13rflpvt/NAND3X4TS5ww6wwwwwa3xg9ty/layout as STRUCTURE NAND3X4TS5ww6wwwwwa3xg9ty.
+INFO (XSTRM-223): 111. Translating cellView ibm13rflpvt/NAND3X4TS/layout as STRUCTURE NAND3X4TS.
+INFO (XSTRM-223): 112. Translating cellView ibm13rflpvt/NAND3X2TS5wwlwwwwwd2lpm0y/layout as STRUCTURE NAND3X2TS5wwlwwwwwd2lpm0y.
+INFO (XSTRM-223): 113. Translating cellView ibm13rflpvt/NAND3X2TS/layout as STRUCTURE NAND3X2TS.
+INFO (XSTRM-223): 114. Translating cellView ibm13rflpvt/AND2X8TS5ww6wwwwwgdk1b6y/layout as STRUCTURE AND2X8TS5ww6wwwwwgdk1b6y.
+INFO (XSTRM-223): 115. Translating cellView ibm13rflpvt/AND2X8TS/layout as STRUCTURE AND2X8TS.
+INFO (XSTRM-223): 116. Translating cellView ibm13rflpvt/CLKBUFX3TS5ww2wwwww5vt5ojy/layout as STRUCTURE CLKBUFX3TS5ww2wwwww5vt5ojy.
+INFO (XSTRM-223): 117. Translating cellView ibm13rflpvt/CLKBUFX3TS/layout as STRUCTURE CLKBUFX3TS.
+INFO (XSTRM-223): 118. Translating cellView ibm13rflpvt/CLKBUFX4TS5ww7wwwwwmb7jvmy/layout as STRUCTURE CLKBUFX4TS5ww7wwwwwmb7jvmy.
+INFO (XSTRM-223): 119. Translating cellView ibm13rflpvt/CLKBUFX4TS/layout as STRUCTURE CLKBUFX4TS.
+INFO (XSTRM-223): 120. Translating cellView ibm13rflpvt/BUFX12TS5ww6wwwwwug0ky7y/layout as STRUCTURE BUFX12TS5ww6wwwwwug0ky7y.
+INFO (XSTRM-223): 121. Translating cellView ibm13rflpvt/BUFX12TS/layout as STRUCTURE BUFX12TS.
+INFO (XSTRM-223): 122. Translating cellView ibm13rflpvt/DFFRXLTS5ww3wwwww0tngcty/layout as STRUCTURE DFFRXLTS5ww3wwwww0tngcty.
+INFO (XSTRM-223): 123. Translating cellView ibm13rflpvt/DFFRXLTS/layout as STRUCTURE DFFRXLTS.
+INFO (XSTRM-223): 124. Translating cellView ibm13rflpvt/DFFRX1TS5ww3wwwwwa3zhh6y/layout as STRUCTURE DFFRX1TS5ww3wwwwwa3zhh6y.
+INFO (XSTRM-223): 125. Translating cellView ibm13rflpvt/DFFRX1TS/layout as STRUCTURE DFFRX1TS.
+INFO (XSTRM-223): 126. Translating cellView ibm13rflpvt/DFFRX4TS5wwyywwwwffcaeiy/layout as STRUCTURE DFFRX4TS5wwyywwwwffcaeiy.
+INFO (XSTRM-223): 127. Translating cellView ibm13rflpvt/DFFRX4TS/layout as STRUCTURE DFFRX4TS.
+INFO (XSTRM-223): 128. Translating cellView ibm13rflpvt/DFFRX2TS5ww3wwwww4wga92y/layout as STRUCTURE DFFRX2TS5ww3wwwww4wga92y.
+INFO (XSTRM-223): 129. Translating cellView ibm13rflpvt/DFFRX2TS/layout as STRUCTURE DFFRX2TS.
+INFO (XSTRM-223): 130. Translating cellView ibm13rflpvt/DFFRHQX1TS5wwwywwwwxc9a4uy/layout as STRUCTURE DFFRHQX1TS5wwwywwwwxc9a4uy.
+INFO (XSTRM-223): 131. Translating cellView ibm13rflpvt/DFFRHQX1TS/layout as STRUCTURE DFFRHQX1TS.
+INFO (XSTRM-223): 132. Translating cellView ibm13rflpvt/DFFRHQX2TS5wwwywwwwqd5hocy/layout as STRUCTURE DFFRHQX2TS5wwwywwwwqd5hocy.
+INFO (XSTRM-223): 133. Translating cellView ibm13rflpvt/DFFRHQX2TS/layout as STRUCTURE DFFRHQX2TS.
+INFO (XSTRM-223): 134. Translating cellView ibm13rflpvt/DFFRHQX4TS5ww0ywwwwt8oexty/layout as STRUCTURE DFFRHQX4TS5ww0ywwwwt8oexty.
+INFO (XSTRM-223): 135. Translating cellView ibm13rflpvt/DFFRHQX4TS/layout as STRUCTURE DFFRHQX4TS.
+INFO (XSTRM-223): 136. Translating cellView ibm13rflpvt/NOR2BX4TS5wwqwwwww44assyy/layout as STRUCTURE NOR2BX4TS5wwqwwwww44assyy.
+INFO (XSTRM-223): 137. Translating cellView ibm13rflpvt/NOR2BX4TS/layout as STRUCTURE NOR2BX4TS.
+INFO (XSTRM-223): 138. Translating cellView ibm13rflpvt/NOR2X4TS5ww0wwwwwdiyx3yy/layout as STRUCTURE NOR2X4TS5ww0wwwwwdiyx3yy.
+INFO (XSTRM-223): 139. Translating cellView ibm13rflpvt/NOR2X4TS/layout as STRUCTURE NOR2X4TS.
+INFO (XSTRM-223): 140. Translating cellView ibm13rflpvt/OR2X6TS5wwawwwwwrkjjlqy/layout as STRUCTURE OR2X6TS5wwawwwwwrkjjlqy.
+INFO (XSTRM-223): 141. Translating cellView ibm13rflpvt/OR2X6TS/layout as STRUCTURE OR2X6TS.
+INFO (XSTRM-223): 142. Translating cellView ibm13rflpvt/ADDHX2TS5wwgwwwwwumgxdly/layout as STRUCTURE ADDHX2TS5wwgwwwwwumgxdly.
+INFO (XSTRM-223): 143. Translating cellView ibm13rflpvt/ADDHX2TS/layout as STRUCTURE ADDHX2TS.
+INFO (XSTRM-223): 144. Translating cellView ibm13rflpvt/ADDFHX2TS5wwsywwwwd9zszmy/layout as STRUCTURE ADDFHX2TS5wwsywwwwd9zszmy.
+INFO (XSTRM-223): 145. Translating cellView ibm13rflpvt/ADDFHX2TS/layout as STRUCTURE ADDFHX2TS.
+INFO (XSTRM-223): 146. Translating cellView ibm13rflpvt/AO21X2TS5wwlwwwwwogt63uy/layout as STRUCTURE AO21X2TS5wwlwwwwwogt63uy.
+INFO (XSTRM-223): 147. Translating cellView ibm13rflpvt/AO21X2TS/layout as STRUCTURE AO21X2TS.
+INFO (XSTRM-223): 148. Translating cellView ibm13rflpvt/OAI21XLTS5ww2wwwwwz334bqy/layout as STRUCTURE OAI21XLTS5ww2wwwwwz334bqy.
+INFO (XSTRM-223): 149. Translating cellView ibm13rflpvt/OAI21XLTS/layout as STRUCTURE OAI21XLTS.
+INFO (XSTRM-223): 150. Translating cellView ibm13rflpvt/NOR2XLTS5wwdwwwww494wwry/layout as STRUCTURE NOR2XLTS5wwdwwwww494wwry.
+INFO (XSTRM-223): 151. Translating cellView ibm13rflpvt/NOR2XLTS/layout as STRUCTURE NOR2XLTS.
+INFO (XSTRM-223): 152. Translating cellView ibm13rflpvt/OR2X1TS5ww2wwwww8ihmgyy/layout as STRUCTURE OR2X1TS5ww2wwwww8ihmgyy.
+INFO (XSTRM-223): 153. Translating cellView ibm13rflpvt/OR2X1TS/layout as STRUCTURE OR2X1TS.
+INFO (XSTRM-223): 154. Translating cellView ibm13rflpvt/AND2X2TS5ww2wwwwwuvt1lsy/layout as STRUCTURE AND2X2TS5ww2wwwwwuvt1lsy.
+INFO (XSTRM-223): 155. Translating cellView ibm13rflpvt/AND2X2TS/layout as STRUCTURE AND2X2TS.
+INFO (XSTRM-223): 156. Translating cellView ibm13rflpvt/NAND2XLTS5wwdwwwwwerljx7y/layout as STRUCTURE NAND2XLTS5wwdwwwwwerljx7y.
+INFO (XSTRM-223): 157. Translating cellView ibm13rflpvt/NAND2XLTS/layout as STRUCTURE NAND2XLTS.
+INFO (XSTRM-223): 158. Translating cellView ibm13rflpvt/NAND2BXLTS5ww2wwwww6ide5ly/layout as STRUCTURE NAND2BXLTS5ww2wwwww6ide5ly.
+INFO (XSTRM-223): 159. Translating cellView ibm13rflpvt/NAND2BXLTS/layout as STRUCTURE NAND2BXLTS.
+INFO (XSTRM-223): 160. Translating cellView ibm13rflpvt/NOR2X6TS5wwawwwwwx88w8dy/layout as STRUCTURE NOR2X6TS5wwawwwwwx88w8dy.
+INFO (XSTRM-223): 161. Translating cellView ibm13rflpvt/NOR2X6TS/layout as STRUCTURE NOR2X6TS.
+INFO (XSTRM-223): 162. Translating cellView ibm13rflpvt/AO21X1TS5ww7wwwww87tggqy/layout as STRUCTURE AO21X1TS5ww7wwwww87tggqy.
+INFO (XSTRM-223): 163. Translating cellView ibm13rflpvt/AO21X1TS/layout as STRUCTURE AO21X1TS.
+INFO (XSTRM-223): 164. Translating cellView ibm13rflpvt/AO22XLTS5wwlwwwwwebn7jyy/layout as STRUCTURE AO22XLTS5wwlwwwwwebn7jyy.
+INFO (XSTRM-223): 165. Translating cellView ibm13rflpvt/AO22XLTS/layout as STRUCTURE AO22XLTS.
+INFO (XSTRM-223): 166. Translating cellView ibm13rflpvt/XOR2XLTS5ww0wwwww8gdqb0y/layout as STRUCTURE XOR2XLTS5ww0wwwww8gdqb0y.
+INFO (XSTRM-223): 167. Translating cellView ibm13rflpvt/XOR2XLTS/layout as STRUCTURE XOR2XLTS.
+INFO (XSTRM-223): 168. Translating cellView ibm13rflpvt/XOR2X1TS5ww0wwwwwb7ar4my/layout as STRUCTURE XOR2X1TS5ww0wwwwwb7ar4my.
+INFO (XSTRM-223): 169. Translating cellView ibm13rflpvt/XOR2X1TS/layout as STRUCTURE XOR2X1TS.
+INFO (XSTRM-223): 170. Translating cellView ibm13rflpvt/NOR2X8TS5wwewwwww1xmsp2y/layout as STRUCTURE NOR2X8TS5wwewwwww1xmsp2y.
+INFO (XSTRM-223): 171. Translating cellView ibm13rflpvt/NOR2X8TS/layout as STRUCTURE NOR2X8TS.
+INFO (XSTRM-223): 172. Translating cellView ibm13rflpvt/ADDFHX4TS5ww0cwwwwpfz26uy/layout as STRUCTURE ADDFHX4TS5ww0cwwwwpfz26uy.
+INFO (XSTRM-223): 173. Translating cellView ibm13rflpvt/ADDFHX4TS/layout as STRUCTURE ADDFHX4TS.
+INFO (XSTRM-223): 174. Translating cellView ibm13rflpvt/OA21X4TS5wwqwwwwwk7uigwy/layout as STRUCTURE OA21X4TS5wwqwwwwwk7uigwy.
+INFO (XSTRM-223): 175. Translating cellView ibm13rflpvt/OA21X4TS/layout as STRUCTURE OA21X4TS.
+INFO (XSTRM-223): 176. Translating cellView ibm13rflpvt/CMPR22X2TS5wwgwwwww39kmijy/layout as STRUCTURE CMPR22X2TS5wwgwwwww39kmijy.
+INFO (XSTRM-223): 177. Translating cellView ibm13rflpvt/CMPR22X2TS/layout as STRUCTURE CMPR22X2TS.
+INFO (XSTRM-223): 178. Translating cellView ibm13rflpvt/ADDHX1TS5wwewwwwwn314pwy/layout as STRUCTURE ADDHX1TS5wwewwwwwn314pwy.
+INFO (XSTRM-223): 179. Translating cellView ibm13rflpvt/ADDHX1TS/layout as STRUCTURE ADDHX1TS.
+INFO (XSTRM-223): 180. Translating cellView ibm13rflpvt/XOR2X2TS5wwewwwww3gazw2y/layout as STRUCTURE XOR2X2TS5wwewwwww3gazw2y.
+INFO (XSTRM-223): 181. Translating cellView ibm13rflpvt/XOR2X2TS/layout as STRUCTURE XOR2X2TS.
+INFO (XSTRM-223): 182. Translating cellView ibm13rflpvt/XNOR2X1TS5ww0wwwww85qi4jy/layout as STRUCTURE XNOR2X1TS5ww0wwwww85qi4jy.
+INFO (XSTRM-223): 183. Translating cellView ibm13rflpvt/XNOR2X1TS/layout as STRUCTURE XNOR2X1TS.
+INFO (XSTRM-223): 184. Translating cellView ibm13rflpvt/AOI21X1TS5ww2wwwwwqihso0y/layout as STRUCTURE AOI21X1TS5ww2wwwwwqihso0y.
+INFO (XSTRM-223): 185. Translating cellView ibm13rflpvt/AOI21X1TS/layout as STRUCTURE AOI21X1TS.
+INFO (XSTRM-223): 186. Translating cellView ibm13rflpvt/CMPR32X2TS5wwhwwwwwxg3h27y/layout as STRUCTURE CMPR32X2TS5wwhwwwwwxg3h27y.
+INFO (XSTRM-223): 187. Translating cellView ibm13rflpvt/CMPR32X2TS/layout as STRUCTURE CMPR32X2TS.
+INFO (XSTRM-223): 188. Translating cellView ibm13rflpvt/FILL4TS5wwdwwwwwf6qhgjy/layout as STRUCTURE FILL4TS5wwdwwwwwf6qhgjy.
+INFO (XSTRM-223): 189. Translating cellView ibm13rflpvt/FILL4TS/layout as STRUCTURE FILL4TS.
+INFO (XSTRM-223): 190. Translating cellView ibm13rflpvt/FILL2TS5wwtwwwwwkpdc6dy/layout as STRUCTURE FILL2TS5wwtwwwwwkpdc6dy.
+INFO (XSTRM-223): 191. Translating cellView ibm13rflpvt/FILL2TS/layout as STRUCTURE FILL2TS.
+INFO (XSTRM-223): 192. Translating cellView ibm13rflpvt/FILL1TS5wwywwwwwf2m1uwy/layout as STRUCTURE FILL1TS5wwywwwwwf2m1uwy.
+INFO (XSTRM-223): 193. Translating cellView ibm13rflpvt/FILL1TS/layout as STRUCTURE FILL1TS.
+INFO (XSTRM-223): 194. Translating cellView ibm13rflpvt/FILL8TS5ww0wwwwwifla62y/layout as STRUCTURE FILL8TS5ww0wwwwwifla62y.
+INFO (XSTRM-223): 195. Translating cellView ibm13rflpvt/FILL8TS/layout as STRUCTURE FILL8TS.
+INFO (XSTRM-223): 196. Translating cellView ibm13rflpvt/FILL32TS5wwlywwwwo1654uy/layout as STRUCTURE FILL32TS5wwlywwwwo1654uy.
+INFO (XSTRM-223): 197. Translating cellView ibm13rflpvt/FILL32TS/layout as STRUCTURE FILL32TS.
+INFO (XSTRM-223): 198. Translating cellView ibm13rflpvt/FILL16TS5ww9wwwww6njrily/layout as STRUCTURE FILL16TS5ww9wwwww6njrily.
+INFO (XSTRM-223): 199. Translating cellView ibm13rflpvt/FILL16TS/layout as STRUCTURE FILL16TS.
+INFO (XSTRM-223): 200. Translating cellView 6321_proj/PE/layout as STRUCTURE PE.
+
+Summary of Objects Translated:
+	Scalar Instances:                       1133
+	Array Instances:                        0
+	Polygons:                               1494
+	Paths:                                  7212
+	Rectangles:                             3754
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Standard Vias                           5305
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               0
+	Text:                                   1007
+	TextDisplay:                            0
+	Cells:                                  200
+
+Elapsed Time: 1.8s   User Time: 0.1s   CPU Time: 0.1s   Peak VM: 14876KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '3' warning(s) found.

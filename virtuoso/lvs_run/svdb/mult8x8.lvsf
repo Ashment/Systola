@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /homes/user/stud/fall21/mz2878/EECS6321/lab04/virtuoso/lvs_run
+lvs_LvsfVersion 2
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 1 0 0}
+lvs_LvsOutFile LVS_REPORT mult8x8.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /homes/user/stud/fall21/mz2878/EECS6321/lab04/innovus/multi_test/mult8x8/mult8x8.cdl
+lvs_LvsOutFile RULES_FILE /homes/user/stud/fall21/mz2878/EECS6321/lab04/virtuoso/lvs_run/_cmrf8sf.lvs.cal_
+lvs_LvsRunTimes 1646883846 1646883847

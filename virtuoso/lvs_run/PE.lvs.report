@@ -1,0 +1,572 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         PE.lvs.report
+LAYOUT NAME:              /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/lvs_run/PE.sp ('PE')
+SOURCE NAME:              /homes/user/stud/fall21/mz2878/EECS6321/Project/innovus/PE/PE.cdl ('PE')
+RULE FILE:                /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/lvs_run/_cmrf8sf.lvs.cal_
+CREATION TIME:            Sat Apr  9 15:44:03 2022
+CURRENT DIRECTORY:        /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/lvs_run
+USER NAME:                mz2878
+CALIBRE VERSION:          v2018.1_36.27    Tue Apr 3 12:54:13 PDT 2018
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+  Warning:  Ambiguity points were found and resolved arbitrarily.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  CORRECT        PE                            PE
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   LVS COMPONENT TYPE PROPERTY            element
+   LVS COMPONENT SUBTYPE PROPERTY         model
+   LVS PIN NAME PROPERTY                  phy_pin
+   LVS POWER NAME                         "VDD" "Vdd" "vdd" "VDD:P" "DVDD" "DVDD:P" "VDD!" "?VDD?" "vdd?" "VCC" "Vcc" "vcc" "?VCC?"
+                                          "vcc?" "vddd" "vdd_33!" "vdda_33!" "VDDI" "VDDO" "PI"
+   LVS GROUND NAME                        "VSS" "Vss" "vss" "VSS:G" "DVSS" "DVSS:P" "?VSS?" "vss?" "GND" "GND:G" "GND!" "?GND?"
+                                          "sub!" "sub?" "sub_vss_33!" "sub_vssd_33!" "sub_vssa_33!" "VSSI" "VSSO"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   YES
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            NO
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                YES
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   // LVS SPICE EXCLUDE CELL SOURCE
+   // LVS SPICE EXCLUDE CELL LAYOUT
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            YES
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            YES
+   SOURCE CASE                            YES
+   LVS COMPARE CASE                       NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        ALL
+   // LVS SIGNATURE MAXIMUM
+   LVS FILTER UNUSED OPTION               RB RC RD RE RF RG YB
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+   // LVS PREFER NETS FILTER SOURCE
+   // LVS PREFER NETS FILTER LAYOUT
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 NO
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           NO
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+
+   LVS REDUCE  R(opndres)  SERIES POS NEG [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  R(nwres)  SERIES POS NEG [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  R(opppcres)  SERIES POS NEG [ TOLERANCE w 0 l 0 bp 0 ]
+   LVS REDUCE  R(oprrpres)  SERIES POS NEG [ TOLERANCE w 0 l 0 bp 0 ]
+   LVS REDUCE  R(oprppres)  SERIES POS NEG [ TOLERANCE w 0 l 0 bp 0 ]
+   LVS REDUCE  R(silres)  SERIES POS NEG [ TOLERANCE w 0 l 0 bp 0 ]
+   LVS REDUCE  R(l1res)  SERIES POS NEG [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  R(kxres)  SERIES POS NEG [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  R(lvsres)  SERIES POS NEG
+   LVS REDUCE  efuse  SERIES IN OUT
+   LVS REDUCE  MN(nfet)  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  MN(nfet33)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  M(lpnfet)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  M(zvtnfet)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  M(hvtnfet33)  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  M(hvtnfet33_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  M(hvtpfet33)  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  M(hvtpfet33_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  MD(dgnfet)  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  M(zvtdgnfet)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  M(lvtnfet)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  MN(nfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  MN(nfet33_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  M(lpnfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  MD(dgnfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  M(lvtnfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  MP(pfet)  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  MP(pfet33)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  M(lppfet)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  MD(dgpfet)  PARALLEL [ TOLERANCE L 0.5 psp 0 ]
+   LVS REDUCE  M(lvtpfet)  PARALLEL [ TOLERANCE L 0.5 ]
+   LVS REDUCE  MP(pfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  MP(pfet33_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  M(lppfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  MD(dgpfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 psp 0 ]
+   LVS REDUCE  M(lvtpfet_rf)  PARALLEL [ TOLERANCE ring 0 L 0.5 ]
+   LVS REDUCE  R(opndres)  PARALLEL [ TOLERANCE l 0 w 0 ]
+   LVS REDUCE  R(nwres)  PARALLEL [ TOLERANCE l 0 w 0 ]
+   LVS REDUCE  R(opppcres)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 ]
+   LVS REDUCE  R(oprrpres)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 ]
+   LVS REDUCE  R(oprppres)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 ]
+   LVS REDUCE  R(silres)  PARALLEL [ TOLERANCE l 0 w 0 bp 0 ]
+   LVS REDUCE  R(l1res)  PARALLEL [ TOLERANCE l 0 w 0 ]
+   LVS REDUCE  R(kxres)  PARALLEL [ TOLERANCE l 0 w 0 ]
+   LVS REDUCE  R(lvsres)  PARALLEL
+   LVS REDUCE  ncap  PARALLEL [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  dgncap  PARALLEL [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  C(vncap)  PARALLEL [ TOLERANCE bp 0 w 0 l 0 ]
+   LVS REDUCE  D(havar)  PARALLEL [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  diffhavar  PARALLEL [ TOLERANCE w 0 l 0 ]
+   LVS REDUCE  diffncap  PARALLEL [ TOLERANCE w 0 l 0 mSwitch 0 ]
+   LVS REDUCE  D(sbd)  PARALLEL [ TOLERANCE w 0 l 0 nf 0 ]
+   LVS REDUCE  D(dipdnw)  PARALLEL [ TOLERANCE w 0 l 0 nf 0 ]
+   LVS REDUCE  Q(divpnp)  PARALLEL
+   LVS REDUCE  Q(esdvpnp)  PARALLEL [ TOLERANCE nf 0 areae 0 areab 0 ]
+   LVS REDUCE  D(esdndsx)  PARALLEL [ TOLERANCE bp 0 ]
+   LVS REDUCE  D(tdpdnw)  PARALLEL
+   LVS REDUCE  D(tdndsx)  PARALLEL
+   LVS REDUCE  subc  PARALLEL
+   LVS REDUCE  efuse  PARALLEL
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Filter
+
+   LVS FILTER  D(diodenx)  OPEN
+   LVS FILTER  D(diodenwx)  OPEN
+   LVS FILTER  D(diodepisx)  OPEN
+   LVS FILTER  D(diodendsx)  OPEN
+   LVS FILTER  D(diodepwpi)  OPEN
+   LVS FILTER  D(diodepnw)  OPEN
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+  Warning:  Ambiguity points were found and resolved arbitrarily.
+
+LAYOUT CELL NAME:         PE
+SOURCE CELL NAME:         PE
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             70        70
+
+ Nets:            3820      3820
+
+ Instances:      10030      7681    *    M (4 pins)
+                    10         0    *    D (2 pins)
+                ------    ------
+ Total Inst:     10040      7681
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             70        70
+
+ Nets:            2211      2211
+
+ Instances:       4419      4419         M (4 pins)
+                  1177      1177         SM2 (4 pins)
+                   149       149         SM3 (5 pins)
+                    75        75         SPM_2_1 (5 pins)
+                    59        59         SPM_2_2 (6 pins)
+                ------    ------
+ Total Inst:      5879      5879
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:              70         70            0            0
+
+   Nets:             2211       2211            0            0
+
+   Instances:        2036       2036            0            0    M(LPNFET)
+                     2383       2383            0            0    M(LPPFET)
+                     1177       1177            0            0    SM2
+                      149        149            0            0    SM3
+                       75         75            0            0    SPM_2_1
+                       59         59            0            0    SPM_2_2
+                  -------    -------    ---------    ---------
+   Total Inst:       5879       5879            0            0
+
+
+o Statistics:
+
+   10 layout instances were filtered and their pins removed from adjoining nets.
+
+   3902 layout mos transistors were reduced to 1553.
+     2349 mos transistors were deleted by parallel reduction.
+
+   51 instances were matched arbitrarily.
+
+
+o Initial Correspondence Points:
+
+   Ports:        VDD VSS data_in[3] data_in[0] data_in[1] data_in[5] data_in[6] data_in[4]
+                 data_in[2] data_in[7] clk rst_n weight_out[0] weight_in[0] weight_in[1]
+                 weight_in[2] weight_in[3] weight_in[4] weight_in[5] weight_in[6] weight_in[7]
+                 fire_in result[1] result[2] result[5] result[4] result[7] result[6] result[3]
+                 result[10] result[9] result[8] result[12] result[11] result[13] result[14]
+                 result[17] result[19] result[24] result[23] result[21] result[25] result[20]
+                 result[27] result[26] result[28] result[29] result[30] result[31] data_out[0]
+
+
+o Ambiguity Resolution Points:
+
+      (Each one of the following objects belongs to a group of indistinguishable objects.
+       The listed objects were matched arbitrarily by the Ambiguity Resolution feature of LVS.
+       Arbitrary matching may be prevented by assigning names to these objects or to adjacent nets).
+
+       Layout                                                    Source
+       ------                                                    ------
+
+                                   Instances
+                                   ---------
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M3626(106.160,62.890)  M(lpnfet)                          XU501/M5  M(LPNFET)
+         M3627(106.480,62.890)  M(lpnfet)                          XU501/M4  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M7477(23.010,64.430)  M(lppfet)                           XU78/M3  M(LPPFET)
+         M7478(23.330,64.430)  M(lppfet)                           XU78/M2  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M7525(173.010,23.250)  M(lppfet)                          XU623/M3  M(LPPFET)
+         M7526(173.330,23.250)  M(lppfet)                          XU623/M2  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M7519(169.410,42.830)  M(lppfet)                          XU594/M3  M(LPPFET)
+         M7520(169.730,42.830)  M(lppfet)                          XU594/M2  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M7513(131.010,57.230)  M(lppfet)                          XU587/M3  M(LPPFET)
+         M7514(131.330,57.230)  M(lppfet)                          XU587/M2  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M7507(127.810,71.630)  M(lppfet)                          XU527/M3  M(LPPFET)
+         M7508(128.130,71.630)  M(lppfet)                          XU527/M2  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M7483(36.210,28.430)  M(lppfet)                           XU465/M3  M(LPPFET)
+         M7484(36.530,28.430)  M(lppfet)                           XU465/M2  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M7489(37.810,73.650)  M(lppfet)                           XU426/M3  M(LPPFET)
+         M7490(38.130,73.650)  M(lppfet)                           XU426/M2  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M7495(83.010,73.650)  M(lppfet)                           XU386/M3  M(LPPFET)
+         M7496(83.330,73.650)  M(lppfet)                           XU386/M2  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M7501(93.410,73.650)  M(lppfet)                           XU311/M3  M(LPPFET)
+         M7502(93.730,73.650)  M(lppfet)                           XU311/M2  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M3614(79.760,75.490)  M(lpnfet)                           XU495/M5  M(LPNFET)
+         M3615(80.080,75.490)  M(lpnfet)                           XU495/M4  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M3560(12.960,53.890)  M(lpnfet)                           XU446/M5  M(LPNFET)
+         M3561(13.280,53.890)  M(lpnfet)                           XU446/M4  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M3602(65.760,48.490)  M(lpnfet)                           XU398/M5  M(LPNFET)
+         M3603(66.080,48.490)  M(lpnfet)                           XU398/M4  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M3596(64.960,32.290)  M(lpnfet)                           XU363/M5  M(LPNFET)
+         M3597(65.280,32.290)  M(lpnfet)                           XU363/M4  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M3554(12.560,39.490)  M(lpnfet)                           XU255/M5  M(LPNFET)
+         M3555(12.880,39.490)  M(lpnfet)                           XU255/M4  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M3638(128.160,75.490)  M(lpnfet)                          XU214/M5  M(LPNFET)
+         M3639(128.480,75.490)  M(lpnfet)                          XU214/M4  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M3572(27.360,61.090)  M(lpnfet)                           XU212/M5  M(LPNFET)
+         M3573(27.680,61.090)  M(lpnfet)                           XU212/M4  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M3620(80.560,39.490)  M(lpnfet)                           XU211/M5  M(LPNFET)
+         M3621(80.880,39.490)  M(lpnfet)                           XU211/M4  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M3590(48.560,17.890)  M(lpnfet)                           XFE_RC_20_0/M5  M(LPNFET)
+         M3591(48.880,17.890)  M(lpnfet)                           XFE_RC_20_0/M4  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M3608(73.760,34.090)  M(lpnfet)                           XU211_dup/M5  M(LPNFET)
+         M3609(74.080,34.090)  M(lpnfet)                           XU211_dup/M4  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M3578(38.960,19.690)  M(lpnfet)                           XFE_RC_124_0/M5  M(LPNFET)
+         M3579(39.280,19.690)  M(lpnfet)                           XFE_RC_124_0/M4  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M3632(115.360,32.290)  M(lpnfet)                          XFE_RC_190_0/M5  M(LPNFET)
+         M3633(115.680,32.290)  M(lpnfet)                          XFE_RC_190_0/M4  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M3584(43.360,25.090)  M(lpnfet)                           XFE_RC_124_0_dup/M5  M(LPNFET)
+         M3585(43.680,25.090)  M(lpnfet)                           XFE_RC_124_0_dup/M4  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M3566(14.960,34.090)  M(lpnfet)                           XFE_RC_204_0/M5  M(LPNFET)
+         M3567(15.280,34.090)  M(lpnfet)                           XFE_RC_204_0/M4  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M1319(16.360,19.870)  M(lpnfet)                           XU471/M3  M(LPNFET)
+         M1320(16.680,19.870)  M(lpnfet)                           XU471/M2  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M1351(39.960,63.070)  M(lpnfet)                           XFE_RC_4_0/M3  M(LPNFET)
+         M1352(40.280,63.070)  M(lpnfet)                           XFE_RC_4_0/M2  M(LPNFET)
+
+       (SM3)                                                     (SM3)
+       Transistors:
+         M48(37.620,68.290)  M(lpnfet)                             XFE_RC_3_0/M5  M(LPNFET)
+         M49(37.940,68.290)  M(lpnfet)                             XFE_RC_3_0/M4  M(LPNFET)
+         M50(38.260,68.290)  M(lpnfet)                             XFE_RC_3_0/M3  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M1339(33.960,68.330)  M(lpnfet)                           XFE_RC_6_0/M3  M(LPNFET)
+         M1340(34.280,68.330)  M(lpnfet)                           XFE_RC_6_0/M2  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M1335(33.160,61.130)  M(lpnfet)                           XFE_RC_5_0/M3  M(LPNFET)
+         M1336(33.480,61.130)  M(lpnfet)                           XFE_RC_5_0/M2  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M1387(127.960,41.470)  M(lpnfet)                          XU216/M3  M(LPNFET)
+         M1388(128.280,41.470)  M(lpnfet)                          XU216/M2  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M5433(127.230,37.930)  M(lppfet)                          XU79/M5  M(LPPFET)
+         M5434(127.550,37.930)  M(lppfet)                          XU79/M4  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M5154(120.200,57.110)  M(lppfet)                          XU80/M7  M(LPPFET)
+         M5155(120.520,57.110)  M(lppfet)                          XU80/M6  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M1379(116.360,63.070)  M(lpnfet)                          XU514_dup/M3  M(LPNFET)
+         M1380(116.680,63.070)  M(lpnfet)                          XU514_dup/M2  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M1365(90.360,75.530)  M(lpnfet)                           XU496/M2  M(LPNFET)
+         M1366(90.680,75.530)  M(lpnfet)                           XU496/M3  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M5405(19.230,52.330)  M(lppfet)                           XU438/M5  M(LPPFET)
+         M5406(19.550,52.330)  M(lppfet)                           XU438/M4  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M1327(23.960,68.330)  M(lpnfet)                           XU477/M3  M(LPNFET)
+         M1328(24.280,68.330)  M(lpnfet)                           XU477/M2  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M1363(69.160,70.270)  M(lpnfet)                           XFE_RC_64_0/M3  M(LPNFET)
+         M1364(69.480,70.270)  M(lpnfet)                           XFE_RC_64_0/M2  M(LPNFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M5333(14.960,71.700)  M(lppfet)                           XU682/M4  M(LPPFET)
+         M5334(15.280,71.700)  M(lppfet)                           XU682/M5  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M5447(137.230,37.930)  M(lppfet)                          XU628/M4  M(LPPFET)
+         M5448(137.550,37.930)  M(lppfet)                          XU628/M5  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M5443(133.230,21.230)  M(lppfet)                          XU619/M4  M(LPPFET)
+         M5444(133.550,21.230)  M(lppfet)                          XU619/M5  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M5459(156.430,66.730)  M(lppfet)                          XU604/M4  M(LPPFET)
+         M5460(156.750,66.730)  M(lppfet)                          XU604/M5  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M5479(184.030,42.830)  M(lppfet)                          XU602/M4  M(LPPFET)
+         M5480(184.350,42.830)  M(lppfet)                          XU602/M5  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M5475(181.630,59.530)  M(lppfet)                          XU599/M4  M(LPPFET)
+         M5476(181.950,59.530)  M(lppfet)                          XU599/M5  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M5471(180.030,16.330)  M(lppfet)                          XU584/M4  M(LPPFET)
+         M5472(180.350,16.330)  M(lppfet)                          XU584/M5  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M7469(173.120,38.050)  M(lppfet)                          XU577/M2  M(LPPFET)
+         M7470(173.440,38.050)  M(lppfet)                          XU577/M3  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M5467(165.630,73.930)  M(lppfet)                          XU560/M4  M(LPPFET)
+         M5468(165.950,73.930)  M(lppfet)                          XU560/M5  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M5427(115.630,73.930)  M(lppfet)                          XU512/M4  M(LPPFET)
+         M5428(115.950,73.930)  M(lppfet)                          XU512/M5  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M5348(100.960,57.300)  M(lppfet)                          XU506/M6  M(LPPFET)
+         M5349(101.280,57.300)  M(lppfet)                          XU506/M7  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M7427(25.920,71.510)  M(lppfet)                           XU479/M2  M(LPPFET)
+         M7428(26.240,71.510)  M(lppfet)                           XU479/M3  M(LPPFET)
+
+       (SM2)                                                     (SM2)
+       Transistors:
+         M5343(37.760,42.900)  M(lppfet)                           XU455/M6  M(LPPFET)
+         M5344(38.080,42.900)  M(lppfet)                           XU455/M7  M(LPPFET)
+
+
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  1 sec

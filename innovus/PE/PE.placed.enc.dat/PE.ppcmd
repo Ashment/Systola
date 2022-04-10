@@ -1,0 +1,44 @@
+# PPCMD 1 
+# sroute -nets {VDD VSS} -allowJogging 0 -allowLayerChange 0
+# 2 
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 1 
+
+# PPCMD 2 
+# addRing -nets {VDD VSS} -type core_rings -layer {top M3 bottom M3 left M2 right M2} -width 2.4 -spacing 1.2 -center 1
+# 1 
+# 32 
+# 1 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 2400 3 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 98400 2400 98400 82800 
+# END_RING_PT_INFO_LIST 
+# VSS 2400 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 2400 42600 194400 42600 
+# END_RING_PT_INFO_LIST 
+# VDD 2400 3 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 98400 6000 98400 79200 
+# END_RING_PT_INFO_LIST 
+# VDD 2400 2 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 6000 42600 190800 42600 
+# END_RING_PT_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 2 
+

@@ -1,0 +1,24 @@
+//  v2lvs v2018.1_36.27    Tue Apr 3 12:53:59 PDT 2018
+//
+//  Copyright (c) 1992, 1993 Regents of the University of California
+//         All rights reserved.
+//
+//        Copyright Mentor Graphics Corporation 1996-2018
+//                       All Rights Reserved.
+//   THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+//        OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  The registered trademark Linux is used pursuant to a sublicense from LMI, the
+//  exclusive licensee of Linus Torvalds, owner of the mark on a world-wide basis.
+//
+//  Mentor Graphics software executing under x86-64 Linux
+//
+Running /tools/mentor/aoi_cal_2018.1_36.27/pkgs/icv/pvt/v2lvs -i -v PE.nophy.v -o PE.cdl -s /courses/ee6321/share/ibm13rflpvt/lvs_netlist/ibm13rflpvt.cdl -lsp /courses/ee6321/share/ibm13rflpvt/lvs_netlist/ibm13rflpvt.cdl
+
+Info: Creating Spice Library Database ...
+Warning: No BUSDELIMITER statement in /courses/ee6321/share/ibm13rflpvt/lvs_netlist/ibm13rflpvt.cdl spice file, it will be set to [
+Info: Creating Design Database ...
+Info: Converting Design ...
+
+CPU TIME = 0  REAL TIME = 0  MALLOC = 6/6/6

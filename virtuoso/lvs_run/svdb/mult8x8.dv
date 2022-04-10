@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/mult8x8.dv
+dv_start matched                                  
+dv_cell {mult8x8} {mult8x8} matched
+dv_obj_count -transformed_nets {2214 2214} -transformed_inst {5715 5715} -transformed_port {36 36}
+dv_end

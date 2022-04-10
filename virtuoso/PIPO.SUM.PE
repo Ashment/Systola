@@ -1,0 +1,479 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.8-64b 05/28/2019 20:08 (cpgbld01) $
+          : sub-version  IC6.1.8-64b.500.4 
+Started at: 09-Apr-2022  15:43:49
+User Name : mz2878
+Host Name : cadpc15
+Directory : /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+
+                       Individual Cell Statistics - Basic Objects
+---------------------------------------------------------------------------------------------------------------------------------------
+Library/Cell/View               Instance Array   Polygon  Rect   Path   PathSeg   Text   TextDisplay   Line   Dot   Arc   Donut   Ellipse 
+---------------------------------------------------------------------------------------------------------------------------------------
+ibm13rflpvt/NOR2X6TS5wwawwwwwx88w8dy/layout                     0        0       15       35     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/INVX8TS5wwlwwwwwuoeek2y/layout                      0        0       10       25     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/DFFRHQX4TS5ww0ywwwwt8oexty/layout                   0        0       48       85     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/DFFRHQX1TS/layout   1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/NAND2X6TS/layout    1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/NOR2BX1TS5ww2wwwwwgmcj2sy/layout                    0        0       13       23     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/NAND2BX2TS5wwlwwwwwpt1rm2y/layout                   0        0       15       28     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/NOR2BX4TS/layout    1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/CLKINVX12TS5wwawwwwwedwlmry/layout                  0        0       10       37     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/OAI22X2TS/layout    1        0       0        2      0      0         12     0             0      0     0     0       0       
+ibm13rflpvt/INVX6TS/layout      1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/NOR2BX2TS5wwlwwwwwbvd79sy/layout                    0        0       14       32     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/BUFX4TS5ww7wwwwwrq87nay/layout                      0        0       12       26     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/OAI22X4TS5ww9wwwwwi261cjy/layout                    0        0       21       45     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/CLKINVX1TS5wwiwwwww1ch2q0y/layout                   0        0       9        16     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/NOR2BX1TS/layout    1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/NOR2X2TS/layout     1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/NAND3BX2TS/layout   1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/BUFX6TS5ww0wwwww52amsly/layout                      0        0       11       35     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/XNOR2X1TS/layout    1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/AOI21X4TS/layout    1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/FILL4TS/layout      1        0       0        1      0      0         7      0             0      0     0     0       0       
+ibm13rflpvt/OR2X6TS/layout      1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/CLKINVX2TS/layout   1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/NOR2BX4TS5wwqwwwww44assyy/layout                    0        0       15       33     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/OA21X4TS/layout     1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/INVX6TS5ww7wwwwwhn6rjyy/layout                      0        0       10       25     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/ADDHX2TS/layout     1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/AOI21X1TS/layout    1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/OR2X4TS5wwlwwwwwnlrq1yy/layout                      0        0       11       30     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/BUFX3TS/layout      1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/XOR2X2TS/layout     1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/NAND3X4TS/layout    1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/XOR2X4TS5wwxwwwwwe40hmjy/layout                     0        0       18       64     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/DFFRHQX2TS5wwwywwwwqd5hocy/layout                   0        0       44       68     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/AO21X2TS5wwlwwwwwogt63uy/layout                     0        0       20       23     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/XNOR2X2TS5wwewwwwwolapway/layout                    0        0       18       43     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/XOR2XLTS5ww0wwwww8gdqb0y/layout                     0        0       14       26     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/DFFRX2TS/layout     1        0       0        2      0      0         12     0             0      0     0     0       0       
+ibm13rflpvt/AO21X2TS/layout     1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/OAI2BB1X1TS/layout  1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/XNOR2X4TS5wwzwwwwwbznojry/layout                    0        0       19       59     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/NAND3BX2TS5ww0wwwwwqce842y/layout                   0        0       17       26     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/XOR2X2TS5wwewwwww3gazw2y/layout                     0        0       21       47     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        3      0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/OA21X4TS5wwqwwwwwk7uigwy/layout                     0        0       15       43     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/OR2X1TS/layout      1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/CLKAND2X2TS5ww2wwwwwjp5upty/layout                  0        0       12       23     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/INVX1TS/layout      1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/DFFRX1TS/layout     1        0       0        2      0      0         12     0             0      0     0     0       0       
+ibm13rflpvt/OAI21X2TS5wwqwwwwwwhqxz0y/layout                    0        0       14       41     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/OAI2BB1X2TS5ww0wwwwwm25y7uy/layout                  0        0       17       34     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/FILL8TS5ww0wwwwwifla62y/layout                      0        0       3        23     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/DFFRHQX2TS/layout   1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/DFFRX4TS5wwyywwwwffcaeiy/layout                     0        0       35       79     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/INVX2TS5wwiwwwwwk9lnbmy/layout                      0        0       7        17     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/AOI21X1TS5ww2wwwwwqihso0y/layout                    0        0       12       25     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/CLKINVX4TS5wwdwwwwwx2kypsy/layout                   0        0       7        22     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/NOR2X6TS/layout     1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/FILL1TS/layout      1        0       0        1      0      0         7      0             0      0     0     0       0       
+ibm13rflpvt/OAI21X2TS/layout    1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/OAI21X1TS5ww2wwwwwwqrz47y/layout                    0        0       14       23     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/NOR2X1TS/layout     1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/ADDFHX4TS/layout    1        0       0        2      0      0         12     0             0      0     0     0       0       
+ibm13rflpvt/NOR2X2TS5ww2wwwww9lr89ty/layout                     0        0       12       23     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/CMPR22X2TS/layout   1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/BUFX8TS/layout      1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/CLKBUFX4TS/layout   1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/NAND2X1TS/layout    1        0       0        2      0      0         10     0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/ADDHX1TS/layout     1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/OAI21X4TS5wwswwwwwulzd40y/layout                    0        0       18       38     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/XNOR2X4TS/layout    1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/NAND2BX1TS/layout   1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/NOR2X1TS5wwdwwwww2tdxcyy/layout                     0        0       10       22     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/OAI2BB1X4TS/layout  1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/XOR2X1TS/layout     1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/BUFX12TS5ww6wwwwwug0ky7y/layout                     0        0       13       45     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/AND2X8TS/layout     1        0       0        2      0      0         10     0             0      0     0     0       0       
+6321_proj/PE/layout             1040     0       0        143    7212   0         70     0             0      0     0     0       0       
+ibm13rflpvt/AOI21X4TS5wwswwwwwoy139jy/layout                    0        0       22       37     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/OR2X2TS5ww2wwwwwk84w0ly/layout                      0        0       12       25     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/CMPR22X2TS5wwgwwwww39kmijy/layout                   0        0       24       65     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/NAND2XLTS5wwdwwwwwerljx7y/layout                    0        0       10       19     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/BUFX4TS/layout      1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/NAND2X4TS/layout    1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/AO21X1TS/layout     1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/NAND2BX4TS/layout   1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/BUFX8TS5wwqwwwww983b4iy/layout                      0        0       12       37     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/NOR2BX2TS/layout    1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/INVX1TS5wwiwwwww8rmvqwy/layout                      0        0       9        16     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/NAND2BXLTS5ww2wwwww6ide5ly/layout                   0        0       12       24     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/NAND3X2TS5wwlwwwwwd2lpm0y/layout                    0        0       16       22     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/OR2X1TS5ww2wwwww8ihmgyy/layout                      0        0       13       23     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/FILL2TS/layout      1        0       0        1      0      0         7      0             0      0     0     0       0       
+ibm13rflpvt/OR2X2TS/layout      1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/CLKBUFX2TS5wwdwwwww7fihtqy/layout                   0        0       13       18     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/XOR2X1TS5ww0wwwwwb7ar4my/layout                     0        0       15       27     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/INVX2TS/layout      1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/AOI21X2TS/layout    1        0       0        2      0      0         11     0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/CLKINVX6TS5ww2wwwwwx1wqyuy/layout                   0        0       7        27     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/DFFRXLTS5ww3wwwww0tngcty/layout                     0        0       34       67     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/OR2X6TS5wwawwwwwrkjjlqy/layout                      0        0       15       40     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/XNOR2X1TS5ww0wwwww85qi4jy/layout                    0        0       16       27     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/XOR2XLTS/layout     1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/CLKINVX6TS/layout   1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/NAND3X2TS/layout    1        0       0        2      0      0         11     0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/OAI2BB1X1TS5ww7wwwwwm6kncdy/layout                  0        0       16       22     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/NAND2X6TS5wwawwwwwai4ajuy/layout                    0        0       15       35     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/AO22XLTS/layout     1        0       0        2      0      0         12     0             0      0     0     0       0       
+ibm13rflpvt/OAI21XLTS/layout    1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/NOR2X8TS5wwewwwww1xmsp2y/layout                     0        0       20       43     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/AND2X2TS/layout     1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/OAI22X2TS5ww6wwwww8a6tjay/layout                    0        0       18       43     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/AO21X1TS5ww7wwwww87tggqy/layout                     0        0       13       27     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/CLKBUFX2TS/layout   1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/NAND2X2TS/layout    1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/FILL32TS5wwlywwwwo1654uy/layout                     0        0       3        74     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/DFFRX1TS5ww3wwwwwa3zhh6y/layout                     0        0       34       67     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        3      0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/AOI21X2TS5wwqwwwwwq9insjy/layout                    0        0       12       43     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/OAI22X1TS5ww7wwwww6lwqady/layout                    0        0       15       28     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/CLKINVX4TS/layout   1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/NAND2X2TS5ww2wwwwwmv6wsmy/layout                    0        0       12       25     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/ADDFHX2TS/layout    1        0       0        2      0      0         12     0             0      0     0     0       0       
+ibm13rflpvt/FILL2TS5wwtwwwwwkpdc6dy/layout                      0        0       3        11     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/OAI21XLTS5ww2wwwwwz334bqy/layout                    0        0       14       22     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/FILL16TS/layout     1        0       0        2      0      0         7      0             0      0     0     0       0       
+ibm13rflpvt/NOR2X4TS/layout     1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/INVX3TS/layout      1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/NAND2BX2TS/layout   1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/NOR2X8TS/layout     1        0       0        2      0      0         10     0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        4      0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/OAI22X4TS/layout    1        0       0        2      0      0         12     0             0      0     0     0       0       
+ibm13rflpvt/XNOR2X2TS/layout    1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/BUFX3TS5ww2wwwwwxbj75ty/layout                      0        0       12       19     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/FILL8TS/layout      1        0       0        2      0      0         7      0             0      0     0     0       0       
+ibm13rflpvt/NAND3X4TS5ww6wwwwwa3xg9ty/layout                    0        0       18       34     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/NAND2X4TS5ww0wwwwwzf02zdy/layout                    0        0       13       26     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        3      0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/NOR2XLTS/layout     1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/INVX3TS5wwdwwwwwq27iwjy/layout                      0        0       8        22     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/CLKINVX2TS5wwiwwwwwcd45tty/layout                   0        0       7        18     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/BUFX12TS/layout     1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/OAI22X1TS/layout    1        0       0        2      0      0         12     0             0      0     0     0       0       
+ibm13rflpvt/AO22XLTS5wwlwwwwwebn7jyy/layout                     0        0       16       27     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/ADDFHX4TS5ww0cwwwwpfz26uy/layout                    0        0       52       155    0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/CLKINVX1TS/layout   1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/NAND2BX1TS5ww2wwwww5equvdy/layout                   0        0       11       23     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/XOR2X4TS/layout     1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/ADDHX2TS5wwgwwwwwumgxdly/layout                     0        0       26       66     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/AND2X2TS5ww2wwwwwuvt1lsy/layout                     0        0       13       25     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/AND2X1TS/layout     1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/DFFRX4TS/layout     1        0       0        2      0      0         12     0             0      0     0     0       0       
+ibm13rflpvt/ADDHX1TS5wwewwwwwn314pwy/layout                     0        0       22       41     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/CLKBUFX3TS5ww2wwwww5vt5ojy/layout                   0        0       11       24     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/OAI2BB1X4TS5wwawwwwwb5l73jy/layout                  0        0       18       33     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/OR3X2TS/layout      1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/NOR2X4TS5ww0wwwwwdiyx3yy/layout                     0        0       16       30     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/NOR2XLTS5wwdwwwww494wwry/layout                     0        0       9        20     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/FILL32TS/layout     1        0       0        2      0      0         7      0             0      0     0     0       0       
+ibm13rflpvt/BUFX6TS/layout      1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/INVX8TS/layout      1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/FILL4TS5wwdwwwwwf6qhgjy/layout                      0        0       3        15     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/FILL16TS5ww9wwwww6njrily/layout                     0        0       3        40     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/CMPR32X2TS5wwhwwwwwxg3h27y/layout                   0        0       39       66     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/AND2X8TS5ww6wwwwwgdk1b6y/layout                     0        0       14       44     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/DFFRHQX1TS5wwwywwwwxc9a4uy/layout                   0        0       42       71     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/INVX4TS5wwdwwwww3lu8pry/layout                      0        0       9        21     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/NAND2XLTS/layout    1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/DFFRHQX4TS/layout   1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/NAND2BX4TS5wwawwwww1qv3myy/layout                   0        0       16       36     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/NAND2BXLTS/layout   1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/DFFRX2TS5ww3wwwww4wga92y/layout                     0        0       38       68     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/FILL1TS5wwywwwwwf2m1uwy/layout                      0        0       0        12     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/CMPR32X2TS/layout   1        0       0        2      0      0         12     0             0      0     0     0       0       
+ibm13rflpvt/OR2X4TS/layout      1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/CLKAND2X2TS/layout  1        0       0        2      0      0         10     0             0      0     0     0       0       
+ibm13rflpvt/OAI2BB1X2TS/layout  1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/BUFX2TS/layout      1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/INVX4TS/layout      1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/OAI21X4TS/layout    1        0       0        2      0      0         11     0             0      0     0     0       0       
+cmrf8sf/VM2_M3/layout           0        0       0        18     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/NAND2X1TS5wwdwwwwwvns2hry/layout                    0        0       10       20     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/CLKBUFX4TS5ww7wwwwwmb7jvmy/layout                   0        0       12       29     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/BUFX2TS5ww2wwwww7vqz40y/layout                      0        0       11       22     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/DFFRXLTS/layout     1        0       0        2      0      0         12     0             0      0     0     0       0       
+ibm13rflpvt/OR3X2TS5wwlwwwww3yvptay/layout                      0        0       14       31     0      0         0      0             0      0     0     0       0       
+cmrf8sf/VM1_M2/layout           0        0       0        6      0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/CLKBUFX3TS/layout   1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/CLKINVX12TS/layout  1        0       0        2      0      0         9      0             0      0     0     0       0       
+ibm13rflpvt/OAI21X1TS/layout    1        0       0        2      0      0         11     0             0      0     0     0       0       
+ibm13rflpvt/AND2X1TS5ww2wwwww47ypvmy/layout                     0        0       13       24     0      0         0      0             0      0     0     0       0       
+ibm13rflpvt/ADDFHX2TS5wwsywwwwd9zszmy/layout                    0        0       39       98     0      0         0      0             0      0     0     0       0       
+---------------------------------------------------------------------------------------------------------------------------------------
+
+                       Individual Cell Statistics - Advanced Objects
+---------------------------------------------------------------------------------------------------------------------------------------
+Library/Cell/View               PRBdy    OtherBdy   AreaBlkg   LayerBlkg  AreaHalo   Row   Marker   CustVia   StdVia    CdsGenVia
+---------------------------------------------------------------------------------------------------------------------------------------
+ibm13rflpvt/NOR2X6TS5wwawwwwwx88w8dy/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/INVX8TS5wwlwwwwwuoeek2y/layout                      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/DFFRHQX4TS5ww0ywwwwt8oexty/layout                   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/DFFRHQX1TS/layout   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND2X6TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NOR2BX1TS5ww2wwwwwgmcj2sy/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND2BX2TS5wwlwwwwwpt1rm2y/layout                   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NOR2BX4TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CLKINVX12TS5wwawwwwwedwlmry/layout                  0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI22X2TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/INVX6TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NOR2BX2TS5wwlwwwwwbvd79sy/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/BUFX4TS5ww7wwwwwrq87nay/layout                      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI22X4TS5ww9wwwwwi261cjy/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CLKINVX1TS5wwiwwwww1ch2q0y/layout                   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NOR2BX1TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NOR2X2TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND3BX2TS/layout   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/BUFX6TS5ww0wwwww52amsly/layout                      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/XNOR2X1TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/AOI21X4TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/FILL4TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OR2X6TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CLKINVX2TS/layout   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NOR2BX4TS5wwqwwwww44assyy/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OA21X4TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/INVX6TS5ww7wwwwwhn6rjyy/layout                      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/ADDHX2TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/AOI21X1TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OR2X4TS5wwlwwwwwnlrq1yy/layout                      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/BUFX3TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/XOR2X2TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND3X4TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/XOR2X4TS5wwxwwwwwe40hmjy/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/DFFRHQX2TS5wwwywwwwqd5hocy/layout                   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/AO21X2TS5wwlwwwwwogt63uy/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/XNOR2X2TS5wwewwwwwolapway/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/XOR2XLTS5ww0wwwww8gdqb0y/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/DFFRX2TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/AO21X2TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI2BB1X1TS/layout  0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/XNOR2X4TS5wwzwwwwwbznojry/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND3BX2TS5ww0wwwwwqce842y/layout                   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/XOR2X2TS5wwewwwww3gazw2y/layout                     0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OA21X4TS5wwqwwwwwk7uigwy/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OR2X1TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CLKAND2X2TS5ww2wwwwwjp5upty/layout                  0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/INVX1TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/DFFRX1TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI21X2TS5wwqwwwwwwhqxz0y/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI2BB1X2TS5ww0wwwwwm25y7uy/layout                  0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/FILL8TS5ww0wwwwwifla62y/layout                      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/DFFRHQX2TS/layout   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/DFFRX4TS5wwyywwwwffcaeiy/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/INVX2TS5wwiwwwwwk9lnbmy/layout                      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/AOI21X1TS5ww2wwwwwqihso0y/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CLKINVX4TS5wwdwwwwwx2kypsy/layout                   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NOR2X6TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/FILL1TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI21X2TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI21X1TS5ww2wwwwwwqrz47y/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NOR2X1TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/ADDFHX4TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NOR2X2TS5ww2wwwww9lr89ty/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CMPR22X2TS/layout   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/BUFX8TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CLKBUFX4TS/layout   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND2X1TS/layout    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/ADDHX1TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI21X4TS5wwswwwwwulzd40y/layout                    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/XNOR2X4TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND2BX1TS/layout   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NOR2X1TS5wwdwwwww2tdxcyy/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI2BB1X4TS/layout  0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/XOR2X1TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/BUFX12TS5ww6wwwwwug0ky7y/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/AND2X8TS/layout     0        0          0          0          0          0     0        0         0         0        
+6321_proj/PE/layout             0        0          0          0          0          0     0        0         5305      0        
+ibm13rflpvt/AOI21X4TS5wwswwwwwoy139jy/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OR2X2TS5ww2wwwwwk84w0ly/layout                      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CMPR22X2TS5wwgwwwww39kmijy/layout                   0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND2XLTS5wwdwwwwwerljx7y/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/BUFX4TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND2X4TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/AO21X1TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND2BX4TS/layout   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/BUFX8TS5wwqwwwww983b4iy/layout                      0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NOR2BX2TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/INVX1TS5wwiwwwww8rmvqwy/layout                      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND2BXLTS5ww2wwwww6ide5ly/layout                   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND3X2TS5wwlwwwwwd2lpm0y/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OR2X1TS5ww2wwwww8ihmgyy/layout                      0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/FILL2TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OR2X2TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CLKBUFX2TS5wwdwwwww7fihtqy/layout                   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/XOR2X1TS5ww0wwwwwb7ar4my/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/INVX2TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/AOI21X2TS/layout    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CLKINVX6TS5ww2wwwwwx1wqyuy/layout                   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/DFFRXLTS5ww3wwwww0tngcty/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OR2X6TS5wwawwwwwrkjjlqy/layout                      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/XNOR2X1TS5ww0wwwww85qi4jy/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/XOR2XLTS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CLKINVX6TS/layout   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND3X2TS/layout    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI2BB1X1TS5ww7wwwwwm6kncdy/layout                  0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND2X6TS5wwawwwwwai4ajuy/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/AO22XLTS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI21XLTS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NOR2X8TS5wwewwwww1xmsp2y/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/AND2X2TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI22X2TS5ww6wwwww8a6tjay/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/AO21X1TS5ww7wwwww87tggqy/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CLKBUFX2TS/layout   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND2X2TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/FILL32TS5wwlywwwwo1654uy/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/DFFRX1TS5ww3wwwwwa3zhh6y/layout                     0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/AOI21X2TS5wwqwwwwwq9insjy/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI22X1TS5ww7wwwww6lwqady/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CLKINVX4TS/layout   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND2X2TS5ww2wwwwwmv6wsmy/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/ADDFHX2TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/FILL2TS5wwtwwwwwkpdc6dy/layout                      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI21XLTS5ww2wwwwwz334bqy/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/FILL16TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NOR2X4TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/INVX3TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND2BX2TS/layout   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NOR2X8TS/layout     0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI22X4TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/XNOR2X2TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/BUFX3TS5ww2wwwwwxbj75ty/layout                      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/FILL8TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND3X4TS5ww6wwwwwa3xg9ty/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND2X4TS5ww0wwwwwzf02zdy/layout                    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NOR2XLTS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/INVX3TS5wwdwwwwwq27iwjy/layout                      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CLKINVX2TS5wwiwwwwwcd45tty/layout                   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/BUFX12TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI22X1TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/AO22XLTS5wwlwwwwwebn7jyy/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/ADDFHX4TS5ww0cwwwwpfz26uy/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CLKINVX1TS/layout   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND2BX1TS5ww2wwwww5equvdy/layout                   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/XOR2X4TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/ADDHX2TS5wwgwwwwwumgxdly/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/AND2X2TS5ww2wwwwwuvt1lsy/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/AND2X1TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/DFFRX4TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/ADDHX1TS5wwewwwwwn314pwy/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CLKBUFX3TS5ww2wwwww5vt5ojy/layout                   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI2BB1X4TS5wwawwwwwb5l73jy/layout                  0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OR3X2TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NOR2X4TS5ww0wwwwwdiyx3yy/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NOR2XLTS5wwdwwwww494wwry/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/FILL32TS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/BUFX6TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/INVX8TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/FILL4TS5wwdwwwwwf6qhgjy/layout                      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/FILL16TS5ww9wwwww6njrily/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CMPR32X2TS5wwhwwwwwxg3h27y/layout                   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/AND2X8TS5ww6wwwwwgdk1b6y/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/DFFRHQX1TS5wwwywwwwxc9a4uy/layout                   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/INVX4TS5wwdwwwww3lu8pry/layout                      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND2XLTS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/DFFRHQX4TS/layout   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND2BX4TS5wwawwwww1qv3myy/layout                   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND2BXLTS/layout   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/DFFRX2TS5ww3wwwww4wga92y/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/FILL1TS5wwywwwwwf2m1uwy/layout                      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CMPR32X2TS/layout   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OR2X4TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CLKAND2X2TS/layout  0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI2BB1X2TS/layout  0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/BUFX2TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/INVX4TS/layout      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI21X4TS/layout    0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM2_M3/layout           0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/NAND2X1TS5wwdwwwwwvns2hry/layout                    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CLKBUFX4TS5ww7wwwwwmb7jvmy/layout                   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/BUFX2TS5ww2wwwww7vqz40y/layout                      0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/DFFRXLTS/layout     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OR3X2TS5wwlwwwww3yvptay/layout                      0        0          0          0          0          0     0        0         0         0        
+cmrf8sf/VM1_M2/layout           0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CLKBUFX3TS/layout   0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/CLKINVX12TS/layout  0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/OAI21X1TS/layout    0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/AND2X1TS5ww2wwwww47ypvmy/layout                     0        0          0          0          0          0     0        0         0         0        
+ibm13rflpvt/ADDFHX2TS5wwsywwwwd9zszmy/layout                    0        0          0          0          0          0     0        0         0         0        
+---------------------------------------------------------------------------------------------------------------------------------------
+
+                       Statistics of Layers 
+---------------------------------------------------------------------------------------------------------------------------------------
+Cadence         Cadence         Stream  Stream   
+Layer           Purpose         Layer   Datatype  Polygon  Rect     Path     Text     TextDisplay   Line Dot Arc Donut Ellipse Pathseg
+---------------------------------------------------------------------------------------------------------------------------------------
+NW              drawing         4       0         9        84       0        0        0             0    0   0   0     0      0      
+M1              label           15      20        0        0        0        472      0             0    0   0   0     0      0      
+V2              drawing         18      0         0        25       0        0        0             0    0   0   0     0      0      
+ALPHA           ip              63      63        0        0        0        465      0             0    0   0   0     0      0      
+OUTLINE         drawing         62      21        0        276      0        0        0             0    0   0   0     0      0      
+M3              drawing         19      0         0        29       2722     0        0             0    0   0   0     0      0      
+CA              drawing         14      0         0        2743     0        0        0             0    0   0   0     0      0      
+V1              drawing         16      0         0        14       0        0        0             0    0   0   0     0      0      
+PV              drawing         12      31        9        84       0        0        0             0    0   0   0     0      0      
+M3              label           19      20        0        0        0        19       0             0    0   0   0     0      0      
+RX              drawing         2       0         336      34       0        0        0             0    0   0   0     0      0      
+M2              drawing         17      0         0        72       4167     0        0             0    0   0   0     0      0      
+M1              drawing         15      0         522      179      323      0        0             0    0   0   0     0      0      
+GRLOGIC         drawing         6       34        0        94       0        0        0             0    0   0   0     0      0      
+PC              drawing         7       0         447      12       0        0        0             0    0   0   0     0      0      
+BP              drawing         10      0         162      24       0        0        0             0    0   0   0     0      0      
+NV              drawing         12      30        9        84       0        0        0             0    0   0   0     0      0      
+M2              label           17      20        0        0        0        51       0             0    0   0   0     0      0      
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Summary of Objects Translated:
+	Scalar Instances:		1133
+	Array Instances:		0
+	Polygons:			1494
+	Paths:				7212
+	Rectangles:			3754
+	Lines:				0
+	Arcs:				0
+	Donuts:				0
+	Dots:				0
+	Ellipses:			0
+	Boundaries:			0
+	Area Blockages:			0
+	Layer Blockages:		0
+	Area Halos:			0
+	Markers:			0
+	Rows:				0
+	Standard Vias:			5305
+	Custom Vias:			0
+	CdsGen Vias:			0
+	Pathsegs:			0
+	Text:				1007
+	TextDisplay:		0
+	Cells:				200
+Design Libraries: 
+
+DEFINE cmrf8sf	/courses/ee6321/share/IBM_PDK/cmrf8sf/V1.8.0.4DM/cdslib/cmrf8sf
+DEFINE 6321_proj	/homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/6321_proj
+DEFINE ibm13rflpvt	/courses/ee6321/share/ibm13rflpvt/cdslib

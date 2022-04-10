@@ -1,0 +1,14 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1649533431 1649533442
+lvs_ExtOutFile RUNDIR /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/lvs_run
+lvs_ExtOutFile RULES_FILE /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/lvs_run/_cmrf8sf.lvs.cal_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {9 0 0 0 0 4 2000 31040 2062 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/lvs_run/PE.sp
+lvs_ExtOutFile EXTRACTION_REPORT PE.lvs.report.ext
+lvs_ExtOutFile ERC_PATHCHK_DATABASE svdb/PE.pathchk.erc
+lvs_ExtOutFile ERC_PATHCHK_REPORT svdb/PE.pathchk.rep
+lvs_ExtOutFile ERC_DATABASE PE.erc.results
+lvs_ExtOutFile ERC_SUMMARY PE.erc.summary

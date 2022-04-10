@@ -1,0 +1,13 @@
+# For Cadence Default Library
+DEFINE analogLib $CDS_INST_DIR/tools/dfII/etc/cdslib/artist/analogLib
+DEFINE rfLib $CDS_INST_DIR/tools/dfII/samples/artist/rfLib
+DEFINE basic $CDS_INST_DIR/tools/dfII/etc/cdslib/basic
+DEFINE US_8ths $CDS_INST_DIR/tools/dfII/etc/cdslib/sheets/US_8ths
+DEFINE sbaLib $CDS_INST_DIR/tools/dfII/etc/cdslib/artist/sbaLib 
+DEFINE sample $CDS_INST_DIR/tools/dfII/samples/cdslib/sample 
+
+# For IBM 130nm CMRF8SF
+DEFINE cmrf8sf /courses/ee6321/share/IBM_PDK/cmrf8sf/relDM/cdslib/cmrf8sf
+DEFINE esd8rf /courses/ee6321/share/IBM_PDK/cmrf8sf/relDM/cdslib/esd8rf
+DEFINE ibm13rflpvt /courses/ee6321/share/ibm13rflpvt/cdslib
+DEFINE 6321_proj ./6321_proj

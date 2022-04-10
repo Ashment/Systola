@@ -1,0 +1,37 @@
+PE 1000
+nfet33_err001
+0 0 2 Apr  9 15:44:02 2022                                                      
+Rule File Pathname: /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/lvs_run/_cmrf8sf.lvs.cal_
+nfet33 in PI is currently not supported 
+lvtnfet_err001
+0 0 2 Apr  9 15:44:02 2022                                                      
+Rule File Pathname: /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/lvs_run/_cmrf8sf.lvs.cal_
+lvtnfet in PI is currently not supported 
+lpnfet_err001
+0 0 2 Apr  9 15:44:02 2022                                                      
+Rule File Pathname: /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/lvs_run/_cmrf8sf.lvs.cal_
+lpnfet in PI is currently not supported 
+nfet33_err002
+0 0 2 Apr  9 15:44:02 2022                                                      
+Rule File Pathname: /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/lvs_run/_cmrf8sf.lvs.cal_
+nfet33tw and nfet33tw_rf in PI is currently not supported 
+lvtnfet_err002
+0 0 2 Apr  9 15:44:02 2022                                                      
+Rule File Pathname: /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/lvs_run/_cmrf8sf.lvs.cal_
+lvtnfettw and lvtnfettw_rf in PI is currently not supported 
+lpnfet_err002
+0 0 2 Apr  9 15:44:02 2022                                                      
+Rule File Pathname: /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/lvs_run/_cmrf8sf.lvs.cal_
+lpnfettw and lpnfettw_rf in PI is currently not supported 
+silres_err001
+0 0 3 Apr  9 15:44:02 2022                                                      
+Rule File Pathname: /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/lvs_run/_cmrf8sf.lvs.cal_
+silres in BFMOAT is not allowed with the current ground rules
+There may be some changes to this device in the future 
+sbd_err001
+0 0 2 Apr  9 15:44:02 2022                                                      
+Rule File Pathname: /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/lvs_run/_cmrf8sf.lvs.cal_
+SBD device not touching BB 
+FLOATING_NW
+0 0 1 Apr  9 15:44:02 2022                                                      
+Rule File Pathname: /homes/user/stud/fall21/mz2878/EECS6321/Project/virtuoso/lvs_run/_cmrf8sf.lvs.cal_
