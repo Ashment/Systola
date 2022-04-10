@@ -10,7 +10,6 @@ module PE_ARR
     input[0 : 8*(cols)-1] in_a_port,
     output wire [0 : 32*(rows*cols)-1] outs_port);
 
-
     wire [7:0] in_w [0:rows-1];
     wire [7:0] in_a [0:cols-1];
     wire [31:0] outs [0:(rows*cols)-1];
@@ -37,8 +36,8 @@ module PE_ARR
         for (i=0; i<rows; i=i+1) begin
             for (j=0; j<cols; j=j+1) begin
 
-                if (j == 0) begin // First Column
-                    if(i == 0) begin // Only for top left PE
+                if (j == 0) begin : gen_fcol// First Column
+                    if (i == 0) begin : gen_topleft// Only for top left PE
                         PE PEL (.clk(clk), .rstn(rstn), 
                         .fire(fire), 
                         .in_w(in_w[0]), 
@@ -47,7 +46,7 @@ module PE_ARR
                         .out_a(a_o[0]), 
                         .out_w(w_o[0]), 
                         .out(outs[0]));
-                    end else begin  // Rest of first column
+                    end else begin  : gen_leftcol// Rest of first column
                         PE PEL (.clk(clk), .rstn(rstn), 
                         .fire(f_o[j + (i-1)*cols]), 
                         .in_w(w_o[j + (i-1)*cols]), 
@@ -58,8 +57,8 @@ module PE_ARR
                         .out(outs[j + i*cols]));
                     end
 
-                end else begin // Not first column
-                    if(i == 0) begin // First Row
+                end else begin : gen_nfcol// Not first column
+                    if(i == 0) begin : gen_firstrow// First Row
                         PE PER (.clk(clk), .rstn(rstn), 
                         .fire(f_o[j + i*cols - 1]), 
                         .in_w(in_w[j]), 
@@ -68,7 +67,7 @@ module PE_ARR
                         .out_a(a_o[j + i*cols]), 
                         .out_w(w_o[j + i*cols]), 
                         .out(outs[j + i*cols]));
-                    end else begin // Not first row, not first column
+                    end else begin : gen_pegen// Not first row, not first column
                         PE PER (.clk(clk), .rstn(rstn), 
                         .fire(f_o[j + i*cols - 1]), 
                         .in_w(w_o[j + (i-1)*cols]), 
