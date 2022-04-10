@@ -12,9 +12,6 @@ module PE_TB();
 	reg [7:0] cnt;
 
 	integer i;
-	integer input_file;
-	integer output_file;
-	integer ret_read;
 
 	always begin
 		`HALF_CLOCK_PERIOD;
@@ -32,33 +29,23 @@ module PE_TB();
 		rstn <= 0;
 		cnt <= 0;
 		w <= 0;
-		a <= 0;
+		a <= 1;
 		fire <= 0;
 
 		$display("Initialized");
 
-		//Open input and output files
-		output_file = $fopen(`OUTPUT_FN,"w");
-		if (!output_file) begin
-			$display("Couldn't open the output file.");
-			$finish;
-		end
-		input_file = $fopen(`INPUT_FN,"r");
-		if (!input_file) begin
-			$display("Couldn't open the input file.");
-			$finish;
-		end
-		@(posedge clk);
 		@(posedge clk);
 		@(negedge clk);
+
 		rstn <= 1;
 		fire <= 1;
+
 		for (i=0; i<16; i=i+1) begin
-			ret_read = $fscanf(input_file, "%d %d", w, a); //Testing the reading in and writing out of values
-			$fwrite(output_file, "w = %0d, a = %0d\n", w, a); //Testing the reading and writing out of values
+			w <= w + 1;
 			@(posedge clk);
 			$display("i=%d\tout=%d", i, out);
 		end
+
 		@(negedge clk);
 		fire <= 0;
 		@(posedge clk);
