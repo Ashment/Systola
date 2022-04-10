@@ -9,23 +9,22 @@ z2
 cModel Technology
 Z0 d/user/stud/fall21/bh2803/Documents/esp/Systola/qsim_rtl/pe_arr
 T_opt
-!s110 1649559676
-VVM<91AcU00Fd7jifWUc]K2
+!s110 1649565111
+V`:A;eoXKE5c:Hz=HaJ6Q>2
 04 11 4 work pe_arr_test fast 0
-=1-b04f130f61e5-6252487c-5ffec-6010
+=1-b04f130f61e5-62525db7-1bd95-1caf
 o-quiet -auto_acc_if_foreign -work work
 Z1 tCvgOpt 0
 n@_opt
 OE;O;10.7b_1;67
 vPE
-!s10a 1649548265
-Z2 !s110 1649559066
+Z2 !s110 1649565110
 !i10b 1
-!s100 zMjjF<U2Om43j5DoJ30`93
-I<XHldWM>f^HHP73iP=fne0
+!s100 iRLKE>d3`8boj=mPK?MK]3
+If1@DWBm7IES6ATYBWF`c=0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1649548265
+w1649565107
 8../../verilog/pe.v
 F../../verilog/pe.v
 L0 3
@@ -33,7 +32,7 @@ Z4 OE;L;10.7b_1;67
 r1
 !s85 0
 31
-Z5 !s108 1649559066.000000
+Z5 !s108 1649565110.000000
 !s107 ../../verilog/pe.v|
 !s90 -reportprogress|300|+acc|-incr|../../verilog/pe.v|
 !i113 0
@@ -41,14 +40,13 @@ Z6 o+acc -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
 n@p@e
 vPE_ARR
-!s10a 1649558631
 R2
 !i10b 1
-!s100 kGmnKb0c35bJn:UK4XYd?0
-IE[6LP4TDNV^4X[;oV5WNA1
+!s100 kC4XEBXz]E@Kmc;^laaYN2
+I0iVV?jWgR3d=1@QM?3[Sk2
 R3
 R0
-w1649558631
+w1649562706
 8../../verilog/pe_arr.v
 F../../verilog/pe_arr.v
 L0 1
@@ -64,6 +62,7 @@ R6
 R1
 n@p@e_@a@r@r
 vpe_arr_test
+!s10a 1649559665
 !s110 1649559675
 !i10b 1
 !s100 :=@VNVhT4BE9^VTi]R1gJ3
