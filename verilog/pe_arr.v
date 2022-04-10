@@ -27,10 +27,11 @@ module PE_ARR
         end
     endgenerate
 
-    // Generate local clocks for each row
+    // Generate half speed local clocks
     reg [0 : rows] lclks;
     always @ (posedge clk) begin
-        lclks <= {rows{clk}};
+        if (!rstn) lclks <= 0;
+        else lclks <= ~lclks;
     end
 
     generate
