@@ -7,7 +7,7 @@ Report : timing
         -sort_by slack
 Design : PE
 Version: O-2018.06-SP5-1
-Date   : Sat Apr  9 21:19:23 2022
+Date   : Sun Apr 10 00:49:58 2022
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c

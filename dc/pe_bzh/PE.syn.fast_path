@@ -7,13 +7,13 @@ Report : timing
         -sort_by slack
 Design : PE
 Version: O-2018.06-SP5-1
-Date   : Sat Apr  9 21:19:23 2022
+Date   : Sun Apr 10 00:49:58 2022
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
-  Startpoint: out_reg_26_
+  Startpoint: out_reg_reg_26_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[26] (output port clocked by clk)
   Path Group: clk
@@ -23,8 +23,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_26_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_26_/Q (DFFHQX4TS)                0.28       0.28 r
+  out_reg_reg_26_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_26_/Q (DFFHQX4TS)            0.28       0.28 r
   out0[26] (out)                           0.00       0.28 r
   data arrival time                                   0.28
 
@@ -40,7 +40,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.37
 
 
-  Startpoint: out_reg_24_
+  Startpoint: out_reg_reg_24_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[24] (output port clocked by clk)
   Path Group: clk
@@ -50,8 +50,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_24_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_24_/Q (DFFHQX4TS)                0.28       0.28 r
+  out_reg_reg_24_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_24_/Q (DFFHQX4TS)            0.28       0.28 r
   out0[24] (out)                           0.00       0.28 r
   data arrival time                                   0.28
 
@@ -67,7 +67,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.37
 
 
-  Startpoint: out_reg_30_
+  Startpoint: out_reg_reg_30_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[30] (output port clocked by clk)
   Path Group: clk
@@ -77,8 +77,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_30_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_30_/Q (DFFHQX4TS)                0.28       0.28 r
+  out_reg_reg_30_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_30_/Q (DFFHQX4TS)            0.28       0.28 r
   out0[30] (out)                           0.00       0.28 r
   data arrival time                                   0.28
 
@@ -94,7 +94,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.37
 
 
-  Startpoint: out_reg_23_
+  Startpoint: out_reg_reg_23_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[23] (output port clocked by clk)
   Path Group: clk
@@ -104,8 +104,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_23_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_23_/Q (DFFHQX4TS)                0.28       0.28 r
+  out_reg_reg_23_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_23_/Q (DFFHQX4TS)            0.28       0.28 r
   out0[23] (out)                           0.00       0.28 r
   data arrival time                                   0.28
 
@@ -121,7 +121,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.37
 
 
-  Startpoint: out_reg_15_
+  Startpoint: out_reg_reg_15_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[15] (output port clocked by clk)
   Path Group: clk
@@ -131,8 +131,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_15_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_15_/Q (DFFHQX4TS)                0.28       0.28 r
+  out_reg_reg_15_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_15_/Q (DFFHQX4TS)            0.28       0.28 r
   out0[15] (out)                           0.00       0.28 r
   data arrival time                                   0.28
 
@@ -148,7 +148,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.37
 
 
-  Startpoint: out_reg_31_
+  Startpoint: out_reg_reg_31_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[31] (output port clocked by clk)
   Path Group: clk
@@ -158,8 +158,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_31_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_31_/Q (DFFHQX4TS)                0.29       0.29 r
+  out_reg_reg_31_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_31_/Q (DFFHQX4TS)            0.29       0.29 r
   out0[31] (out)                           0.00       0.29 r
   data arrival time                                   0.29
 
@@ -175,7 +175,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.38
 
 
-  Startpoint: out_reg_28_
+  Startpoint: out_reg_reg_28_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[28] (output port clocked by clk)
   Path Group: clk
@@ -185,8 +185,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_28_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_28_/Q (DFFHQX4TS)                0.29       0.29 r
+  out_reg_reg_28_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_28_/Q (DFFHQX4TS)            0.29       0.29 r
   out0[28] (out)                           0.00       0.29 r
   data arrival time                                   0.29
 
@@ -202,7 +202,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.38
 
 
-  Startpoint: out_reg_20_
+  Startpoint: out_reg_reg_20_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[20] (output port clocked by clk)
   Path Group: clk
@@ -212,8 +212,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_20_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_20_/Q (DFFHQX4TS)                0.29       0.29 r
+  out_reg_reg_20_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_20_/Q (DFFHQX4TS)            0.29       0.29 r
   out0[20] (out)                           0.00       0.29 r
   data arrival time                                   0.29
 
@@ -229,7 +229,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.38
 
 
-  Startpoint: out_reg_29_
+  Startpoint: out_reg_reg_29_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[29] (output port clocked by clk)
   Path Group: clk
@@ -239,8 +239,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_29_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_29_/Q (DFFHQX4TS)                0.29       0.29 r
+  out_reg_reg_29_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_29_/Q (DFFHQX4TS)            0.29       0.29 r
   out0[29] (out)                           0.00       0.29 r
   data arrival time                                   0.29
 
@@ -256,7 +256,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.38
 
 
-  Startpoint: out_reg_27_
+  Startpoint: out_reg_reg_27_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[27] (output port clocked by clk)
   Path Group: clk
@@ -266,8 +266,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_27_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_27_/Q (DFFHQX4TS)                0.29       0.29 r
+  out_reg_reg_27_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_27_/Q (DFFHQX4TS)            0.29       0.29 r
   out0[27] (out)                           0.00       0.29 r
   data arrival time                                   0.29
 
@@ -283,7 +283,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.38
 
 
-  Startpoint: out_reg_25_
+  Startpoint: out_reg_reg_25_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[25] (output port clocked by clk)
   Path Group: clk
@@ -293,8 +293,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_25_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_25_/Q (DFFHQX4TS)                0.29       0.29 r
+  out_reg_reg_25_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_25_/Q (DFFHQX4TS)            0.29       0.29 r
   out0[25] (out)                           0.00       0.29 r
   data arrival time                                   0.29
 
@@ -310,7 +310,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.38
 
 
-  Startpoint: out_reg_22_
+  Startpoint: out_reg_reg_22_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[22] (output port clocked by clk)
   Path Group: clk
@@ -320,8 +320,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_22_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_22_/Q (DFFHQX4TS)                0.29       0.29 r
+  out_reg_reg_22_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_22_/Q (DFFHQX4TS)            0.29       0.29 r
   out0[22] (out)                           0.00       0.29 r
   data arrival time                                   0.29
 
@@ -337,7 +337,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.38
 
 
-  Startpoint: out_reg_12_
+  Startpoint: out_reg_reg_12_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[12] (output port clocked by clk)
   Path Group: clk
@@ -347,8 +347,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_12_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_12_/Q (DFFHQX4TS)                0.31       0.31 r
+  out_reg_reg_12_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_12_/Q (DFFHQX4TS)            0.31       0.31 r
   out0[12] (out)                           0.00       0.31 r
   data arrival time                                   0.31
 
@@ -364,7 +364,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.40
 
 
-  Startpoint: out_reg_14_
+  Startpoint: out_reg_reg_14_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[14] (output port clocked by clk)
   Path Group: clk
@@ -374,8 +374,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_14_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_14_/Q (DFFHQX4TS)                0.31       0.31 r
+  out_reg_reg_14_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_14_/Q (DFFHQX4TS)            0.31       0.31 r
   out0[14] (out)                           0.00       0.31 r
   data arrival time                                   0.31
 
@@ -392,7 +392,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_a[0] (input port clocked by clk)
-  Endpoint: out_a_reg_0_
+  Endpoint: out_a_reg_reg_0_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -404,13 +404,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   in_a[0] (in)                             0.06       0.16 r
   ...
-  out_a_reg_0_/D (DFFQX1TS)                0.25       0.41 r
+  out_a_reg_reg_0_/D (DFFQX1TS)            0.25       0.41 r
   data arrival time                                   0.41
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_a_reg_0_/CK (DFFQX1TS)               0.00       0.01 r
+  out_a_reg_reg_0_/CK (DFFQX1TS)           0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -421,7 +421,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[6] (input port clocked by clk)
-  Endpoint: out_w_reg_6_
+  Endpoint: out_w_reg_reg_6_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -433,13 +433,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   in_w[6] (in)                             0.06       0.16 r
   ...
-  out_w_reg_6_/D (DFFQX1TS)                0.25       0.41 r
+  out_w_reg_reg_6_/D (DFFQX1TS)            0.25       0.41 r
   data arrival time                                   0.41
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_w_reg_6_/CK (DFFQX1TS)               0.00       0.01 r
+  out_w_reg_reg_6_/CK (DFFQX1TS)           0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -450,7 +450,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[0] (input port clocked by clk)
-  Endpoint: out_w_reg_0_
+  Endpoint: out_w_reg_reg_0_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -462,13 +462,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   in_w[0] (in)                             0.06       0.16 r
   ...
-  out_w_reg_0_/D (DFFQX1TS)                0.25       0.41 r
+  out_w_reg_reg_0_/D (DFFQX1TS)            0.25       0.41 r
   data arrival time                                   0.41
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_w_reg_0_/CK (DFFQX1TS)               0.00       0.01 r
+  out_w_reg_reg_0_/CK (DFFQX1TS)           0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -478,7 +478,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.50
 
 
-  Startpoint: out_reg_21_
+  Startpoint: out_reg_reg_21_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[21] (output port clocked by clk)
   Path Group: clk
@@ -488,8 +488,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_21_/CK (DFFHQX1TS)               0.00       0.00 r
-  out_reg_21_/Q (DFFHQX1TS)                0.41       0.41 r
+  out_reg_reg_21_/CK (DFFHQX1TS)           0.00       0.00 r
+  out_reg_reg_21_/Q (DFFHQX1TS)            0.41       0.41 r
   out0[21] (out)                           0.00       0.41 r
   data arrival time                                   0.41
 
@@ -506,7 +506,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_w_reg_7_
+  Endpoint: out_w_reg_reg_7_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -518,13 +518,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   in_w[7] (in)                             0.06       0.16 r
   ...
-  out_w_reg_7_/D (DFFQX1TS)                0.27       0.43 r
+  out_w_reg_reg_7_/D (DFFQX1TS)            0.27       0.43 r
   data arrival time                                   0.43
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_w_reg_7_/CK (DFFQX1TS)               0.00       0.01 r
+  out_w_reg_reg_7_/CK (DFFQX1TS)           0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -535,7 +535,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[2] (input port clocked by clk)
-  Endpoint: out_w_reg_2_
+  Endpoint: out_w_reg_reg_2_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -547,13 +547,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   in_w[2] (in)                             0.06       0.16 r
   ...
-  out_w_reg_2_/D (DFFQX1TS)                0.27       0.43 r
+  out_w_reg_reg_2_/D (DFFQX1TS)            0.27       0.43 r
   data arrival time                                   0.43
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_w_reg_2_/CK (DFFQX1TS)               0.00       0.01 r
+  out_w_reg_reg_2_/CK (DFFQX1TS)           0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -564,7 +564,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: fire (input port clocked by clk)
-  Endpoint: out_reg_11_
+  Endpoint: out_reg_reg_11_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -576,13 +576,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   fire (in)                                0.04       0.14 r
   ...
-  out_reg_11_/D (DFFQX1TS)                 0.38       0.52 f
+  out_reg_reg_11_/D (DFFQX1TS)             0.38       0.52 f
   data arrival time                                   0.52
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_11_/CK (DFFQX1TS)                0.00       0.01 r
+  out_reg_reg_11_/CK (DFFQX1TS)            0.00       0.01 r
   library hold time                       -0.01       0.00
   data required time                                  0.00
   -----------------------------------------------------------
@@ -592,9 +592,9 @@ Wire Load Model Mode: top
   slack (MET)                                         0.52
 
 
-  Startpoint: out_reg_30_
+  Startpoint: out_reg_reg_30_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_30_
+  Endpoint: out_reg_reg_30_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -603,16 +603,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_30_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_30_/Q (DFFHQX4TS)                0.28       0.28 r
+  out_reg_reg_30_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_30_/Q (DFFHQX4TS)            0.28       0.28 r
   ...
-  out_reg_30_/D (DFFHQX4TS)                0.23       0.51 r
+  out_reg_reg_30_/D (DFFHQX4TS)            0.23       0.51 r
   data arrival time                                   0.51
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_30_/CK (DFFHQX4TS)               0.00       0.01 r
+  out_reg_reg_30_/CK (DFFHQX4TS)           0.00       0.01 r
   library hold time                       -0.06      -0.05
   data required time                                 -0.05
   -----------------------------------------------------------
@@ -622,9 +622,9 @@ Wire Load Model Mode: top
   slack (MET)                                         0.57
 
 
-  Startpoint: out_reg_15_
+  Startpoint: out_reg_reg_15_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_15_
+  Endpoint: out_reg_reg_15_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -633,16 +633,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_15_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_15_/Q (DFFHQX4TS)                0.28       0.28 r
+  out_reg_reg_15_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_15_/Q (DFFHQX4TS)            0.28       0.28 r
   ...
-  out_reg_15_/D (DFFHQX4TS)                0.23       0.52 r
+  out_reg_reg_15_/D (DFFHQX4TS)            0.23       0.52 r
   data arrival time                                   0.52
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_15_/CK (DFFHQX4TS)               0.00       0.01 r
+  out_reg_reg_15_/CK (DFFHQX4TS)           0.00       0.01 r
   library hold time                       -0.06      -0.05
   data required time                                 -0.05
   -----------------------------------------------------------
@@ -652,9 +652,9 @@ Wire Load Model Mode: top
   slack (MET)                                         0.57
 
 
-  Startpoint: out_reg_31_
+  Startpoint: out_reg_reg_31_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_31_
+  Endpoint: out_reg_reg_31_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -663,16 +663,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_31_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_31_/Q (DFFHQX4TS)                0.29       0.29 r
+  out_reg_reg_31_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_31_/Q (DFFHQX4TS)            0.29       0.29 r
   ...
-  out_reg_31_/D (DFFHQX4TS)                0.23       0.52 r
+  out_reg_reg_31_/D (DFFHQX4TS)            0.23       0.52 r
   data arrival time                                   0.52
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_31_/CK (DFFHQX4TS)               0.00       0.01 r
+  out_reg_reg_31_/CK (DFFHQX4TS)           0.00       0.01 r
   library hold time                       -0.06      -0.05
   data required time                                 -0.05
   -----------------------------------------------------------
@@ -682,9 +682,9 @@ Wire Load Model Mode: top
   slack (MET)                                         0.57
 
 
-  Startpoint: out_reg_12_
+  Startpoint: out_reg_reg_12_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_12_
+  Endpoint: out_reg_reg_12_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -693,16 +693,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_12_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_12_/Q (DFFHQX4TS)                0.31       0.31 r
+  out_reg_reg_12_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_12_/Q (DFFHQX4TS)            0.31       0.31 r
   ...
-  out_reg_12_/D (DFFHQX4TS)                0.25       0.56 r
+  out_reg_reg_12_/D (DFFHQX4TS)            0.25       0.56 r
   data arrival time                                   0.56
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_12_/CK (DFFHQX4TS)               0.00       0.01 r
+  out_reg_reg_12_/CK (DFFHQX4TS)           0.00       0.01 r
   library hold time                       -0.04      -0.03
   data required time                                 -0.03
   -----------------------------------------------------------
@@ -712,9 +712,9 @@ Wire Load Model Mode: top
   slack (MET)                                         0.59
 
 
-  Startpoint: out_reg_27_
+  Startpoint: out_reg_reg_27_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_27_
+  Endpoint: out_reg_reg_27_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -723,16 +723,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_27_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_27_/Q (DFFHQX4TS)                0.29       0.29 r
+  out_reg_reg_27_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_27_/Q (DFFHQX4TS)            0.29       0.29 r
   ...
-  out_reg_27_/D (DFFHQX4TS)                0.25       0.54 r
+  out_reg_reg_27_/D (DFFHQX4TS)            0.25       0.54 r
   data arrival time                                   0.54
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_27_/CK (DFFHQX4TS)               0.00       0.01 r
+  out_reg_reg_27_/CK (DFFHQX4TS)           0.00       0.01 r
   library hold time                       -0.06      -0.05
   data required time                                 -0.05
   -----------------------------------------------------------
@@ -742,9 +742,9 @@ Wire Load Model Mode: top
   slack (MET)                                         0.59
 
 
-  Startpoint: out_reg_23_
+  Startpoint: out_reg_reg_23_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_23_
+  Endpoint: out_reg_reg_23_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -753,16 +753,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_23_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_23_/Q (DFFHQX4TS)                0.28       0.28 r
+  out_reg_reg_23_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_23_/Q (DFFHQX4TS)            0.28       0.28 r
   ...
-  out_reg_23_/D (DFFHQX4TS)                0.26       0.54 r
+  out_reg_reg_23_/D (DFFHQX4TS)            0.26       0.54 r
   data arrival time                                   0.54
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_23_/CK (DFFHQX4TS)               0.00       0.01 r
+  out_reg_reg_23_/CK (DFFHQX4TS)           0.00       0.01 r
   library hold time                       -0.06      -0.05
   data required time                                 -0.05
   -----------------------------------------------------------
@@ -772,9 +772,9 @@ Wire Load Model Mode: top
   slack (MET)                                         0.59
 
 
-  Startpoint: out_reg_29_
+  Startpoint: out_reg_reg_29_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_29_
+  Endpoint: out_reg_reg_29_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -783,16 +783,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_29_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_29_/Q (DFFHQX4TS)                0.29       0.29 r
+  out_reg_reg_29_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_29_/Q (DFFHQX4TS)            0.29       0.29 r
   ...
-  out_reg_29_/D (DFFHQX4TS)                0.26       0.54 r
+  out_reg_reg_29_/D (DFFHQX4TS)            0.26       0.54 r
   data arrival time                                   0.54
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_29_/CK (DFFHQX4TS)               0.00       0.01 r
+  out_reg_reg_29_/CK (DFFHQX4TS)           0.00       0.01 r
   library hold time                       -0.06      -0.05
   data required time                                 -0.05
   -----------------------------------------------------------
@@ -802,9 +802,9 @@ Wire Load Model Mode: top
   slack (MET)                                         0.59
 
 
-  Startpoint: out_reg_20_
+  Startpoint: out_reg_reg_20_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_20_
+  Endpoint: out_reg_reg_20_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -813,16 +813,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_20_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_20_/Q (DFFHQX4TS)                0.29       0.29 r
+  out_reg_reg_20_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_20_/Q (DFFHQX4TS)            0.29       0.29 r
   ...
-  out_reg_20_/D (DFFHQX4TS)                0.26       0.54 r
+  out_reg_reg_20_/D (DFFHQX4TS)            0.26       0.54 r
   data arrival time                                   0.54
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_20_/CK (DFFHQX4TS)               0.00       0.01 r
+  out_reg_reg_20_/CK (DFFHQX4TS)           0.00       0.01 r
   library hold time                       -0.06      -0.05
   data required time                                 -0.05
   -----------------------------------------------------------
@@ -832,9 +832,9 @@ Wire Load Model Mode: top
   slack (MET)                                         0.60
 
 
-  Startpoint: out_reg_28_
+  Startpoint: out_reg_reg_28_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_28_
+  Endpoint: out_reg_reg_28_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -843,16 +843,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_28_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_28_/Q (DFFHQX4TS)                0.29       0.29 r
+  out_reg_reg_28_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_28_/Q (DFFHQX4TS)            0.29       0.29 r
   ...
-  out_reg_28_/D (DFFHQX4TS)                0.26       0.54 r
+  out_reg_reg_28_/D (DFFHQX4TS)            0.26       0.54 r
   data arrival time                                   0.54
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_28_/CK (DFFHQX4TS)               0.00       0.01 r
+  out_reg_reg_28_/CK (DFFHQX4TS)           0.00       0.01 r
   library hold time                       -0.06      -0.05
   data required time                                 -0.05
   -----------------------------------------------------------
@@ -862,7 +862,8 @@ Wire Load Model Mode: top
   slack (MET)                                         0.60
 
 
-  Startpoint: out_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: out_reg_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[1] (output port clocked by clk)
   Path Group: clk
   Path Type: min
@@ -871,8 +872,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_1_/CK (DFFXLTS)                  0.00       0.00 r
-  out_reg_1_/Q (DFFXLTS)                   0.52       0.52 f
+  out_reg_reg_1_/CK (DFFXLTS)              0.00       0.00 r
+  out_reg_reg_1_/Q (DFFXLTS)               0.52       0.52 f
   out0[1] (out)                            0.00       0.52 f
   data arrival time                                   0.52
 
@@ -888,9 +889,9 @@ Wire Load Model Mode: top
   slack (MET)                                         0.61
 
 
-  Startpoint: out_reg_24_
+  Startpoint: out_reg_reg_24_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_24_
+  Endpoint: out_reg_reg_24_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -899,16 +900,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_24_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_24_/Q (DFFHQX4TS)                0.30       0.30 f
+  out_reg_reg_24_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_24_/Q (DFFHQX4TS)            0.30       0.30 f
   ...
-  out_reg_24_/D (DFFHQX4TS)                0.20       0.49 f
+  out_reg_reg_24_/D (DFFHQX4TS)            0.20       0.49 f
   data arrival time                                   0.49
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_24_/CK (DFFHQX4TS)               0.00       0.01 r
+  out_reg_reg_24_/CK (DFFHQX4TS)           0.00       0.01 r
   library hold time                       -0.13      -0.12
   data required time                                 -0.12
   -----------------------------------------------------------
@@ -918,9 +919,9 @@ Wire Load Model Mode: top
   slack (MET)                                         0.61
 
 
-  Startpoint: out_reg_14_
+  Startpoint: out_reg_reg_14_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_14_
+  Endpoint: out_reg_reg_14_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -929,16 +930,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_14_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_14_/Q (DFFHQX4TS)                0.32       0.32 f
+  out_reg_reg_14_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_14_/Q (DFFHQX4TS)            0.32       0.32 f
   ...
-  out_reg_14_/D (DFFHQX4TS)                0.18       0.49 f
+  out_reg_reg_14_/D (DFFHQX4TS)            0.18       0.49 f
   data arrival time                                   0.49
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_14_/CK (DFFHQX4TS)               0.00       0.01 r
+  out_reg_reg_14_/CK (DFFHQX4TS)           0.00       0.01 r
   library hold time                       -0.13      -0.12
   data required time                                 -0.12
   -----------------------------------------------------------
@@ -948,9 +949,9 @@ Wire Load Model Mode: top
   slack (MET)                                         0.61
 
 
-  Startpoint: out_reg_25_
+  Startpoint: out_reg_reg_25_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_25_
+  Endpoint: out_reg_reg_25_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -959,16 +960,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_25_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_25_/Q (DFFHQX4TS)                0.30       0.30 f
+  out_reg_reg_25_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_25_/Q (DFFHQX4TS)            0.30       0.30 f
   ...
-  out_reg_25_/D (DFFHQX4TS)                0.20       0.49 f
+  out_reg_reg_25_/D (DFFHQX4TS)            0.20       0.49 f
   data arrival time                                   0.49
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_25_/CK (DFFHQX4TS)               0.00       0.01 r
+  out_reg_reg_25_/CK (DFFHQX4TS)           0.00       0.01 r
   library hold time                       -0.13      -0.12
   data required time                                 -0.12
   -----------------------------------------------------------
@@ -978,9 +979,9 @@ Wire Load Model Mode: top
   slack (MET)                                         0.61
 
 
-  Startpoint: out_reg_26_
+  Startpoint: out_reg_reg_26_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_26_
+  Endpoint: out_reg_reg_26_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -989,16 +990,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_26_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_26_/Q (DFFHQX4TS)                0.28       0.28 r
+  out_reg_reg_26_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_26_/Q (DFFHQX4TS)            0.28       0.28 r
   ...
-  out_reg_26_/D (DFFHQX4TS)                0.27       0.55 r
+  out_reg_reg_26_/D (DFFHQX4TS)            0.27       0.55 r
   data arrival time                                   0.55
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_26_/CK (DFFHQX4TS)               0.00       0.01 r
+  out_reg_reg_26_/CK (DFFHQX4TS)           0.00       0.01 r
   library hold time                       -0.08      -0.07
   data required time                                 -0.07
   -----------------------------------------------------------
@@ -1008,9 +1009,9 @@ Wire Load Model Mode: top
   slack (MET)                                         0.62
 
 
-  Startpoint: out_reg_22_
+  Startpoint: out_reg_reg_22_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_22_
+  Endpoint: out_reg_reg_22_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -1019,16 +1020,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_22_/CK (DFFHQX4TS)               0.00       0.00 r
-  out_reg_22_/Q (DFFHQX4TS)                0.29       0.29 r
+  out_reg_reg_22_/CK (DFFHQX4TS)           0.00       0.00 r
+  out_reg_reg_22_/Q (DFFHQX4TS)            0.29       0.29 r
   ...
-  out_reg_22_/D (DFFHQX4TS)                0.27       0.55 r
+  out_reg_reg_22_/D (DFFHQX4TS)            0.27       0.55 r
   data arrival time                                   0.55
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_22_/CK (DFFHQX4TS)               0.00       0.01 r
+  out_reg_reg_22_/CK (DFFHQX4TS)           0.00       0.01 r
   library hold time                       -0.08      -0.07
   data required time                                 -0.07
   -----------------------------------------------------------
@@ -1039,7 +1040,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: rstn (input port clocked by clk)
-  Endpoint: out_a_reg_2_
+  Endpoint: out_a_reg_reg_2_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -1051,13 +1052,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   rstn (in)                                0.04       0.14 r
   ...
-  out_a_reg_2_/D (DFFQX1TS)                0.46       0.59 r
+  out_a_reg_reg_2_/D (DFFQX1TS)            0.46       0.59 r
   data arrival time                                   0.59
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_a_reg_2_/CK (DFFQX1TS)               0.00       0.01 r
+  out_a_reg_reg_2_/CK (DFFQX1TS)           0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -1068,7 +1069,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_a[7] (input port clocked by clk)
-  Endpoint: out_a_reg_7_
+  Endpoint: out_a_reg_reg_7_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -1080,13 +1081,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   in_a[7] (in)                             0.04       0.14 r
   ...
-  out_a_reg_7_/D (DFFQX1TS)                0.45       0.60 r
+  out_a_reg_reg_7_/D (DFFQX1TS)            0.45       0.60 r
   data arrival time                                   0.60
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_a_reg_7_/CK (DFFQX1TS)               0.00       0.01 r
+  out_a_reg_reg_7_/CK (DFFQX1TS)           0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -1097,7 +1098,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[4] (input port clocked by clk)
-  Endpoint: out_w_reg_4_
+  Endpoint: out_w_reg_reg_4_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -1109,13 +1110,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   in_w[4] (in)                             0.04       0.14 r
   ...
-  out_w_reg_4_/D (DFFQX1TS)                0.47       0.61 r
+  out_w_reg_reg_4_/D (DFFQX1TS)            0.47       0.61 r
   data arrival time                                   0.61
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_w_reg_4_/CK (DFFQX1TS)               0.00       0.01 r
+  out_w_reg_reg_4_/CK (DFFQX1TS)           0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -1125,7 +1126,8 @@ Wire Load Model Mode: top
   slack (MET)                                         0.70
 
 
-  Startpoint: out_f_reg (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: out_f_reg_reg
+              (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out_f (output port clocked by clk)
   Path Group: clk
   Path Type: min
@@ -1134,8 +1136,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_f_reg/CK (DFFQX1TS)                  0.00       0.00 r
-  out_f_reg/Q (DFFQX1TS)                   0.61       0.61 r
+  out_f_reg_reg/CK (DFFQX1TS)              0.00       0.00 r
+  out_f_reg_reg/Q (DFFQX1TS)               0.61       0.61 r
   out_f (out)                              0.00       0.61 r
   data arrival time                                   0.61
 
@@ -1151,7 +1153,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.70
 
 
-  Startpoint: out_a_reg_7_
+  Startpoint: out_a_reg_reg_7_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out_a[7] (output port clocked by clk)
   Path Group: clk
@@ -1161,8 +1163,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_a_reg_7_/CK (DFFQX1TS)               0.00       0.00 r
-  out_a_reg_7_/Q (DFFQX1TS)                0.63       0.63 r
+  out_a_reg_reg_7_/CK (DFFQX1TS)           0.00       0.00 r
+  out_a_reg_reg_7_/Q (DFFQX1TS)            0.63       0.63 r
   out_a[7] (out)                           0.00       0.63 r
   data arrival time                                   0.63
 
@@ -1178,7 +1180,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.72
 
 
-  Startpoint: out_a_reg_6_
+  Startpoint: out_a_reg_reg_6_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out_a[6] (output port clocked by clk)
   Path Group: clk
@@ -1188,8 +1190,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_a_reg_6_/CK (DFFQX1TS)               0.00       0.00 r
-  out_a_reg_6_/Q (DFFQX1TS)                0.63       0.63 r
+  out_a_reg_reg_6_/CK (DFFQX1TS)           0.00       0.00 r
+  out_a_reg_reg_6_/Q (DFFQX1TS)            0.63       0.63 r
   out_a[6] (out)                           0.00       0.63 r
   data arrival time                                   0.63
 
@@ -1205,7 +1207,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.72
 
 
-  Startpoint: out_a_reg_5_
+  Startpoint: out_a_reg_reg_5_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out_a[5] (output port clocked by clk)
   Path Group: clk
@@ -1215,8 +1217,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_a_reg_5_/CK (DFFQX1TS)               0.00       0.00 r
-  out_a_reg_5_/Q (DFFQX1TS)                0.63       0.63 r
+  out_a_reg_reg_5_/CK (DFFQX1TS)           0.00       0.00 r
+  out_a_reg_reg_5_/Q (DFFQX1TS)            0.63       0.63 r
   out_a[5] (out)                           0.00       0.63 r
   data arrival time                                   0.63
 
@@ -1232,7 +1234,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.72
 
 
-  Startpoint: out_a_reg_4_
+  Startpoint: out_a_reg_reg_4_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out_a[4] (output port clocked by clk)
   Path Group: clk
@@ -1242,8 +1244,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_a_reg_4_/CK (DFFQX1TS)               0.00       0.00 r
-  out_a_reg_4_/Q (DFFQX1TS)                0.63       0.63 r
+  out_a_reg_reg_4_/CK (DFFQX1TS)           0.00       0.00 r
+  out_a_reg_reg_4_/Q (DFFQX1TS)            0.63       0.63 r
   out_a[4] (out)                           0.00       0.63 r
   data arrival time                                   0.63
 
@@ -1259,7 +1261,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.72
 
 
-  Startpoint: out_a_reg_3_
+  Startpoint: out_a_reg_reg_3_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out_a[3] (output port clocked by clk)
   Path Group: clk
@@ -1269,8 +1271,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_a_reg_3_/CK (DFFQX1TS)               0.00       0.00 r
-  out_a_reg_3_/Q (DFFQX1TS)                0.63       0.63 r
+  out_a_reg_reg_3_/CK (DFFQX1TS)           0.00       0.00 r
+  out_a_reg_reg_3_/Q (DFFQX1TS)            0.63       0.63 r
   out_a[3] (out)                           0.00       0.63 r
   data arrival time                                   0.63
 
@@ -1286,7 +1288,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.72
 
 
-  Startpoint: out_a_reg_2_
+  Startpoint: out_a_reg_reg_2_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out_a[2] (output port clocked by clk)
   Path Group: clk
@@ -1296,8 +1298,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_a_reg_2_/CK (DFFQX1TS)               0.00       0.00 r
-  out_a_reg_2_/Q (DFFQX1TS)                0.63       0.63 r
+  out_a_reg_reg_2_/CK (DFFQX1TS)           0.00       0.00 r
+  out_a_reg_reg_2_/Q (DFFQX1TS)            0.63       0.63 r
   out_a[2] (out)                           0.00       0.63 r
   data arrival time                                   0.63
 
@@ -1313,7 +1315,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.72
 
 
-  Startpoint: out_a_reg_1_
+  Startpoint: out_a_reg_reg_1_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out_a[1] (output port clocked by clk)
   Path Group: clk
@@ -1323,8 +1325,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_a_reg_1_/CK (DFFQX1TS)               0.00       0.00 r
-  out_a_reg_1_/Q (DFFQX1TS)                0.63       0.63 r
+  out_a_reg_reg_1_/CK (DFFQX1TS)           0.00       0.00 r
+  out_a_reg_reg_1_/Q (DFFQX1TS)            0.63       0.63 r
   out_a[1] (out)                           0.00       0.63 r
   data arrival time                                   0.63
 
@@ -1340,7 +1342,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.72
 
 
-  Startpoint: out_a_reg_0_
+  Startpoint: out_a_reg_reg_0_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out_a[0] (output port clocked by clk)
   Path Group: clk
@@ -1350,8 +1352,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_a_reg_0_/CK (DFFQX1TS)               0.00       0.00 r
-  out_a_reg_0_/Q (DFFQX1TS)                0.63       0.63 r
+  out_a_reg_reg_0_/CK (DFFQX1TS)           0.00       0.00 r
+  out_a_reg_reg_0_/Q (DFFQX1TS)            0.63       0.63 r
   out_a[0] (out)                           0.00       0.63 r
   data arrival time                                   0.63
 
@@ -1367,7 +1369,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.72
 
 
-  Startpoint: out_w_reg_6_
+  Startpoint: out_w_reg_reg_6_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out_w[6] (output port clocked by clk)
   Path Group: clk
@@ -1377,8 +1379,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_w_reg_6_/CK (DFFQX1TS)               0.00       0.00 r
-  out_w_reg_6_/Q (DFFQX1TS)                0.63       0.63 r
+  out_w_reg_reg_6_/CK (DFFQX1TS)           0.00       0.00 r
+  out_w_reg_reg_6_/Q (DFFQX1TS)            0.63       0.63 r
   out_w[6] (out)                           0.00       0.63 r
   data arrival time                                   0.63
 
@@ -1394,7 +1396,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.72
 
 
-  Startpoint: out_w_reg_5_
+  Startpoint: out_w_reg_reg_5_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out_w[5] (output port clocked by clk)
   Path Group: clk
@@ -1404,8 +1406,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_w_reg_5_/CK (DFFQX1TS)               0.00       0.00 r
-  out_w_reg_5_/Q (DFFQX1TS)                0.63       0.63 r
+  out_w_reg_reg_5_/CK (DFFQX1TS)           0.00       0.00 r
+  out_w_reg_reg_5_/Q (DFFQX1TS)            0.63       0.63 r
   out_w[5] (out)                           0.00       0.63 r
   data arrival time                                   0.63
 
@@ -1421,7 +1423,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.72
 
 
-  Startpoint: out_w_reg_4_
+  Startpoint: out_w_reg_reg_4_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out_w[4] (output port clocked by clk)
   Path Group: clk
@@ -1431,8 +1433,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_w_reg_4_/CK (DFFQX1TS)               0.00       0.00 r
-  out_w_reg_4_/Q (DFFQX1TS)                0.63       0.63 r
+  out_w_reg_reg_4_/CK (DFFQX1TS)           0.00       0.00 r
+  out_w_reg_reg_4_/Q (DFFQX1TS)            0.63       0.63 r
   out_w[4] (out)                           0.00       0.63 r
   data arrival time                                   0.63
 
@@ -1448,7 +1450,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.72
 
 
-  Startpoint: out_w_reg_3_
+  Startpoint: out_w_reg_reg_3_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out_w[3] (output port clocked by clk)
   Path Group: clk
@@ -1458,8 +1460,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_w_reg_3_/CK (DFFQX1TS)               0.00       0.00 r
-  out_w_reg_3_/Q (DFFQX1TS)                0.63       0.63 r
+  out_w_reg_reg_3_/CK (DFFQX1TS)           0.00       0.00 r
+  out_w_reg_reg_3_/Q (DFFQX1TS)            0.63       0.63 r
   out_w[3] (out)                           0.00       0.63 r
   data arrival time                                   0.63
 
@@ -1475,7 +1477,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.72
 
 
-  Startpoint: out_w_reg_0_
+  Startpoint: out_w_reg_reg_0_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out_w[0] (output port clocked by clk)
   Path Group: clk
@@ -1485,8 +1487,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_w_reg_0_/CK (DFFQX1TS)               0.00       0.00 r
-  out_w_reg_0_/Q (DFFQX1TS)                0.63       0.63 r
+  out_w_reg_reg_0_/CK (DFFQX1TS)           0.00       0.00 r
+  out_w_reg_reg_0_/Q (DFFQX1TS)            0.63       0.63 r
   out_w[0] (out)                           0.00       0.63 r
   data arrival time                                   0.63
 
@@ -1502,7 +1504,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.72
 
 
-  Startpoint: out_w_reg_7_
+  Startpoint: out_w_reg_reg_7_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out_w[7] (output port clocked by clk)
   Path Group: clk
@@ -1512,8 +1514,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_w_reg_7_/CK (DFFQX1TS)               0.00       0.00 r
-  out_w_reg_7_/Q (DFFQX1TS)                0.63       0.63 r
+  out_w_reg_reg_7_/CK (DFFQX1TS)           0.00       0.00 r
+  out_w_reg_reg_7_/Q (DFFQX1TS)            0.63       0.63 r
   out_w[7] (out)                           0.00       0.63 r
   data arrival time                                   0.63
 
@@ -1529,7 +1531,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.72
 
 
-  Startpoint: out_w_reg_2_
+  Startpoint: out_w_reg_reg_2_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out_w[2] (output port clocked by clk)
   Path Group: clk
@@ -1539,8 +1541,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_w_reg_2_/CK (DFFQX1TS)               0.00       0.00 r
-  out_w_reg_2_/Q (DFFQX1TS)                0.63       0.63 r
+  out_w_reg_reg_2_/CK (DFFQX1TS)           0.00       0.00 r
+  out_w_reg_reg_2_/Q (DFFQX1TS)            0.63       0.63 r
   out_w[2] (out)                           0.00       0.63 r
   data arrival time                                   0.63
 
@@ -1556,7 +1558,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.72
 
 
-  Startpoint: out_w_reg_1_
+  Startpoint: out_w_reg_reg_1_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out_w[1] (output port clocked by clk)
   Path Group: clk
@@ -1566,8 +1568,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_w_reg_1_/CK (DFFQX1TS)               0.00       0.00 r
-  out_w_reg_1_/Q (DFFQX1TS)                0.63       0.63 r
+  out_w_reg_reg_1_/CK (DFFQX1TS)           0.00       0.00 r
+  out_w_reg_reg_1_/Q (DFFQX1TS)            0.63       0.63 r
   out_w[1] (out)                           0.00       0.63 r
   data arrival time                                   0.63
 
@@ -1583,7 +1585,8 @@ Wire Load Model Mode: top
   slack (MET)                                         0.72
 
 
-  Startpoint: out_reg_3_ (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: out_reg_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[3] (output port clocked by clk)
   Path Group: clk
   Path Type: min
@@ -1592,8 +1595,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_3_/CK (DFFQX1TS)                 0.00       0.00 r
-  out_reg_3_/Q (DFFQX1TS)                  0.65       0.65 r
+  out_reg_reg_3_/CK (DFFQX1TS)             0.00       0.00 r
+  out_reg_reg_3_/Q (DFFQX1TS)              0.65       0.65 r
   out0[3] (out)                            0.00       0.65 r
   data arrival time                                   0.65
 
@@ -1609,7 +1612,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.74
 
 
-  Startpoint: out_reg_18_
+  Startpoint: out_reg_reg_18_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[18] (output port clocked by clk)
   Path Group: clk
@@ -1619,8 +1622,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_18_/CK (DFFQX2TS)                0.00       0.00 r
-  out_reg_18_/Q (DFFQX2TS)                 0.65       0.65 r
+  out_reg_reg_18_/CK (DFFQX2TS)            0.00       0.00 r
+  out_reg_reg_18_/Q (DFFQX2TS)             0.65       0.65 r
   out0[18] (out)                           0.00       0.65 r
   data arrival time                                   0.65
 
@@ -1637,7 +1640,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[1] (input port clocked by clk)
-  Endpoint: out_w_reg_1_
+  Endpoint: out_w_reg_reg_1_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -1649,13 +1652,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   in_w[1] (in)                             0.05       0.15 r
   ...
-  out_w_reg_1_/D (DFFQX1TS)                0.51       0.66 r
+  out_w_reg_reg_1_/D (DFFQX1TS)            0.51       0.66 r
   data arrival time                                   0.66
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_w_reg_1_/CK (DFFQX1TS)               0.00       0.01 r
+  out_w_reg_reg_1_/CK (DFFQX1TS)           0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -1666,7 +1669,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: fire (input port clocked by clk)
-  Endpoint: out_reg_13_
+  Endpoint: out_reg_reg_13_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -1678,13 +1681,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   fire (in)                                0.04       0.14 r
   ...
-  out_reg_13_/D (DFFQX1TS)                 0.61       0.75 f
+  out_reg_reg_13_/D (DFFQX1TS)             0.61       0.75 f
   data arrival time                                   0.75
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_13_/CK (DFFQX1TS)                0.00       0.01 r
+  out_reg_reg_13_/CK (DFFQX1TS)            0.00       0.01 r
   library hold time                       -0.01       0.00
   data required time                                  0.00
   -----------------------------------------------------------
@@ -1694,7 +1697,8 @@ Wire Load Model Mode: top
   slack (MET)                                         0.75
 
 
-  Startpoint: out_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: out_reg_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[0] (output port clocked by clk)
   Path Group: clk
   Path Type: min
@@ -1703,8 +1707,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_0_/CK (DFFQX1TS)                 0.00       0.00 r
-  out_reg_0_/Q (DFFQX1TS)                  0.67       0.67 r
+  out_reg_reg_0_/CK (DFFQX1TS)             0.00       0.00 r
+  out_reg_reg_0_/Q (DFFQX1TS)              0.67       0.67 r
   out0[0] (out)                            0.00       0.67 r
   data arrival time                                   0.67
 
@@ -1720,7 +1724,8 @@ Wire Load Model Mode: top
   slack (MET)                                         0.76
 
 
-  Startpoint: out_reg_6_ (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: out_reg_reg_6_
+              (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[6] (output port clocked by clk)
   Path Group: clk
   Path Type: min
@@ -1729,8 +1734,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_6_/CK (DFFQX1TS)                 0.00       0.00 r
-  out_reg_6_/Q (DFFQX1TS)                  0.67       0.67 r
+  out_reg_reg_6_/CK (DFFQX1TS)             0.00       0.00 r
+  out_reg_reg_6_/Q (DFFQX1TS)              0.67       0.67 r
   out0[6] (out)                            0.00       0.67 r
   data arrival time                                   0.67
 
@@ -1746,7 +1751,8 @@ Wire Load Model Mode: top
   slack (MET)                                         0.76
 
 
-  Startpoint: out_reg_2_ (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: out_reg_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[2] (output port clocked by clk)
   Path Group: clk
   Path Type: min
@@ -1755,8 +1761,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_2_/CK (DFFQX1TS)                 0.00       0.00 r
-  out_reg_2_/Q (DFFQX1TS)                  0.67       0.67 r
+  out_reg_reg_2_/CK (DFFQX1TS)             0.00       0.00 r
+  out_reg_reg_2_/Q (DFFQX1TS)              0.67       0.67 r
   out0[2] (out)                            0.00       0.67 r
   data arrival time                                   0.67
 
@@ -1772,7 +1778,8 @@ Wire Load Model Mode: top
   slack (MET)                                         0.76
 
 
-  Startpoint: out_reg_4_ (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: out_reg_reg_4_
+              (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[4] (output port clocked by clk)
   Path Group: clk
   Path Type: min
@@ -1781,8 +1788,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_4_/CK (DFFQX1TS)                 0.00       0.00 r
-  out_reg_4_/Q (DFFQX1TS)                  0.67       0.67 r
+  out_reg_reg_4_/CK (DFFQX1TS)             0.00       0.00 r
+  out_reg_reg_4_/Q (DFFQX1TS)              0.67       0.67 r
   out0[4] (out)                            0.00       0.67 r
   data arrival time                                   0.67
 
@@ -1798,7 +1805,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.76
 
 
-  Startpoint: out_reg_13_
+  Startpoint: out_reg_reg_13_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[13] (output port clocked by clk)
   Path Group: clk
@@ -1808,8 +1815,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_13_/CK (DFFQX1TS)                0.00       0.00 r
-  out_reg_13_/Q (DFFQX1TS)                 0.68       0.68 r
+  out_reg_reg_13_/CK (DFFQX1TS)            0.00       0.00 r
+  out_reg_reg_13_/Q (DFFQX1TS)             0.68       0.68 r
   out0[13] (out)                           0.00       0.68 r
   data arrival time                                   0.68
 
@@ -1825,7 +1832,8 @@ Wire Load Model Mode: top
   slack (MET)                                         0.77
 
 
-  Startpoint: out_reg_7_ (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: out_reg_reg_7_
+              (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[7] (output port clocked by clk)
   Path Group: clk
   Path Type: min
@@ -1834,8 +1842,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_7_/CK (DFFQX1TS)                 0.00       0.00 r
-  out_reg_7_/Q (DFFQX1TS)                  0.69       0.69 r
+  out_reg_reg_7_/CK (DFFQX1TS)             0.00       0.00 r
+  out_reg_reg_7_/Q (DFFQX1TS)              0.69       0.69 r
   out0[7] (out)                            0.00       0.69 r
   data arrival time                                   0.69
 
@@ -1851,7 +1859,8 @@ Wire Load Model Mode: top
   slack (MET)                                         0.78
 
 
-  Startpoint: out_reg_5_ (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: out_reg_reg_5_
+              (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[5] (output port clocked by clk)
   Path Group: clk
   Path Type: min
@@ -1860,8 +1869,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_5_/CK (DFFQX1TS)                 0.00       0.00 r
-  out_reg_5_/Q (DFFQX1TS)                  0.69       0.69 r
+  out_reg_reg_5_/CK (DFFQX1TS)             0.00       0.00 r
+  out_reg_reg_5_/Q (DFFQX1TS)              0.69       0.69 r
   out0[5] (out)                            0.00       0.69 r
   data arrival time                                   0.69
 
@@ -1878,7 +1887,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_a[5] (input port clocked by clk)
-  Endpoint: out_a_reg_5_
+  Endpoint: out_a_reg_reg_5_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -1890,13 +1899,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   in_a[5] (in)                             0.02       0.12 r
   ...
-  out_a_reg_5_/D (DFFQX1TS)                0.57       0.69 r
+  out_a_reg_reg_5_/D (DFFQX1TS)            0.57       0.69 r
   data arrival time                                   0.69
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_a_reg_5_/CK (DFFQX1TS)               0.00       0.01 r
+  out_a_reg_reg_5_/CK (DFFQX1TS)           0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -1906,7 +1915,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.78
 
 
-  Startpoint: out_reg_10_
+  Startpoint: out_reg_reg_10_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[10] (output port clocked by clk)
   Path Group: clk
@@ -1916,8 +1925,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_10_/CK (DFFQX1TS)                0.00       0.00 r
-  out_reg_10_/Q (DFFQX1TS)                 0.69       0.69 r
+  out_reg_reg_10_/CK (DFFQX1TS)            0.00       0.00 r
+  out_reg_reg_10_/Q (DFFQX1TS)             0.69       0.69 r
   out0[10] (out)                           0.00       0.69 r
   data arrival time                                   0.69
 
@@ -1933,7 +1942,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.78
 
 
-  Startpoint: out_reg_11_
+  Startpoint: out_reg_reg_11_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[11] (output port clocked by clk)
   Path Group: clk
@@ -1943,8 +1952,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_11_/CK (DFFQX1TS)                0.00       0.00 r
-  out_reg_11_/Q (DFFQX1TS)                 0.69       0.69 r
+  out_reg_reg_11_/CK (DFFQX1TS)            0.00       0.00 r
+  out_reg_reg_11_/Q (DFFQX1TS)             0.69       0.69 r
   out0[11] (out)                           0.00       0.69 r
   data arrival time                                   0.69
 
@@ -1960,7 +1969,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.78
 
 
-  Startpoint: out_reg_16_
+  Startpoint: out_reg_reg_16_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[16] (output port clocked by clk)
   Path Group: clk
@@ -1970,8 +1979,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_16_/CK (DFFQX1TS)                0.00       0.00 r
-  out_reg_16_/Q (DFFQX1TS)                 0.70       0.70 r
+  out_reg_reg_16_/CK (DFFQX1TS)            0.00       0.00 r
+  out_reg_reg_16_/Q (DFFQX1TS)             0.70       0.70 r
   out0[16] (out)                           0.00       0.70 r
   data arrival time                                   0.70
 
@@ -1988,7 +1997,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_a[1] (input port clocked by clk)
-  Endpoint: out_a_reg_1_
+  Endpoint: out_a_reg_reg_1_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -2000,13 +2009,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   in_a[1] (in)                             0.02       0.12 r
   ...
-  out_a_reg_1_/D (DFFQX1TS)                0.58       0.70 r
+  out_a_reg_reg_1_/D (DFFQX1TS)            0.58       0.70 r
   data arrival time                                   0.70
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_a_reg_1_/CK (DFFQX1TS)               0.00       0.01 r
+  out_a_reg_reg_1_/CK (DFFQX1TS)           0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -2016,7 +2025,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.79
 
 
-  Startpoint: out_reg_19_
+  Startpoint: out_reg_reg_19_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[19] (output port clocked by clk)
   Path Group: clk
@@ -2026,8 +2035,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_19_/CK (DFFQX1TS)                0.00       0.00 r
-  out_reg_19_/Q (DFFQX1TS)                 0.70       0.70 r
+  out_reg_reg_19_/CK (DFFQX1TS)            0.00       0.00 r
+  out_reg_reg_19_/Q (DFFQX1TS)             0.70       0.70 r
   out0[19] (out)                           0.00       0.70 r
   data arrival time                                   0.70
 
@@ -2043,7 +2052,7 @@ Wire Load Model Mode: top
   slack (MET)                                         0.79
 
 
-  Startpoint: out_reg_17_
+  Startpoint: out_reg_reg_17_
               (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[17] (output port clocked by clk)
   Path Group: clk
@@ -2053,8 +2062,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_17_/CK (DFFQX1TS)                0.00       0.00 r
-  out_reg_17_/Q (DFFQX1TS)                 0.70       0.70 r
+  out_reg_reg_17_/CK (DFFQX1TS)            0.00       0.00 r
+  out_reg_reg_17_/Q (DFFQX1TS)             0.70       0.70 r
   out0[17] (out)                           0.00       0.70 r
   data arrival time                                   0.70
 
@@ -2071,7 +2080,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_a[3] (input port clocked by clk)
-  Endpoint: out_a_reg_3_
+  Endpoint: out_a_reg_reg_3_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -2083,13 +2092,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   in_a[3] (in)                             0.02       0.12 r
   ...
-  out_a_reg_3_/D (DFFQX1TS)                0.59       0.71 r
+  out_a_reg_reg_3_/D (DFFQX1TS)            0.59       0.71 r
   data arrival time                                   0.71
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_a_reg_3_/CK (DFFQX1TS)               0.00       0.01 r
+  out_a_reg_reg_3_/CK (DFFQX1TS)           0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -2100,7 +2109,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_a[6] (input port clocked by clk)
-  Endpoint: out_a_reg_6_
+  Endpoint: out_a_reg_reg_6_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -2112,13 +2121,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   in_a[6] (in)                             0.02       0.12 r
   ...
-  out_a_reg_6_/D (DFFQX1TS)                0.59       0.71 r
+  out_a_reg_reg_6_/D (DFFQX1TS)            0.59       0.71 r
   data arrival time                                   0.71
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_a_reg_6_/CK (DFFQX1TS)               0.00       0.01 r
+  out_a_reg_reg_6_/CK (DFFQX1TS)           0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -2129,7 +2138,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_a[4] (input port clocked by clk)
-  Endpoint: out_a_reg_4_
+  Endpoint: out_a_reg_reg_4_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -2141,13 +2150,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   in_a[4] (in)                             0.02       0.12 r
   ...
-  out_a_reg_4_/D (DFFQX1TS)                0.59       0.71 r
+  out_a_reg_reg_4_/D (DFFQX1TS)            0.59       0.71 r
   data arrival time                                   0.71
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_a_reg_4_/CK (DFFQX1TS)               0.00       0.01 r
+  out_a_reg_reg_4_/CK (DFFQX1TS)           0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -2157,9 +2166,9 @@ Wire Load Model Mode: top
   slack (MET)                                         0.80
 
 
-  Startpoint: out_reg_21_
+  Startpoint: out_reg_reg_21_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_21_
+  Endpoint: out_reg_reg_21_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -2168,16 +2177,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_21_/CK (DFFHQX1TS)               0.00       0.00 r
-  out_reg_21_/Q (DFFHQX1TS)                0.42       0.42 f
+  out_reg_reg_21_/CK (DFFHQX1TS)           0.00       0.00 r
+  out_reg_reg_21_/Q (DFFHQX1TS)            0.42       0.42 f
   ...
-  out_reg_21_/D (DFFHQX1TS)                0.25       0.67 f
+  out_reg_reg_21_/D (DFFHQX1TS)            0.25       0.67 f
   data arrival time                                   0.67
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_21_/CK (DFFHQX1TS)               0.00       0.01 r
+  out_reg_reg_21_/CK (DFFHQX1TS)           0.00       0.01 r
   library hold time                       -0.16      -0.15
   data required time                                 -0.15
   -----------------------------------------------------------
@@ -2188,7 +2197,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[5] (input port clocked by clk)
-  Endpoint: out_w_reg_5_
+  Endpoint: out_w_reg_reg_5_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -2200,13 +2209,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   in_w[5] (in)                             0.03       0.13 r
   ...
-  out_w_reg_5_/D (DFFQX1TS)                0.64       0.77 r
+  out_w_reg_reg_5_/D (DFFQX1TS)            0.64       0.77 r
   data arrival time                                   0.77
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_w_reg_5_/CK (DFFQX1TS)               0.00       0.01 r
+  out_w_reg_reg_5_/CK (DFFQX1TS)           0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -2216,7 +2225,8 @@ Wire Load Model Mode: top
   slack (MET)                                         0.86
 
 
-  Startpoint: out_reg_9_ (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: out_reg_reg_9_
+              (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[9] (output port clocked by clk)
   Path Group: clk
   Path Type: min
@@ -2225,8 +2235,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_9_/CK (DFFQX1TS)                 0.00       0.00 r
-  out_reg_9_/Q (DFFQX1TS)                  0.78       0.78 r
+  out_reg_reg_9_/CK (DFFQX1TS)             0.00       0.00 r
+  out_reg_reg_9_/Q (DFFQX1TS)              0.78       0.78 r
   out0[9] (out)                            0.00       0.78 r
   data arrival time                                   0.78
 
@@ -2242,7 +2252,8 @@ Wire Load Model Mode: top
   slack (MET)                                         0.87
 
 
-  Startpoint: out_reg_8_ (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: out_reg_reg_8_
+              (rising edge-triggered flip-flop clocked by clk)
   Endpoint: out0[8] (output port clocked by clk)
   Path Group: clk
   Path Type: min
@@ -2251,8 +2262,8 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_8_/CK (DFFQX1TS)                 0.00       0.00 r
-  out_reg_8_/Q (DFFQX1TS)                  0.78       0.78 r
+  out_reg_reg_8_/CK (DFFQX1TS)             0.00       0.00 r
+  out_reg_reg_8_/Q (DFFQX1TS)              0.78       0.78 r
   out0[8] (out)                            0.00       0.78 r
   data arrival time                                   0.78
 
@@ -2269,7 +2280,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[3] (input port clocked by clk)
-  Endpoint: out_w_reg_3_
+  Endpoint: out_w_reg_reg_3_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -2281,13 +2292,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   in_w[3] (in)                             0.03       0.13 r
   ...
-  out_w_reg_3_/D (DFFQX1TS)                0.72       0.86 r
+  out_w_reg_reg_3_/D (DFFQX1TS)            0.72       0.86 r
   data arrival time                                   0.86
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_w_reg_3_/CK (DFFQX1TS)               0.00       0.01 r
+  out_w_reg_reg_3_/CK (DFFQX1TS)           0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -2298,7 +2309,8 @@ Wire Load Model Mode: top
 
 
   Startpoint: rstn (input port clocked by clk)
-  Endpoint: out_f_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_f_reg_reg
+            (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
 
@@ -2309,13 +2321,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   rstn (in)                                0.04       0.14 r
   ...
-  out_f_reg/D (DFFQX1TS)                   0.76       0.89 r
+  out_f_reg_reg/D (DFFQX1TS)               0.76       0.89 r
   data arrival time                                   0.89
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_f_reg/CK (DFFQX1TS)                  0.00       0.01 r
+  out_f_reg_reg/CK (DFFQX1TS)              0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -2325,9 +2337,9 @@ Wire Load Model Mode: top
   slack (MET)                                         0.98
 
 
-  Startpoint: out_reg_16_
+  Startpoint: out_reg_reg_16_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_16_
+  Endpoint: out_reg_reg_16_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -2336,16 +2348,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_16_/CK (DFFQX1TS)                0.00       0.00 r
-  out_reg_16_/Q (DFFQX1TS)                 0.77       0.77 f
+  out_reg_reg_16_/CK (DFFQX1TS)            0.00       0.00 r
+  out_reg_reg_16_/Q (DFFQX1TS)             0.77       0.77 f
   ...
-  out_reg_16_/D (DFFQX1TS)                 0.22       0.99 f
+  out_reg_reg_16_/D (DFFQX1TS)             0.22       0.99 f
   data arrival time                                   0.99
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_16_/CK (DFFQX1TS)                0.00       0.01 r
+  out_reg_reg_16_/CK (DFFQX1TS)            0.00       0.01 r
   library hold time                       -0.01       0.00
   data required time                                  0.00
   -----------------------------------------------------------
@@ -2356,7 +2368,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: fire (input port clocked by clk)
-  Endpoint: out_reg_10_
+  Endpoint: out_reg_reg_10_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -2368,13 +2380,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   fire (in)                                0.04       0.14 r
   ...
-  out_reg_10_/D (DFFQX1TS)                 0.86       1.01 f
+  out_reg_reg_10_/D (DFFQX1TS)             0.86       1.01 f
   data arrival time                                   1.01
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_10_/CK (DFFQX1TS)                0.00       0.01 r
+  out_reg_reg_10_/CK (DFFQX1TS)            0.00       0.01 r
   library hold time                       -0.01       0.00
   data required time                                  0.00
   -----------------------------------------------------------
@@ -2384,9 +2396,9 @@ Wire Load Model Mode: top
   slack (MET)                                         1.01
 
 
-  Startpoint: out_reg_19_
+  Startpoint: out_reg_reg_19_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_19_
+  Endpoint: out_reg_reg_19_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -2395,16 +2407,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_19_/CK (DFFQX1TS)                0.00       0.00 r
-  out_reg_19_/Q (DFFQX1TS)                 0.77       0.77 f
+  out_reg_reg_19_/CK (DFFQX1TS)            0.00       0.00 r
+  out_reg_reg_19_/Q (DFFQX1TS)             0.77       0.77 f
   ...
-  out_reg_19_/D (DFFQX1TS)                 0.23       1.01 f
+  out_reg_reg_19_/D (DFFQX1TS)             0.23       1.01 f
   data arrival time                                   1.01
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_19_/CK (DFFQX1TS)                0.00       0.01 r
+  out_reg_reg_19_/CK (DFFQX1TS)            0.00       0.01 r
   library hold time                       -0.01       0.00
   data required time                                  0.00
   -----------------------------------------------------------
@@ -2414,9 +2426,9 @@ Wire Load Model Mode: top
   slack (MET)                                         1.01
 
 
-  Startpoint: out_reg_17_
+  Startpoint: out_reg_reg_17_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_17_
+  Endpoint: out_reg_reg_17_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -2425,16 +2437,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_17_/CK (DFFQX1TS)                0.00       0.00 r
-  out_reg_17_/Q (DFFQX1TS)                 0.77       0.77 f
+  out_reg_reg_17_/CK (DFFQX1TS)            0.00       0.00 r
+  out_reg_reg_17_/Q (DFFQX1TS)             0.77       0.77 f
   ...
-  out_reg_17_/D (DFFQX1TS)                 0.24       1.01 f
+  out_reg_reg_17_/D (DFFQX1TS)             0.24       1.01 f
   data arrival time                                   1.01
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_17_/CK (DFFQX1TS)                0.00       0.01 r
+  out_reg_reg_17_/CK (DFFQX1TS)            0.00       0.01 r
   library hold time                       -0.01       0.00
   data required time                                  0.00
   -----------------------------------------------------------
@@ -2444,8 +2456,10 @@ Wire Load Model Mode: top
   slack (MET)                                         1.01
 
 
-  Startpoint: out_reg_3_ (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_3_ (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: out_reg_reg_3_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_reg_reg_3_
+            (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
 
@@ -2453,16 +2467,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_3_/CK (DFFQX1TS)                 0.00       0.00 r
-  out_reg_3_/Q (DFFQX1TS)                  0.65       0.65 r
+  out_reg_reg_3_/CK (DFFQX1TS)             0.00       0.00 r
+  out_reg_reg_3_/Q (DFFQX1TS)              0.65       0.65 r
   ...
-  out_reg_3_/D (DFFQX1TS)                  0.28       0.93 r
+  out_reg_reg_3_/D (DFFQX1TS)              0.28       0.93 r
   data arrival time                                   0.93
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_3_/CK (DFFQX1TS)                 0.00       0.01 r
+  out_reg_reg_3_/CK (DFFQX1TS)             0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -2473,7 +2487,8 @@ Wire Load Model Mode: top
 
 
   Startpoint: rstn (input port clocked by clk)
-  Endpoint: out_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_reg_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
 
@@ -2484,13 +2499,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   rstn (in)                                0.04       0.14 r
   ...
-  out_reg_0_/D (DFFQX1TS)                  0.79       0.93 r
+  out_reg_reg_0_/D (DFFQX1TS)              0.79       0.93 r
   data arrival time                                   0.93
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_0_/CK (DFFQX1TS)                 0.00       0.01 r
+  out_reg_reg_0_/CK (DFFQX1TS)             0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -2500,9 +2515,9 @@ Wire Load Model Mode: top
   slack (MET)                                         1.02
 
 
-  Startpoint: out_reg_18_
+  Startpoint: out_reg_reg_18_
               (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_18_
+  Endpoint: out_reg_reg_18_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
@@ -2511,16 +2526,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_18_/CK (DFFQX2TS)                0.00       0.00 r
-  out_reg_18_/Q (DFFQX2TS)                 0.80       0.80 f
+  out_reg_reg_18_/CK (DFFQX2TS)            0.00       0.00 r
+  out_reg_reg_18_/Q (DFFQX2TS)             0.80       0.80 f
   ...
-  out_reg_18_/D (DFFQX2TS)                 0.23       1.03 f
+  out_reg_reg_18_/D (DFFQX2TS)             0.23       1.03 f
   data arrival time                                   1.03
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_18_/CK (DFFQX2TS)                0.00       0.01 r
+  out_reg_reg_18_/CK (DFFQX2TS)            0.00       0.01 r
   library hold time                       -0.01       0.00
   data required time                                  0.00
   -----------------------------------------------------------
@@ -2530,8 +2545,10 @@ Wire Load Model Mode: top
   slack (MET)                                         1.03
 
 
-  Startpoint: out_reg_2_ (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_2_ (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: out_reg_reg_2_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_reg_reg_2_
+            (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
 
@@ -2539,16 +2556,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_2_/CK (DFFQX1TS)                 0.00       0.00 r
-  out_reg_2_/Q (DFFQX1TS)                  0.67       0.67 r
+  out_reg_reg_2_/CK (DFFQX1TS)             0.00       0.00 r
+  out_reg_reg_2_/Q (DFFQX1TS)              0.67       0.67 r
   ...
-  out_reg_2_/D (DFFQX1TS)                  0.29       0.96 r
+  out_reg_reg_2_/D (DFFQX1TS)              0.29       0.96 r
   data arrival time                                   0.96
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_2_/CK (DFFQX1TS)                 0.00       0.01 r
+  out_reg_reg_2_/CK (DFFQX1TS)             0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -2558,8 +2575,10 @@ Wire Load Model Mode: top
   slack (MET)                                         1.05
 
 
-  Startpoint: out_reg_6_ (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_6_ (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: out_reg_reg_6_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_reg_reg_6_
+            (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
 
@@ -2567,16 +2586,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_6_/CK (DFFQX1TS)                 0.00       0.00 r
-  out_reg_6_/Q (DFFQX1TS)                  0.67       0.67 r
+  out_reg_reg_6_/CK (DFFQX1TS)             0.00       0.00 r
+  out_reg_reg_6_/Q (DFFQX1TS)              0.67       0.67 r
   ...
-  out_reg_6_/D (DFFQX1TS)                  0.32       0.98 r
+  out_reg_reg_6_/D (DFFQX1TS)              0.32       0.98 r
   data arrival time                                   0.98
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_6_/CK (DFFQX1TS)                 0.00       0.01 r
+  out_reg_reg_6_/CK (DFFQX1TS)             0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -2587,7 +2606,8 @@ Wire Load Model Mode: top
 
 
   Startpoint: rstn (input port clocked by clk)
-  Endpoint: out_reg_1_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_reg_reg_1_
+            (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
 
@@ -2598,13 +2618,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   rstn (in)                                0.04       0.14 r
   ...
-  out_reg_1_/D (DFFXLTS)                   0.81       0.94 r
+  out_reg_reg_1_/D (DFFXLTS)               0.81       0.94 r
   data arrival time                                   0.94
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_1_/CK (DFFXLTS)                  0.00       0.01 r
+  out_reg_reg_1_/CK (DFFXLTS)              0.00       0.01 r
   library hold time                       -0.14      -0.13
   data required time                                 -0.13
   -----------------------------------------------------------
@@ -2614,8 +2634,10 @@ Wire Load Model Mode: top
   slack (MET)                                         1.07
 
 
-  Startpoint: out_reg_4_ (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_4_ (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: out_reg_reg_4_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_reg_reg_4_
+            (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
 
@@ -2623,16 +2645,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_4_/CK (DFFQX1TS)                 0.00       0.00 r
-  out_reg_4_/Q (DFFQX1TS)                  0.67       0.67 r
+  out_reg_reg_4_/CK (DFFQX1TS)             0.00       0.00 r
+  out_reg_reg_4_/Q (DFFQX1TS)              0.67       0.67 r
   ...
-  out_reg_4_/D (DFFQX1TS)                  0.32       0.99 r
+  out_reg_reg_4_/D (DFFQX1TS)              0.32       0.99 r
   data arrival time                                   0.99
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_4_/CK (DFFQX1TS)                 0.00       0.01 r
+  out_reg_reg_4_/CK (DFFQX1TS)             0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -2642,8 +2664,10 @@ Wire Load Model Mode: top
   slack (MET)                                         1.07
 
 
-  Startpoint: out_reg_7_ (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_7_ (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: out_reg_reg_7_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_reg_reg_7_
+            (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
 
@@ -2651,16 +2675,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_7_/CK (DFFQX1TS)                 0.00       0.00 r
-  out_reg_7_/Q (DFFQX1TS)                  0.69       0.69 r
+  out_reg_reg_7_/CK (DFFQX1TS)             0.00       0.00 r
+  out_reg_reg_7_/Q (DFFQX1TS)              0.69       0.69 r
   ...
-  out_reg_7_/D (DFFQX1TS)                  0.33       1.02 r
+  out_reg_reg_7_/D (DFFQX1TS)              0.33       1.02 r
   data arrival time                                   1.02
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_7_/CK (DFFQX1TS)                 0.00       0.01 r
+  out_reg_reg_7_/CK (DFFQX1TS)             0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -2670,8 +2694,10 @@ Wire Load Model Mode: top
   slack (MET)                                         1.10
 
 
-  Startpoint: out_reg_5_ (rising edge-triggered flip-flop clocked by clk)
-  Endpoint: out_reg_5_ (rising edge-triggered flip-flop clocked by clk)
+  Startpoint: out_reg_reg_5_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_reg_reg_5_
+            (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
 
@@ -2679,16 +2705,16 @@ Wire Load Model Mode: top
   -----------------------------------------------------------
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
-  out_reg_5_/CK (DFFQX1TS)                 0.00       0.00 r
-  out_reg_5_/Q (DFFQX1TS)                  0.69       0.69 r
+  out_reg_reg_5_/CK (DFFQX1TS)             0.00       0.00 r
+  out_reg_reg_5_/Q (DFFQX1TS)              0.69       0.69 r
   ...
-  out_reg_5_/D (DFFQX1TS)                  0.33       1.02 r
+  out_reg_reg_5_/D (DFFQX1TS)              0.33       1.02 r
   data arrival time                                   1.02
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_5_/CK (DFFQX1TS)                 0.00       0.01 r
+  out_reg_reg_5_/CK (DFFQX1TS)             0.00       0.01 r
   library hold time                       -0.10      -0.09
   data required time                                 -0.09
   -----------------------------------------------------------
@@ -2699,7 +2725,8 @@ Wire Load Model Mode: top
 
 
   Startpoint: fire (input port clocked by clk)
-  Endpoint: out_reg_8_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_reg_reg_8_
+            (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
 
@@ -2710,13 +2737,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   fire (in)                                0.04       0.14 r
   ...
-  out_reg_8_/D (DFFQX1TS)                  1.00       1.14 f
+  out_reg_reg_8_/D (DFFQX1TS)              1.00       1.14 f
   data arrival time                                   1.14
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_8_/CK (DFFQX1TS)                 0.00       0.01 r
+  out_reg_reg_8_/CK (DFFQX1TS)             0.00       0.01 r
   library hold time                       -0.02      -0.01
   data required time                                 -0.01
   -----------------------------------------------------------
@@ -2727,7 +2754,8 @@ Wire Load Model Mode: top
 
 
   Startpoint: fire (input port clocked by clk)
-  Endpoint: out_reg_9_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_reg_reg_9_
+            (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: min
 
@@ -2738,13 +2766,13 @@ Wire Load Model Mode: top
   input external delay                     0.10       0.10 r
   fire (in)                                0.04       0.14 r
   ...
-  out_reg_9_/D (DFFQX1TS)                  1.00       1.14 f
+  out_reg_reg_9_/D (DFFQX1TS)              1.00       1.14 f
   data arrival time                                   1.14
 
   clock clk (rise edge)                    0.00       0.00
   clock network delay (ideal)              0.00       0.00
   clock uncertainty                        0.01       0.01
-  out_reg_9_/CK (DFFQX1TS)                 0.00       0.01 r
+  out_reg_reg_9_/CK (DFFQX1TS)             0.00       0.01 r
   library hold time                       -0.02      -0.01
   data required time                                 -0.01
   -----------------------------------------------------------

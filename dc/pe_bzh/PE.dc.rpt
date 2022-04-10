@@ -4,7 +4,7 @@
 Report : area
 Design : PE
 Version: O-2018.06-SP5-1
-Date   : Sat Apr  9 21:19:23 2022
+Date   : Sun Apr 10 00:49:57 2022
 ****************************************
 
 Information: Updating design information... (UID-85)
@@ -40,7 +40,7 @@ Report : power
         -analysis_effort medium
 Design : PE
 Version: O-2018.06-SP5-1
-Date   : Sat Apr  9 21:19:23 2022
+Date   : Sun Apr 10 00:49:57 2022
 ****************************************
 
 
@@ -73,7 +73,7 @@ PE                                        0.170    0.670 1.10e+04    0.840 100.0
 Report : design
 Design : PE
 Version: O-2018.06-SP5-1
-Date   : Sat Apr  9 21:19:23 2022
+Date   : Sun Apr 10 00:49:57 2022
 ****************************************
 
 Design allows ideal nets on clock nets.
@@ -140,7 +140,7 @@ Design Parameters:
 Report : cell
 Design : PE
 Version: O-2018.06-SP5-1
-Date   : Sat Apr  9 21:19:23 2022
+Date   : Sun Apr 10 00:49:57 2022
 ****************************************
 
 Attributes:
@@ -1524,103 +1524,103 @@ U737                      NAND2X1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           5.760000  
 U738                      AO22X1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           10.080000 
-out_a_reg_0_              DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_a_reg_reg_0_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_a_reg_1_              DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_a_reg_reg_1_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_a_reg_2_              DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_a_reg_reg_2_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_a_reg_3_              DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_a_reg_reg_3_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_a_reg_4_              DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_a_reg_reg_4_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_a_reg_5_              DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_a_reg_reg_5_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_a_reg_6_              DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_a_reg_reg_6_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_a_reg_7_              DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_a_reg_reg_7_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_f_reg                 DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_f_reg_reg             DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_reg_0_                DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_0_            DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_reg_1_                DFFXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_1_            DFFXLTS         scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           25.920000 n
-out_reg_2_                DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_2_            DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_reg_3_                DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_3_            DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_reg_4_                DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_4_            DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_reg_5_                DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_5_            DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_reg_6_                DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_6_            DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_reg_7_                DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_7_            DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_reg_8_                DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_8_            DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_reg_9_                DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_9_            DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_reg_10_               DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_10_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_reg_11_               DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_11_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_reg_12_               DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_12_           DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           41.759998 n
-out_reg_13_               DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_13_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_reg_14_               DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_14_           DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           41.759998 n
-out_reg_15_               DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_15_           DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           41.759998 n
-out_reg_16_               DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_16_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_reg_17_               DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_17_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_reg_18_               DFFQX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_18_           DFFQX2TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           25.920000 n
-out_reg_19_               DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_19_           DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_reg_20_               DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_20_           DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           41.759998 n
-out_reg_21_               DFFHQX1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_21_           DFFHQX1TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           28.799999 n
-out_reg_22_               DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_22_           DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           41.759998 n
-out_reg_23_               DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_23_           DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           41.759998 n
-out_reg_24_               DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_24_           DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           41.759998 n
-out_reg_25_               DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_25_           DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           41.759998 n
-out_reg_26_               DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_26_           DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           41.759998 n
-out_reg_27_               DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_27_           DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           41.759998 n
-out_reg_28_               DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_28_           DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           41.759998 n
-out_reg_29_               DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_29_           DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           41.759998 n
-out_reg_30_               DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_30_           DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           41.759998 n
-out_reg_31_               DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_reg_reg_31_           DFFHQX4TS       scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           41.759998 n
-out_w_reg_0_              DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_w_reg_reg_0_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_w_reg_1_              DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_w_reg_reg_1_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_w_reg_2_              DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_w_reg_reg_2_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_w_reg_3_              DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_w_reg_reg_3_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_w_reg_4_              DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_w_reg_reg_4_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_w_reg_5_              DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_w_reg_reg_5_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_w_reg_6_              DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_w_reg_reg_6_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
-out_w_reg_7_              DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
+out_w_reg_reg_7_          DFFQX1TS        scx3_cmos8rf_lpvt_tt_1p2v_25c
                                                           24.480000 n
 --------------------------------------------------------------------------------
 Total 735 cells                                           8388.000000
@@ -1631,7 +1631,7 @@ Report : port
         -verbose
 Design : PE
 Version: O-2018.06-SP5-1
-Date   : Sat Apr  9 21:19:23 2022
+Date   : Sun Apr 10 00:49:57 2022
 ****************************************
 
 
@@ -1943,7 +1943,7 @@ out_w[7]      0.10    0.10    0.10    0.10  clk       0.00
 Report : compile_options
 Design : PE
 Version: O-2018.06-SP5-1
-Date   : Sat Apr  9 21:19:23 2022
+Date   : Sun Apr 10 00:49:57 2022
 ****************************************
 
 Design                                   Compile Option         Value
@@ -1966,7 +1966,7 @@ Report : constraint
         -verbose
 Design : PE
 Version: O-2018.06-SP5-1
-Date   : Sat Apr  9 21:19:23 2022
+Date   : Sun Apr 10 00:49:57 2022
 ****************************************
 
 This design has no violated constraints.
@@ -1981,14 +1981,14 @@ Report : timing
         -max_paths 20
 Design : PE
 Version: O-2018.06-SP5-1
-Date   : Sat Apr  9 21:19:23 2022
+Date   : Sun Apr 10 00:49:57 2022
 ****************************************
 
 Operating Conditions: tt_1p2v_25c   Library: scx3_cmos8rf_lpvt_tt_1p2v_25c
 Wire Load Model Mode: top
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_21_
+  Endpoint: out_reg_reg_21_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2019,13 +2019,13 @@ Wire Load Model Mode: top
   U366/Y (AOI21X4TS)                       0.09       3.41 f
   U363/Y (XOR2X4TS)                        0.15       3.56 f
   U58/Y (OAI22X1TS)                        0.13       3.69 r
-  out_reg_21_/D (DFFHQX1TS)                0.00       3.69 r
+  out_reg_reg_21_/D (DFFHQX1TS)            0.00       3.69 r
   data arrival time                                   3.69
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_21_/CK (DFFHQX1TS)               0.00       3.99 r
+  out_reg_reg_21_/CK (DFFHQX1TS)           0.00       3.99 r
   library setup time                      -0.30       3.69
   data required time                                  3.69
   -----------------------------------------------------------
@@ -2036,7 +2036,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_17_
+  Endpoint: out_reg_reg_17_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2064,13 +2064,13 @@ Wire Load Model Mode: top
   U700/Y (AOI21X2TS)                       0.18       3.36 r
   U701/Y (XOR2X4TS)                        0.17       3.53 r
   U64/Y (OAI22X1TS)                        0.13       3.66 f
-  out_reg_17_/D (DFFQX1TS)                 0.00       3.66 f
+  out_reg_reg_17_/D (DFFQX1TS)             0.00       3.66 f
   data arrival time                                   3.66
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_17_/CK (DFFQX1TS)                0.00       3.99 r
+  out_reg_reg_17_/CK (DFFQX1TS)            0.00       3.99 r
   library setup time                      -0.33       3.66
   data required time                                  3.66
   -----------------------------------------------------------
@@ -2081,7 +2081,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_17_
+  Endpoint: out_reg_reg_17_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2109,13 +2109,13 @@ Wire Load Model Mode: top
   U700/Y (AOI21X2TS)                       0.18       3.36 r
   U701/Y (XOR2X4TS)                        0.17       3.53 r
   U64/Y (OAI22X1TS)                        0.13       3.66 f
-  out_reg_17_/D (DFFQX1TS)                 0.00       3.66 f
+  out_reg_reg_17_/D (DFFQX1TS)             0.00       3.66 f
   data arrival time                                   3.66
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_17_/CK (DFFQX1TS)                0.00       3.99 r
+  out_reg_reg_17_/CK (DFFQX1TS)            0.00       3.99 r
   library setup time                      -0.33       3.66
   data required time                                  3.66
   -----------------------------------------------------------
@@ -2126,7 +2126,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_21_
+  Endpoint: out_reg_reg_21_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2157,13 +2157,13 @@ Wire Load Model Mode: top
   U366/Y (AOI21X4TS)                       0.09       3.41 f
   U363/Y (XOR2X4TS)                        0.15       3.56 f
   U58/Y (OAI22X1TS)                        0.13       3.69 r
-  out_reg_21_/D (DFFHQX1TS)                0.00       3.69 r
+  out_reg_reg_21_/D (DFFHQX1TS)            0.00       3.69 r
   data arrival time                                   3.69
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_21_/CK (DFFHQX1TS)               0.00       3.99 r
+  out_reg_reg_21_/CK (DFFHQX1TS)           0.00       3.99 r
   library setup time                      -0.30       3.69
   data required time                                  3.69
   -----------------------------------------------------------
@@ -2174,7 +2174,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_17_
+  Endpoint: out_reg_reg_17_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2202,13 +2202,13 @@ Wire Load Model Mode: top
   U700/Y (AOI21X2TS)                       0.18       3.36 r
   U701/Y (XOR2X4TS)                        0.17       3.53 r
   U64/Y (OAI22X1TS)                        0.13       3.66 f
-  out_reg_17_/D (DFFQX1TS)                 0.00       3.66 f
+  out_reg_reg_17_/D (DFFQX1TS)             0.00       3.66 f
   data arrival time                                   3.66
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_17_/CK (DFFQX1TS)                0.00       3.99 r
+  out_reg_reg_17_/CK (DFFQX1TS)            0.00       3.99 r
   library setup time                      -0.33       3.66
   data required time                                  3.66
   -----------------------------------------------------------
@@ -2219,7 +2219,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_17_
+  Endpoint: out_reg_reg_17_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2247,13 +2247,13 @@ Wire Load Model Mode: top
   U700/Y (AOI21X2TS)                       0.18       3.36 r
   U701/Y (XOR2X4TS)                        0.17       3.53 r
   U64/Y (OAI22X1TS)                        0.13       3.66 f
-  out_reg_17_/D (DFFQX1TS)                 0.00       3.66 f
+  out_reg_reg_17_/D (DFFQX1TS)             0.00       3.66 f
   data arrival time                                   3.66
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_17_/CK (DFFQX1TS)                0.00       3.99 r
+  out_reg_reg_17_/CK (DFFQX1TS)            0.00       3.99 r
   library setup time                      -0.33       3.66
   data required time                                  3.66
   -----------------------------------------------------------
@@ -2264,7 +2264,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_21_
+  Endpoint: out_reg_reg_21_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2295,13 +2295,13 @@ Wire Load Model Mode: top
   U366/Y (AOI21X4TS)                       0.09       3.41 f
   U363/Y (XOR2X4TS)                        0.15       3.56 f
   U58/Y (OAI22X1TS)                        0.13       3.69 r
-  out_reg_21_/D (DFFHQX1TS)                0.00       3.69 r
+  out_reg_reg_21_/D (DFFHQX1TS)            0.00       3.69 r
   data arrival time                                   3.69
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_21_/CK (DFFHQX1TS)               0.00       3.99 r
+  out_reg_reg_21_/CK (DFFHQX1TS)           0.00       3.99 r
   library setup time                      -0.30       3.69
   data required time                                  3.69
   -----------------------------------------------------------
@@ -2312,7 +2312,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_21_
+  Endpoint: out_reg_reg_21_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2343,13 +2343,13 @@ Wire Load Model Mode: top
   U366/Y (AOI21X4TS)                       0.09       3.41 f
   U363/Y (XOR2X4TS)                        0.15       3.56 f
   U58/Y (OAI22X1TS)                        0.13       3.69 r
-  out_reg_21_/D (DFFHQX1TS)                0.00       3.69 r
+  out_reg_reg_21_/D (DFFHQX1TS)            0.00       3.69 r
   data arrival time                                   3.69
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_21_/CK (DFFHQX1TS)               0.00       3.99 r
+  out_reg_reg_21_/CK (DFFHQX1TS)           0.00       3.99 r
   library setup time                      -0.30       3.69
   data required time                                  3.69
   -----------------------------------------------------------
@@ -2360,7 +2360,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_17_
+  Endpoint: out_reg_reg_17_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2388,13 +2388,13 @@ Wire Load Model Mode: top
   U700/Y (AOI21X2TS)                       0.18       3.36 r
   U701/Y (XOR2X4TS)                        0.17       3.53 r
   U64/Y (OAI22X1TS)                        0.13       3.66 f
-  out_reg_17_/D (DFFQX1TS)                 0.00       3.66 f
+  out_reg_reg_17_/D (DFFQX1TS)             0.00       3.66 f
   data arrival time                                   3.66
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_17_/CK (DFFQX1TS)                0.00       3.99 r
+  out_reg_reg_17_/CK (DFFQX1TS)            0.00       3.99 r
   library setup time                      -0.33       3.66
   data required time                                  3.66
   -----------------------------------------------------------
@@ -2405,7 +2405,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_17_
+  Endpoint: out_reg_reg_17_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2433,13 +2433,13 @@ Wire Load Model Mode: top
   U700/Y (AOI21X2TS)                       0.18       3.36 r
   U701/Y (XOR2X4TS)                        0.17       3.53 r
   U64/Y (OAI22X1TS)                        0.13       3.66 f
-  out_reg_17_/D (DFFQX1TS)                 0.00       3.66 f
+  out_reg_reg_17_/D (DFFQX1TS)             0.00       3.66 f
   data arrival time                                   3.66
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_17_/CK (DFFQX1TS)                0.00       3.99 r
+  out_reg_reg_17_/CK (DFFQX1TS)            0.00       3.99 r
   library setup time                      -0.33       3.66
   data required time                                  3.66
   -----------------------------------------------------------
@@ -2450,7 +2450,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_17_
+  Endpoint: out_reg_reg_17_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2478,13 +2478,13 @@ Wire Load Model Mode: top
   U700/Y (AOI21X2TS)                       0.18       3.36 r
   U701/Y (XOR2X4TS)                        0.17       3.53 r
   U64/Y (OAI22X1TS)                        0.13       3.66 f
-  out_reg_17_/D (DFFQX1TS)                 0.00       3.66 f
+  out_reg_reg_17_/D (DFFQX1TS)             0.00       3.66 f
   data arrival time                                   3.66
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_17_/CK (DFFQX1TS)                0.00       3.99 r
+  out_reg_reg_17_/CK (DFFQX1TS)            0.00       3.99 r
   library setup time                      -0.33       3.66
   data required time                                  3.66
   -----------------------------------------------------------
@@ -2495,7 +2495,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_17_
+  Endpoint: out_reg_reg_17_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2523,13 +2523,13 @@ Wire Load Model Mode: top
   U700/Y (AOI21X2TS)                       0.18       3.36 r
   U701/Y (XOR2X4TS)                        0.17       3.53 r
   U64/Y (OAI22X1TS)                        0.13       3.66 f
-  out_reg_17_/D (DFFQX1TS)                 0.00       3.66 f
+  out_reg_reg_17_/D (DFFQX1TS)             0.00       3.66 f
   data arrival time                                   3.66
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_17_/CK (DFFQX1TS)                0.00       3.99 r
+  out_reg_reg_17_/CK (DFFQX1TS)            0.00       3.99 r
   library setup time                      -0.33       3.66
   data required time                                  3.66
   -----------------------------------------------------------
@@ -2540,7 +2540,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_21_
+  Endpoint: out_reg_reg_21_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2571,13 +2571,13 @@ Wire Load Model Mode: top
   U366/Y (AOI21X4TS)                       0.09       3.41 f
   U363/Y (XOR2X4TS)                        0.15       3.56 f
   U58/Y (OAI22X1TS)                        0.13       3.69 r
-  out_reg_21_/D (DFFHQX1TS)                0.00       3.69 r
+  out_reg_reg_21_/D (DFFHQX1TS)            0.00       3.69 r
   data arrival time                                   3.69
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_21_/CK (DFFHQX1TS)               0.00       3.99 r
+  out_reg_reg_21_/CK (DFFHQX1TS)           0.00       3.99 r
   library setup time                      -0.30       3.69
   data required time                                  3.69
   -----------------------------------------------------------
@@ -2588,7 +2588,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_21_
+  Endpoint: out_reg_reg_21_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2619,13 +2619,13 @@ Wire Load Model Mode: top
   U366/Y (AOI21X4TS)                       0.09       3.41 f
   U363/Y (XOR2X4TS)                        0.15       3.56 f
   U58/Y (OAI22X1TS)                        0.13       3.69 r
-  out_reg_21_/D (DFFHQX1TS)                0.00       3.69 r
+  out_reg_reg_21_/D (DFFHQX1TS)            0.00       3.69 r
   data arrival time                                   3.69
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_21_/CK (DFFHQX1TS)               0.00       3.99 r
+  out_reg_reg_21_/CK (DFFHQX1TS)           0.00       3.99 r
   library setup time                      -0.30       3.69
   data required time                                  3.69
   -----------------------------------------------------------
@@ -2636,7 +2636,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_17_
+  Endpoint: out_reg_reg_17_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2664,13 +2664,13 @@ Wire Load Model Mode: top
   U700/Y (AOI21X2TS)                       0.18       3.36 r
   U701/Y (XOR2X4TS)                        0.17       3.53 r
   U64/Y (OAI22X1TS)                        0.13       3.66 f
-  out_reg_17_/D (DFFQX1TS)                 0.00       3.66 f
+  out_reg_reg_17_/D (DFFQX1TS)             0.00       3.66 f
   data arrival time                                   3.66
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_17_/CK (DFFQX1TS)                0.00       3.99 r
+  out_reg_reg_17_/CK (DFFQX1TS)            0.00       3.99 r
   library setup time                      -0.33       3.66
   data required time                                  3.66
   -----------------------------------------------------------
@@ -2681,7 +2681,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_17_
+  Endpoint: out_reg_reg_17_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2709,13 +2709,13 @@ Wire Load Model Mode: top
   U700/Y (AOI21X2TS)                       0.18       3.36 r
   U701/Y (XOR2X4TS)                        0.17       3.53 r
   U64/Y (OAI22X1TS)                        0.13       3.66 f
-  out_reg_17_/D (DFFQX1TS)                 0.00       3.66 f
+  out_reg_reg_17_/D (DFFQX1TS)             0.00       3.66 f
   data arrival time                                   3.66
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_17_/CK (DFFQX1TS)                0.00       3.99 r
+  out_reg_reg_17_/CK (DFFQX1TS)            0.00       3.99 r
   library setup time                      -0.33       3.66
   data required time                                  3.66
   -----------------------------------------------------------
@@ -2726,7 +2726,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_17_
+  Endpoint: out_reg_reg_17_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2754,13 +2754,13 @@ Wire Load Model Mode: top
   U700/Y (AOI21X2TS)                       0.18       3.36 r
   U701/Y (XOR2X4TS)                        0.17       3.53 r
   U64/Y (OAI22X1TS)                        0.13       3.66 f
-  out_reg_17_/D (DFFQX1TS)                 0.00       3.66 f
+  out_reg_reg_17_/D (DFFQX1TS)             0.00       3.66 f
   data arrival time                                   3.66
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_17_/CK (DFFQX1TS)                0.00       3.99 r
+  out_reg_reg_17_/CK (DFFQX1TS)            0.00       3.99 r
   library setup time                      -0.33       3.66
   data required time                                  3.66
   -----------------------------------------------------------
@@ -2771,7 +2771,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_17_
+  Endpoint: out_reg_reg_17_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2799,13 +2799,13 @@ Wire Load Model Mode: top
   U700/Y (AOI21X2TS)                       0.18       3.36 r
   U701/Y (XOR2X4TS)                        0.17       3.53 r
   U64/Y (OAI22X1TS)                        0.13       3.66 f
-  out_reg_17_/D (DFFQX1TS)                 0.00       3.66 f
+  out_reg_reg_17_/D (DFFQX1TS)             0.00       3.66 f
   data arrival time                                   3.66
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_17_/CK (DFFQX1TS)                0.00       3.99 r
+  out_reg_reg_17_/CK (DFFQX1TS)            0.00       3.99 r
   library setup time                      -0.33       3.66
   data required time                                  3.66
   -----------------------------------------------------------
@@ -2816,7 +2816,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[1] (input port clocked by clk)
-  Endpoint: out_reg_17_
+  Endpoint: out_reg_reg_17_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2846,13 +2846,13 @@ Wire Load Model Mode: top
   U700/Y (AOI21X2TS)                       0.20       3.36 r
   U701/Y (XOR2X4TS)                        0.17       3.53 r
   U64/Y (OAI22X1TS)                        0.13       3.66 f
-  out_reg_17_/D (DFFQX1TS)                 0.00       3.66 f
+  out_reg_reg_17_/D (DFFQX1TS)             0.00       3.66 f
   data arrival time                                   3.66
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_17_/CK (DFFQX1TS)                0.00       3.99 r
+  out_reg_reg_17_/CK (DFFQX1TS)            0.00       3.99 r
   library setup time                      -0.33       3.66
   data required time                                  3.66
   -----------------------------------------------------------
@@ -2863,7 +2863,7 @@ Wire Load Model Mode: top
 
 
   Startpoint: in_w[7] (input port clocked by clk)
-  Endpoint: out_reg_21_
+  Endpoint: out_reg_reg_21_
             (rising edge-triggered flip-flop clocked by clk)
   Path Group: clk
   Path Type: max
@@ -2894,13 +2894,13 @@ Wire Load Model Mode: top
   U366/Y (AOI21X4TS)                       0.09       3.41 f
   U363/Y (XOR2X4TS)                        0.15       3.56 f
   U58/Y (OAI22X1TS)                        0.13       3.69 r
-  out_reg_21_/D (DFFHQX1TS)                0.00       3.69 r
+  out_reg_reg_21_/D (DFFHQX1TS)            0.00       3.69 r
   data arrival time                                   3.69
 
   clock clk (rise edge)                    4.00       4.00
   clock network delay (ideal)              0.00       4.00
   clock uncertainty                       -0.01       3.99
-  out_reg_21_/CK (DFFHQX1TS)               0.00       3.99 r
+  out_reg_reg_21_/CK (DFFHQX1TS)           0.00       3.99 r
   library setup time                      -0.30       3.69
   data required time                                  3.69
   -----------------------------------------------------------
@@ -2917,7 +2917,7 @@ Report : timing_requirements
         -attributes
 Design : PE
 Version: O-2018.06-SP5-1
-Date   : Sat Apr  9 21:19:23 2022
+Date   : Sun Apr 10 00:49:57 2022
 ****************************************
 
 1
