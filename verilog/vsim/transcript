@@ -19,46 +19,49 @@
 # Compile of pe_tb.v was successful.
 # Compile of pe_arr_test.v was successful.
 # 5 compiles, 0 failed with no errors.
-vsim -voptargs=+acc work.pe_arr_test
-# vsim -voptargs="+acc" work.pe_arr_test 
-# Start time: 20:40:16 on Apr 09,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.pe_arr_test(fast)
-# Loading work.PE_ARR(fast)
+vsim -voptargs=+acc work.PE_TB
+# vsim -voptargs="+acc" work.PE_TB 
+# Start time: 21:25:14 on Apr 09,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.PE_TB(fast)
 # Loading work.PE(fast)
-add wave -position insertpoint sim:/pe_arr_test/*
-run
-run
-run
-run
-run
-restart -f
+add wave -position insertpoint sim:/PE_TB/*
+# Causality operation skipped due to absence of debug database file
+vsim -voptargs=+acc work.pe_arr_test
+# End time: 21:26:02 on Apr 09,2022, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 1
+# vsim -voptargs="+acc" work.pe_arr_test 
+# Start time: 21:26:02 on Apr 09,2022
 # ** Note: (vsim-8009) Loading existing optimized design _opt1
 # Loading work.pe_arr_test(fast)
 # Loading work.PE_ARR(fast)
 # Loading work.PE(fast)
 add wave -position insertpoint sim:/pe_arr_test/*
-add wave -noupdate /pe_arr_test/outs
 run
-# Compile of pe.v was successful.
-# Compile of pe_arr.v was successful.
-# Compile of pe_arr_tb.v was successful.
-# Compile of pe_tb.v was successful.
-# Compile of pe_arr_test.v was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -voptargs=+acc work.pe_arr_test
-# End time: 20:44:42 on Apr 09,2022, Elapsed time: 0:04:26
+vsim -voptargs=+acc work.PE_TB
+# End time: 21:27:10 on Apr 09,2022, Elapsed time: 0:01:08
 # Errors: 0, Warnings: 0
-# vsim -voptargs="+acc" work.pe_arr_test 
-# Start time: 20:44:42 on Apr 09,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.pe_arr_test(fast)
-# Loading work.PE_ARR(fast)
+# vsim -voptargs="+acc" work.PE_TB 
+# Start time: 21:27:10 on Apr 09,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.PE_TB(fast)
 # Loading work.PE(fast)
-add wave -position insertpoint sim:/pe_arr_test/*
-add wave /pe_arr_test/outs
+add wave -position insertpoint sim:/PE_TB/*
 run
-run
-run
-# End time: 21:03:25 on Apr 09,2022, Elapsed time: 0:18:43
+# Initialized
+# i=          0	out=         0
+# i=          1	out=         1
+# i=          2	out=         3
+# i=          3	out=         6
+# i=          4	out=        10
+# i=          5	out=        15
+# i=          6	out=        21
+# i=          7	out=        28
+# i=          8	out=        36
+# i=          9	out=        45
+# i=         10	out=        55
+# i=         11	out=        66
+# i=         12	out=        78
+# i=         13	out=        91
+# End time: 21:29:25 on Apr 09,2022, Elapsed time: 0:02:15
 # Errors: 0, Warnings: 0

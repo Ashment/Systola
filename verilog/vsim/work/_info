@@ -9,32 +9,42 @@ z2
 cModel Technology
 Z0 d/homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/vsim
 T_opt
-!s110 1649549566
-V;<dSY_KXneL?;STN[d6j?3
-04 6 4 work PE_ARR fast 0
-=1-b04f130f61e5-625220fe-909d0-6fe1
-Z1 o-quiet -auto_acc_if_foreign -work work +acc
-Z2 tCvgOpt 0
+!s110 1649553915
+VQO[dD=bONhS@1b819G4o:2
+Z1 04 5 4 work PE_TB fast 0
+=1-b04f130f61e5-625231fb-7c0c0-1d42
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
 n@_opt
-Z3 OE;O;10.7b_1;67
-R0
+Z4 OE;O;10.7b_1;67
 T_opt1
 !s110 1649551483
 VJK4hAL5mh=hi>g1H2k5^21
 04 11 4 work pe_arr_test fast 0
 =1-b04f130f61e5-6252287b-4f438-5fc
-R1
 R2
-n@_opt1
 R3
+n@_opt1
+R4
+R0
+T_opt2
+!s110 1649553661
+V2KST@olgjAYg[HPIO<li;2
+R1
+=1-e4b97aea3ce7-625230fc-d7b8e-69f
+o-quiet -auto_acc_if_foreign -work work
+R3
+n@_opt2
+R4
+R0
 vPE
-Z4 !s110 1649551475
+Z5 !s110 1649553897
 !i10b 1
 !s100 zMjjF<U2Om43j5DoJ30`93
 I0W5ac:aP>z3A9R?Kdk4:W1
-Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z6 w1649548265
+w1649548265
 8/homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe.v
 F/homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe.v
 L0 3
@@ -42,19 +52,19 @@ Z7 OE;L;10.7b_1;67
 r1
 !s85 0
 31
-Z8 !s108 1649551475.000000
+Z8 !s108 1649553897.000000
 !s107 /homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe.v|
 !i113 0
 Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R2
+R3
 n@p@e
 vPE_ARR
-R4
+R5
 !i10b 1
 !s100 J:JWJB_>@N<0]lmd:Yd6S2
 IJWnJd?L:IYo5:A489FlYU0
-R5
+R6
 R0
 w1649548753
 8/homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe_arr.v
@@ -69,14 +79,14 @@ R8
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe_arr.v|
 !i113 0
 R9
-R2
+R3
 n@p@e_@a@r@r
 vpe_arr_tb
-Z10 !s110 1649551476
+Z10 !s110 1649553898
 !i10b 1
 !s100 MeTV:>nX>j:@PR]AG<gPQ1
 Ia:ATIFRi1C>oI30EgR1Se3
-R5
+R6
 R0
 w1649548118
 8/homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe_arr_tb.v
@@ -91,13 +101,13 @@ R8
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe_arr_tb.v|
 !i113 0
 R9
-R2
+R3
 vpe_arr_test
 R10
 !i10b 1
 !s100 6ebI`EcbG0CJQGU]dQD@e0
 Ij][K4m73=z[<;_aKS::Y_1
-R5
+R6
 R0
 w1649551467
 8/homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe_arr_test.v
@@ -107,23 +117,23 @@ R7
 r1
 !s85 0
 31
-Z11 !s108 1649551476.000000
+Z11 !s108 1649553898.000000
 !s107 /homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe_arr_test.v|
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe_arr_test.v|
 !i113 0
 R9
-R2
+R3
 vPE_TB
 R10
 !i10b 1
-!s100 l0D>7MLNE>@eDD]jl@jSi0
-IXD8GzeR^_G=FY<E`GQQC;0
-R5
-R0
+!s100 >S]DXkJmVba2TaGV8m7H33
+Iz8;6TzT;Q5<?g_h68QH9m0
 R6
+R0
+w1649553525
 8/homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe_tb.v
 F/homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe_tb.v
-L0 6
+L0 7
 R7
 r1
 !s85 0
@@ -133,5 +143,5 @@ R11
 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|/homes/user/stud/fall21/bh2803/Documents/esp/Systola/verilog/pe_tb.v|
 !i113 0
 R9
-R2
+R3
 n@p@e_@t@b

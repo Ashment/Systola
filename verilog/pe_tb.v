@@ -44,7 +44,6 @@ module PE_TB();
 		for (i=0; i<16; i=i+1) begin
 			w <= w + 1;
 			@(posedge clk);
-			$display("i=%d\tout=%d", i, out);
 		end
 
 		@(negedge clk);
