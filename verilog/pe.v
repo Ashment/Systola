@@ -12,8 +12,8 @@ module PE (
 	output [31:0] out);
 
 	reg out_f_reg;
-	reg[7:0] out_a_reg, out_w_reg;
-	reg [31:0] out_reg;
+	reg signed [7:0] out_a_reg, out_w_reg;
+	reg signed [31:0] out_reg;
 	assign out_f = out_f_reg;
 	assign out_a = out_a_reg;
 	assign out_w = out_w_reg;
