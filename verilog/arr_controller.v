@@ -89,21 +89,29 @@ module ARR_CTRL
     INPMEM inpmem(.Q, .clk, .CEN, .WEN, .A, .D);
 
     integer i;
+    reg inpWEN;
+    reg inpCEN;
+
+    reg [3:0] cur_conf = 0;
+    reg [15:0] cur_addr = 0;
     reg [7:0] configs [0:7];
+
+    /////////////////////////
     // CONFIGURATIONS:
     // 0: operation
     // 1: input Channels
     // 2: input width
     // 3: input height
-    reg inpWEN;
-    reg inpCEN;
-
+    //
     // Target Address:
     // Convs per row: cr = w - 2
     // Total Convs: (w-2) * (cr-2)
+    /////////////////////////
 
-    reg [3:0] cur_conf = 0;
-    reg [15:0] cur_addr = 0;
+    wire [15:0] totconvs;
+    wire [15:0] rowconvs;
+    assign totconvs = (configs[2]-2) * (configs[3]-2);
+    assign rowconvs = (configs[2]-2);
 
     always @ (posedge clk) begin
         if(!rstn) begin
@@ -131,7 +139,7 @@ module ARR_CTRL
                     cur_addr <= 0;
 
                     // Send appropriate data to each PE row
-                    
+                    for(i = 0)
 
                 end
                 default: begin
@@ -140,7 +148,6 @@ module ARR_CTRL
             end
         end
     end
-
 
 
 endmodule
