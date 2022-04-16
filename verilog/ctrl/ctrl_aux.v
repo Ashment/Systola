@@ -1,6 +1,6 @@
 `timescale 1 ns/1 ps
 
-module RINGBUF
+module INPBUF
     #(
         parameter WORDLEN = 8,
         parameter BUFSIZE = 16)
@@ -10,22 +10,18 @@ module RINGBUF
         input read,
         input write,
         input [WORDLEN-1 : 0] din,
-        output [WORDLEN-1 : 0] dout,
-        output eout,
-        output fout);
+        output [WORDLEN-1 : 0] dout);
 
     reg [WORDLEN-1 : 0] bufdat [0:BUFSIZE];
     reg [WORDLEN-1 : 0] outdat;
-    // assume buffer no dmore than 32 depth
+
+    // assume buffer no dmore than 32 depth (5 bit pointers)
     reg [4:0] curhead;
     reg [4:0] curtail;
+    wire empty;
 
+    assign empty = (curhead == curtail);
     assign dout = outdat;
-    wire bempty, bfull;
-    assign bempty = (curhead == curtail);
-    assign bfull = (curhead == curtail + 1);
-    assign eout = bempty;
-    assign fout = bfull;
 
     always @ (posedge clk) begin
         if(!rstn) begin
@@ -36,11 +32,13 @@ module RINGBUF
             curhead <= 0;
             curtail <= 0;
         end else begin
-            if (read && ~bempty) begin
+            if (read) begin
+                // /!\ NO EMPTY CHECK
                 outdat <= bufdat[curhead];
                 curhead <= curhead + 1;
             end
-            if (write && ~bfull) begin
+            if (write) begin
+                // /!\ NO FULL CHECK
                 bufdat[curtail+1] <= in_dat;
                 curtail <= curtail + 1;
             end

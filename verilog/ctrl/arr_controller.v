@@ -1,10 +1,6 @@
 `timescale 1 ns/1 ps
 
-module ARR_CTRL
-    #(
-        parameter ROWS = 16,
-        parameter COLS = 16)
-    (
+module ARR_CTRL_16x16
         input clk,
         input rstn,
         input enable,
