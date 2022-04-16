@@ -1,22 +1,31 @@
 `timescale 1 ns/1 ps
 
-module PEROWBUF
+module RINGBUF
     #(
         parameter WORDLEN = 8,
-        parameter BUFSIZE = 8
-    )(
+        parameter BUFSIZE = 16)
+    (
         input clk,
         input rstn,
         input read,
         input write,
-        input [WORDLEN-1 : 0] in_dat,
-        output [WORDLEN-1 : 0]
-    );
+        input [WORDLEN-1 : 0] din,
+        output [WORDLEN-1 : 0] dout,
+        output eout,
+        output fout);
 
     reg [WORDLEN-1 : 0] bufdat [0:BUFSIZE];
     reg [WORDLEN-1 : 0] outdat;
-    reg [7:0] curhead;
-    reg [7:0] curtail;
+    // assume buffer no dmore than 32 depth
+    reg [4:0] curhead;
+    reg [4:0] curtail;
+
+    assign dout = outdat;
+    wire bempty, bfull;
+    assign bempty = (curhead == curtail);
+    assign bfull = (curhead == curtail + 1);
+    assign eout = bempty;
+    assign fout = bfull;
 
     always @ (posedge clk) begin
         if(!rstn) begin
@@ -27,13 +36,16 @@ module PEROWBUF
             curhead <= 0;
             curtail <= 0;
         end else begin
-            if (read) begin
+            if (read && ~bempty) begin
                 outdat <= bufdat[curhead];
                 curhead <= curhead + 1;
             end
+            if (write && ~bfull) begin
+                bufdat[curtail+1] <= in_dat;
+                curtail <= curtail + 1;
+            end
         end
     end
-    
 endmodule
 
 module CLKDIV

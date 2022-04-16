@@ -2,36 +2,37 @@
 
 module ARR_CTRL
     #(
-    parameter ROWS = 16,
-    parameter COLS = 16
-    )(
-    input clk,
-    input rstn,
-    input enable,
+        parameter ROWS = 16,
+        parameter COLS = 16)
+    (
+        input clk,
+        input rstn,
+        input enable,
 
-    input [2:0] mode,
-    // mode is used to control current operating mode.
-    // 00 is config loading
-    // 01 is weight loading
-    // 10 is data loading
-    // 11 is compute
+        input [2:0] mode,
+        // mode is used to control current operating mode.
+        // 00 is config loading
+        // 01 is weight loading
+        // 10 is data loading
+        // 11 is compute
 
-    input config_load,
-    input data_load,
-    input [7:0] data_in,
+        input config_load,
+        input data_load,
+        input [7:0] data_in,
 
-    output valid,
-    output fire,
-    output done);
+        output valid,
+        output fire,
+        output done);
 
     integer i;
 
     reg aWEN, wWEN;
+    reg [7:0] Dbuf;
     wire [7:0] amemQ, wmemQ;
 
     // Instantiate SRAM for weights and activations
-    INPMEM amem(.Q(amemQ), .clk(clk), .CEN(1'b0), .WEN(aWEN), .A(a_addr), .D(data_in));
-    INPMEM wmem(.Q(wmemQ), .clk(clk), .CEN(1'b0), .WEN(wWEN), .A(w_addr), .D(data_in));
+    INPMEM amem(.Q(amemQ), .clk(clk), .CEN(1'b0), .WEN(aWEN), .A(a_addr), .D(Dbuf));
+    INPMEM wmem(.Q(wmemQ), .clk(clk), .CEN(1'b0), .WEN(wWEN), .A(w_addr), .D(Dbuf));
 
     reg [3:0] cur_conf;
     reg [7:0] configs [0:7];
@@ -77,6 +78,7 @@ module ARR_CTRL
 
             aWEN <= 1;
             wWEN <= 1;
+            Dbuf <= 0;
 
             cur_conf <= 0;
             for(i=0; i<4; i=i+1) begin
@@ -115,26 +117,28 @@ module ARR_CTRL
 
                     2'b01: begin    // MODE: Weight Loading
                         aWEN <= 1;
-                        if(w_addr < 16'hFFFF && data_load) begin
+                        Dbuf <= data_in;
+                        if(w_addr < 16'hFFFF) begin
                             // writes data_in to wmem at w_addr
-                            wWEN <= 0;
+                            wWEN <= ~data_load; //Enable write to wmem if data_load high
                             w_addr <= w_addr + 1;
                         end
-                        
                     end
 
                     2'b10: begin    // MODE: Data Loading
                         wWEN <= 1;
-                        if (a_addr < 16'hFFFF && data_load) begin
+                        Dbuf <= data_in;
+                        if (a_addr < 16'hFFFF) begin
                             // writes data_in to amem at a_addr
-                            aWEN <= 0;  // Enable write to amem
+                            aWEN <= ~data_load;  // Enable write to amem if data_load high
                             a_addr <= a_addr + 1;
                         end
                     end
 
                     2'b11: begin    // MODE: Computing
                         aWEN <= 1;
-                        
+                        wWEN <= 1;
+
                         //////////////////////////////
                         // Input Data Orchestration //
                         //////////////////////////////
