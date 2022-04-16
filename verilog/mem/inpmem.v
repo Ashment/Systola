@@ -35,5 +35,4 @@ module INPMEM
 			A_out <= A[addr_len+7:8];
 		end
 	end
-
 endmodule
