@@ -72,10 +72,10 @@ module ARR_CTRL
 
     input [2:0] mode,
     // mode is used to control current operating mode.
-    // 00 is config loading.
-    // 01 is data loading.
-    // 10 is start compute.
-    // 11 is currently unused.
+    // 00 is config loading
+    // 01 is weight loading
+    // 10 is data loading
+    // 11 is compute
 
     input config_load,
     input data_load,
@@ -112,6 +112,8 @@ module ARR_CTRL
     wire [15:0] rowconvs;
     assign totconvs = (configs[2]-2) * (configs[3]-2);
     assign rowconvs = (configs[2]-2);
+    reg [15:0] convcnt;
+    reg [7:0] windowcnt;
 
     always @ (posedge clk) begin
         if(!rstn) begin
@@ -123,28 +125,36 @@ module ARR_CTRL
             cur_addr <= 0;
             inpCEN <= 0; // Mem always on
             inpWEN <= 1;
+
+            convcnt <= 0;
+            windowcnt <= 0;
         end
         else begin
-            case (mode)
-                2'b00: begin    // MODE: Config Loading
-                    inpWEN <= 1;
-                    configs[cur_conf] <= data_in;
-                end
-                2'b01: begin    // MODE: Data Loading
-                    inpWEN <= 0; // Enable write to inpmem iff mode = 01
-                    cur_addr <= cur_addr + 1;
-                end
-                2'b10: begin    // MODE: Computing
-                    inpWEN <= 1;
-                    cur_addr <= 0;
+            if(enable) begin
+                case (mode)
+                    2'b00: begin    // MODE: Config Loading
+                        inpWEN <= 1;
+                        configs[cur_conf] <= data_in;
+                    end
+                    2'b01: begin    // MODE: Weight Loading
+                        inpWEN <= 1;
+                    end
+                    2'b10: begin    // MODE: Data Loading
+                        inpWEN <= 0; // Enable write to inpmem iff mode = 01
+                        cur_addr <= cur_addr + 1;
+                    end
+                    2'b11: begin    // MODE: Computing
+                        inpWEN <= 1;
+                        cur_addr <= 0;
 
-                    // Send appropriate data to each PE row
-                    for(i = 0)
+                        // Send appropriate data to each PE row
+                        
 
-                end
-                default: begin
-                    inpWEN <= 1;
-                end
+                    end
+                    default: begin
+                        inpWEN <= 1;
+                    end
+                endcase
             end
         end
     end
