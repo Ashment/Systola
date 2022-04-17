@@ -47,7 +47,7 @@ module INPBUF
 endmodule
 
 module CLKDIV
-    #(parameter DIV_CNT = 16, parameter BITS = 4;
+    #(parameter DIV_CNT = 8, parameter BITS = 3;
     )(
         input clk,
         input rstn,
@@ -63,7 +63,7 @@ module CLKDIV
             clkreg <=  0;
             cnt <= 0;
         end else begin
-            if(cnt == DIV_CNT-1) begin
+            if(cnt == (DIV_CNT-1) begin
                 clkreg <= ~clkreg;
                 cnt <= 0;
             end else begin
