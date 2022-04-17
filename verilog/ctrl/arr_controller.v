@@ -17,10 +17,19 @@ module ARR_CTRL_16x16
 
         output [16*8 - 1 : 0] aouts,
         output [16*8 - 1 : 0] wouts, 
+        output saclk,
         output done);
 
     integer i;
     genvar gi;
+
+    ///////////////////
+    // CLOCK DIVIDER //
+    ///////////////////
+
+    wire clkdivo;
+    CLK_DIV #(.DIV_CNT(8), .BITS(3)) clkdiv (.clk(clk), .rstn(rstn), .clkout(clkdivo));
+    assign saclk = clkdivo;
 
     ////////////////////
     // INPUT MEMORIES //
@@ -133,6 +142,7 @@ module ARR_CTRL_16x16
             wbufwrites <= 0;
             abufdin <= 0;
             wbufdin <= 0;
+            prefillcnt <= 0;
 
             cur_conf <= 0;
             for(i=0; i<4; i=i+1) begin
@@ -258,7 +268,6 @@ module ARR_CTRL_16x16
 
                             inpscnt <= inpscnt + 1;
                         end
-                        peitcnt <= peitcnt + 1;
 
                         // Update base if current windows are completed.
                         if (inpscnt == (9 * configs[1]) - 1) begin
@@ -280,6 +289,8 @@ module ARR_CTRL_16x16
                             a_addr <= 0;
                             basecol <= 0;
                             baserow <= 0;
+                            basecolnext <= 0;
+                            baserowinc <= 0;
                         end else begin
                             // Select appropriate address from amem
                             // Assume windows span maximum of 2 rows
@@ -296,6 +307,7 @@ module ARR_CTRL_16x16
                                 basecolnext <= basecolnext + 1;
                             end
                         end
+                        peitcnt <= peitcnt + 1;
 
                         ///////////////////////////
                         // Weights Data Movement //
@@ -340,13 +352,15 @@ module ARR_CTRL_16x16
                         //////////////////////////////
 
                         for (i=0; i<16; i=i+1) begin
+                            // Enable write to the appropriate row/col buffers
                             abufwrites[i] <= (i == peitcnt);
                             wbufwrites[i] <= (i == peitcnt);
                         end
+                        // send 0 to a buf if no more conv windows left to compute
                         abufdin <= (convcnt + perowcnt < (configs[2]-2)*(configs[3]-2)) ? amemQ : 0;
                         wbufdin <= wmemQ;
-
                     end
+
                 endcase
             end
         end
