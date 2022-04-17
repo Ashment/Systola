@@ -201,17 +201,17 @@ module ARR_CTRL_16x16
                             aWEN <= ~data_load;  // Enable write to amem if data_load high
                             a_addr <= a_addr + 1;
                         end
-                    end
 
-                    // Also prefill buffers for inputs
-                    // First row/col needs no pad, last row/col needs 15 pad, etc.
-                    if(prefillcnt == 4'hF) begin
-                        abufwrites <= 0;
-                    end else begin
-                        for (i=0; i<16; i=i+1) begin
-                            // prefill buffer to appropriately delay compute start
-                            abufwrites[i] = (i > prefillcnt);
-                            wbufwrites[i] = (i > prefillcnt);
+                        // Also prefill buffers for inputs
+                        // First row/col needs no pad, last row/col needs 15 pad, etc.
+                        if(prefillcnt == 4'hF) begin
+                            abufwrites <= 0;
+                        end else begin
+                            for (i=0; i<16; i=i+1) begin
+                                // prefill buffer to appropriately delay compute start
+                                abufwrites[i] = (i > prefillcnt);
+                                wbufwrites[i] = (i > prefillcnt);
+                            end
                         end
                     end
 
@@ -373,7 +373,7 @@ module ARR_CTRL_16x16
                                 wbufwrites[i] <= (i == peitcnt);
                             end
                             // sends 0 to a buf if no more conv windows left to compute
-                            abufdin <= (convcnt + perowcnt < (configs[2]-2)*(configs[3]-2)) ? amemQ : 0;
+                            abufdin <= (convcnt + peitcnt < (configs[2]-2)*(configs[3]-2)) ? amemQ : 0;
                             wbufdin <= wmemQ;
                         end
                     end
