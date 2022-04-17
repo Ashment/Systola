@@ -1,6 +1,6 @@
 `timescale 1 ns/1 ps
 
-module INPBUF
+module RBUF
     #(
         parameter WORDLEN = 8,
         parameter BUFSIZE = 16)
@@ -51,8 +51,10 @@ module CLKDIV
     )(
         input clk,
         input rstn,
+        input enable,
         output clkout,
     );
+    // DIV_CNT is cnt before toggle (e.g. DIV_CNT = 8 is 16x clock period.)
 
     reg [BITS-1:0] cnt;
     reg clkreg;
@@ -63,11 +65,13 @@ module CLKDIV
             clkreg <=  0;
             cnt <= 0;
         end else begin
-            if(cnt == (DIV_CNT-1) begin
-                clkreg <= ~clkreg;
-                cnt <= 0;
-            end else begin
-                cnt <= cnt + 1;
+            if(enable) begin
+                if(cnt == (DIV_CNT-1) begin
+                    clkreg <= ~clkreg;
+                    cnt <= 0;
+                end else begin
+                    cnt <= cnt + 1;
+                end
             end
         end
     end

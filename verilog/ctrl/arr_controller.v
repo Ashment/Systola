@@ -18,17 +18,22 @@ module ARR_CTRL_16x16
         output [16*8 - 1 : 0] aouts,
         output [16*8 - 1 : 0] wouts, 
         output saclk,
+        output fire,
         output done);
 
     integer i;
     genvar gi;
+
+    reg fire;
+    reg computedone;
 
     ///////////////////
     // CLOCK DIVIDER //
     ///////////////////
 
     wire clkdivo;
-    CLK_DIV #(.DIV_CNT(8), .BITS(3)) clkdiv (.clk(clk), .rstn(rstn), .clkout(clkdivo));
+    reg clkdiven;
+    CLKDIV #(.DIV_CNT(8), .BITS(3)) clkdiv (.clk(clk), .rstn(rstn), .enable(clkdiven), .clkout(clkdivo));
     assign saclk = clkdivo;
 
     ////////////////////
@@ -61,7 +66,7 @@ module ARR_CTRL_16x16
 
     generate
         for (gi=0; gi<16; gi=gi+1) begin
-            INPBUF #(.WORDLEN(8), .BUFSIZE(gi+1)) abuf_gen (
+            RBUF #(.WORDLEN(8), .BUFSIZE(gi+1)) abuf_gen (
                 .clk(clk),
                 .rstn(rstn),
                 .read(abufreads[gi]),
@@ -70,7 +75,7 @@ module ARR_CTRL_16x16
                 .dout(abufdout[gi]));
         end
         for (gi=0; gi<16; gi=gi+1) begin
-            INPBUF #(.WORDLEN(8), .BUFSIZE(gi+1)) wbuf_gen (
+            RBUF #(.WORDLEN(8), .BUFSIZE(gi+1)) wbuf_gen (
                 .clk(clk),
                 .rstn(rstn),
                 .read(wbufreads[gi]),
@@ -93,10 +98,6 @@ module ARR_CTRL_16x16
     // 1: input Channels
     // 2: input width
     // 3: input height
-    //
-    // Target Address:
-    // Convs per row: cr = w - 2
-    // Total Convs: (w-2) * (cr-2)
     /////////////////////////
 
     /////////////////////////////
@@ -134,6 +135,9 @@ module ARR_CTRL_16x16
             ///////////
             // RESET //
             ///////////
+
+            computedone <= 0;
+            clkdiven <= 0;
 
             aWEN <= 1;
             wWEN <= 1;
@@ -212,156 +216,169 @@ module ARR_CTRL_16x16
                     end
 
                     2'b11: begin    // MODE: Computing
+                        // Disable writing to memories
                         aWEN <= 1;
                         wWEN <= 1;
 
-                        ///////////////////////////////
-                        // Activations Data Movement //
-                        ///////////////////////////////
+                        if(!done) begin
+                            ///////////////////////////////
+                            // Activations Data Movement //
+                            ///////////////////////////////
 
-                        //  A MEM
-                        //  ______________
-                        // |              |
-                        // |  INPUT CH 1  | 
-                        // |              |
-                        // |--------------|
-                        // |              |
-                        // |  INPUT CH 2  | 
-                        // |              |
-                        // |--------------|
-                        // |              |
-                        // |    . . .     |
-                        // |              |
-                        // |--------------|
-                        // |              |
-                        // |  INPUT CH n  |
-                        // |              |  
-                        //  --------------
-                        //   
-                        //        .------------.
-                        //    .------------.20 |
-                        //  ___________ 11 | --|
-                        // | 0 | 1 | 2 | --|23 |
-                        // |---|---|---|14 | --|
-                        // | 3 | 4 | 5 | --|26 |
-                        // |---|---|---|17 |--- 
-                        // | 6 | 7 | 8 |---
-                        //  -----------
+                            //  A MEM
+                            //  ______________
+                            // |              |
+                            // |  INPUT CH 1  | 
+                            // |              |
+                            // |--------------|
+                            // |              |
+                            // |  INPUT CH 2  | 
+                            // |              |
+                            // |--------------|
+                            // |              |
+                            // |    . . .     |
+                            // |              |
+                            // |--------------|
+                            // |              |
+                            // |  INPUT CH n  |
+                            // |              |  
+                            //  --------------
+                            //
+                            //        .-----CH3----.
+                            //    .-----CH2----.20 |
+                            //  ____CH1____ 11 | --|
+                            // | 0 | 1 | 2 | --|23 |
+                            // |---|---|---|14 | --|
+                            // | 3 | 4 | 5 | --|26 |
+                            // |---|---|---|17 |--- 
+                            // | 6 | 7 | 8 |---
+                            //  -----------
 
-                        if (peitcnt == 4'hF) begin
-                            peitcnt <= 0;
-
-                            if (lcolcnt == 2) begin
-                                // End of row in kernel
-                                lcolcnt <= 0;
-                                if(lrowcnt == 2) begin
-                                    // Also end of ch in kernel
-                                    lrowcnt <= 0;
-                                    lchcnt <= 1;
+                            // Update local info if cur PE iteration is over
+                            if (peitcnt == 4'hF) begin
+                                peitcnt <= 0;
+                                if (lcolcnt == 2) begin
+                                    // End of row in kernel
+                                    lcolcnt <= 0;
+                                    if(lrowcnt == 2) begin
+                                        // Also end of ch in kernel
+                                        lrowcnt <= 0;
+                                        lchcnt <= 1;
+                                    end else begin
+                                        lrowcnt <= lrowcnt + 1;
+                                    end
                                 end else begin
-                                    lrowcnt <= lrowcnt + 1;
+                                    // increment x position
+                                    lcolcnt <= lcolcnt + 1;
                                 end
-                            end else begin
-                                // increment x position
-                                lcolcnt <= lcolcnt + 1;
+
+                                inpscnt <= inpscnt + 1;
                             end
 
-                            inpscnt <= inpscnt + 1;
-                        end
-
-                        // Update base if current windows are completed.
-                        if (inpscnt == (9 * configs[1]) - 1) begin
-                            inpscnt <= 0;
-                            basecol <= basecolnext;
-                            convcnt <= convcnt + 16;
-                            baserow <= baserow + baserowinc;
-                            if(configs[2] - (2 + basecolnext) < 5'd16) begin
-                                rowendcnt <= configs[2] - (2 + basecolnext);
-                            end else begin
-                                rowendcnt <= 5'd20; // row won't end this window cycle
+                            // Update base if current conv windows are completed.
+                            if (inpscnt == (9 * configs[1]) - 1) begin
+                                inpscnt <= 0;
+                                basecol <= basecolnext;
+                                convcnt <= convcnt + 16;
+                                baserow <= baserow + baserowinc;
+                                if(configs[2] - (2 + basecolnext) < 5'd16) begin
+                                    rowendcnt <= configs[2] - (2 + basecolnext);
+                                end else begin
+                                    rowendcnt <= 5'd20; // row won't end this window cycle
+                                end
                             end
-                        end
 
-                        // Calculate address for data needed
-                        if (convcnt == 0 && peitcnt == 0) begin
-                            // Begin Computing Base
-                            base_addr <= 0;
-                            a_addr <= 0;
-                            basecol <= 0;
-                            baserow <= 0;
-                            basecolnext <= 0;
-                            baserowinc <= 0;
-                        end else begin
-                            // Select appropriate address from amem
-                            // Assume windows span maximum of 2 rows
-                            if (peitcnt >= rowendcnt) begin
-                                // Window starts in the next row of input
-                                a_addr <= base_addr + peitcnt + 2 + (configs[2]*configs[3])*lchcnt + configs[2]*lrowcnt + lcolcnt;
-                                //        |^ - - Kernel Base - - ^|   |^ - - - - - - - location in current kernel - - - - - - - ^|
+                            if (convcnt > (configs[2]-2)*(configs[3]-2)) begin
+                                computedone <= 1;
+                                fire <= 0;
+                            end
+
+                            // Calculate address for data needed
+                            if (convcnt == 0 && peitcnt == 0) begin
+                                // Begin Compute. Reset base.
+                                base_addr <= 0;
+                                a_addr <= 0;
+                                basecol <= 0;
+                                baserow <= 0;
                                 basecolnext <= 0;
-                                baserowinc <= 1;
+                                baserowinc <= 0;
+                                clkdiven <= 1;
+                                fire <= 1;
                             end else begin
-                                // Window starts on same row and same ch as base address
-                                a_addr <= base_addr + peitcnt + (configs[2]*configs[3])*lchcnt + configs[2]*lrowcnt + lcolcnt;
-                                //        |^ - Kernel Base - ^|   |^ - - - - - - - location in current kernel - - - - - - - ^|
-                                basecolnext <= basecolnext + 1;
+                                // Select appropriate address from amem
+                                // Assume windows span maximum of 2 rows
+                                if (convcnt + peitcnt > (configs[2] - 2) * (configs[3] - 2)) begin
+                                    // No window to compute for this pe iteration
+                                    a_addr <= 16'hdedb
+                                end else if (peitcnt >= rowendcnt) begin
+                                    // Window starts in the next row of input
+                                    a_addr <= base_addr + peitcnt + 2 + (configs[2]*configs[3])*lchcnt + configs[2]*lrowcnt + lcolcnt;
+                                    //        |^ -  Kernel Base  - ^|   |^ - - - - - - - location in current kernel - - - - - - - ^|
+                                    basecolnext <= 0;
+                                    baserowinc <= 1;
+                                end else begin
+                                    // Window starts on same row and same ch as base address
+                                    a_addr <= base_addr + peitcnt + (configs[2]*configs[3])*lchcnt + configs[2]*lrowcnt + lcolcnt;
+                                    //        |^ - Kernel Base - ^|   |^ - - - - - - - location in current kernel - - - - - - - ^|
+                                    basecolnext <= basecolnext + 1;
+                                end
                             end
+                            peitcnt <= peitcnt + 1;
+
+                            ///////////////////////////
+                            // Weights Data Movement //
+                            ///////////////////////////                        
+
+                            //  W MEM
+                            //  _________________
+                            // |                 |
+                            // |  KERNEL 1 CH 1  | 
+                            // |                 |
+                            // |-----------------|
+                            // |                 |  <- Addr = (channel-1) * 9
+                            // |  KERNEL 1 CH 2  | 
+                            // |                 |
+                            // |-----------------|
+                            // |                 |
+                            // |      . . .      |
+                            // |                 |
+                            // |-----------------|
+                            // |                 |
+                            // |  KERNEL 1 CH n  |
+                            // |                 |
+                            // |-----------------|
+                            // |                 |  <- Addr = (kernel-1) * 9 * kernel_depth
+                            // |  KERNEL 2 CH 1  |
+                            // |                 |
+                            // |-----------------|
+                            // |                 |  <- In General: Addr = (kernel-1)*9*kernel_depth + (channel-1)*9 + position
+                            // |      . . .      |
+                            // |                 |  <-- Loaded with zeroes there are fewer
+                            // |-----------------|      than 16 output channels left to compute
+                            // |                 |
+                            // |  KERNEL 16 CH n |
+                            // |                 |  
+                            //  -----------------
+
+                            w_addr <= peitcnt*(9*configs[1]) + (lchcnt * 9) + (lrowcnt * 3) + lcolcnt;
+                            //        |^ -  Kernel base  - ^|   |^ -- location in current kernel -- ^|
+                            
+                            //////////////////////////////
+                            // Write to A and W Buffers //
+                            //////////////////////////////
+
+                            for (i=0; i<16; i=i+1) begin
+                                // Enable write to the appropriate row/col buffers
+                                abufwrites[i] <= (i == peitcnt);
+                                wbufwrites[i] <= (i == peitcnt);
+                            end
+                            // sends 0 to a buf if no more conv windows left to compute
+                            abufdin <= (convcnt + perowcnt < (configs[2]-2)*(configs[3]-2)) ? amemQ : 0;
+                            wbufdin <= wmemQ;
                         end
-                        peitcnt <= peitcnt + 1;
-
-                        ///////////////////////////
-                        // Weights Data Movement //
-                        ///////////////////////////                        
-
-                        //  W MEM
-                        //  _________________
-                        // |                 |
-                        // |  KERNEL 1 CH 1  | 
-                        // |                 |
-                        // |-----------------|
-                        // |                 |  <- Addr = (channel-1) * 9
-                        // |  KERNEL 1 CH 2  | 
-                        // |                 |
-                        // |-----------------|
-                        // |                 |
-                        // |      . . .      |
-                        // |                 |
-                        // |-----------------|
-                        // |                 |
-                        // |  KERNEL 1 CH n  |
-                        // |                 |
-                        // |-----------------|
-                        // |                 |  <- Addr = (kernel-1) * 9 * kernel_depth
-                        // |  KERNEL 2 CH 1  |
-                        // |                 |
-                        // |-----------------|
-                        // |                 |  <- In General: Addr = (kernel-1)*9*kernel_depth + (channel-1)*9 + position
-                        // |      . . .      |
-                        // |                 |  <-- Loaded with zeroes there are fewer
-                        // |-----------------|      than 16 output channels left to compute
-                        // |                 |
-                        // |  KERNEL 16 CH n |
-                        // |                 |  
-                        //  -----------------
-
-                        w_addr <= peitcnt*(9*configs[1]) + (lchcnt * 9) + (lrowcnt * 3) + lcolcnt;
-                        //        |^ -  Kernel base  - ^|   |^ -- location in current kernel -- ^|
-                        
-                        //////////////////////////////
-                        // Write to A and W Buffers //
-                        //////////////////////////////
-
-                        for (i=0; i<16; i=i+1) begin
-                            // Enable write to the appropriate row/col buffers
-                            abufwrites[i] <= (i == peitcnt);
-                            wbufwrites[i] <= (i == peitcnt);
-                        end
-                        // send 0 to a buf if no more conv windows left to compute
-                        abufdin <= (convcnt + perowcnt < (configs[2]-2)*(configs[3]-2)) ? amemQ : 0;
-                        wbufdin <= wmemQ;
                     end
-
                 endcase
+
             end
         end
     end
