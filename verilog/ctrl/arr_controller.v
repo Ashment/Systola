@@ -1,11 +1,12 @@
 `timescale 1 ns/1 ps
 
 module ARR_CTRL_16x16
+    (
         input clk,
         input rstn,
         input enable,
 
-        input [2:0] mode,
+        input [1:0] mode,
         // mode is used to control current operating mode.
         // 00 is config loading
         // 01 is weight loading
@@ -18,13 +19,15 @@ module ARR_CTRL_16x16
         output [16*8 - 1 : 0] aouts,
         output [16*8 - 1 : 0] wouts, 
         output saclk,
-        output fire,
+        output reg fire,
         output done);
 
-    integer i;
-    genvar gi;
 
-    reg fire;
+    //genvar i;
+    genvar gi;
+    integer i;
+    integer j;
+    //reg fire;
     reg computedone;
 
     ///////////////////
@@ -43,25 +46,25 @@ module ARR_CTRL_16x16
     reg aWEN, wWEN;
     reg [7:0] Dbuf;
     wire [7:0] amemQ, wmemQ;
-
+    reg [15:0] a_addr, w_addr;
     // Instantiate SRAM for weights and activations
-    INPMEM amem(.Q(amemQ), .clk(clk), .CEN(1'b0), .WEN(aWEN), .A(a_addr), .D(Dbuf));
-    INPMEM wmem(.Q(wmemQ), .clk(clk), .CEN(1'b0), .WEN(wWEN), .A(w_addr), .D(Dbuf));
+    INPMEM #(.sub_mems(256), .addr_len(8)) amem(.Q(amemQ), .clk(clk), .CEN(1'b0), .WEN(aWEN), .A(a_addr), .D(Dbuf));
+    INPMEM #(.sub_mems(256), .addr_len(8)) wmem(.Q(wmemQ), .clk(clk), .CEN(1'b0), .WEN(wWEN), .A(w_addr), .D(Dbuf));
 
     /////////////////////
     // A and W Buffers //
     /////////////////////
 
-    wire [15:0] abufreads, wbufreads;
+    reg [15:0] abufreads, wbufreads;
     reg [15:0] abufwrites, wbufwrites;
     wire [7:0] abufdout [0:15];
     wire [7:0] wbufdout [0:15];
     reg [7:0] abufdin, wbufdin;
     reg [3:0] prefillcnt;
 
-    for (i=0; i<16; i=i+1) begin
-        assign aouts[i*8 : (i+1) * 8 - 1] = abufdout[i];
-        assign wouts[i*8 : (i+1) * 8 - 1] = wbufdout[i];
+    for (gi=0; gi<16; gi=gi+1) begin
+        assign aouts[(gi+1) * 8 - 1 : gi*8] = abufdout[gi];
+        assign wouts[(gi+1) * 8 - 1 : gi*8] = wbufdout[gi];
     end
 
     generate
@@ -104,7 +107,7 @@ module ARR_CTRL_16x16
     // DATA MOVEMENT VARIABLES //
     /////////////////////////////
 
-    reg [15:0] a_addr, w_addr;
+
 
     wire [15:0] chconvs;        //number of convs per input channel
     wire [15:0] rowconvs;       //number of convs per row
@@ -125,6 +128,8 @@ module ARR_CTRL_16x16
     reg [2:0] lrowcnt;          // current row of the current kernel
     reg [4:0] rowendcnt;        // num PE row iters before end of row
 
+
+    reg [3:0] edgecnt;		//read=1 at poseedge saclk
     ///////////////////
     // CLOCKED LOGIC //
     ///////////////////
@@ -138,12 +143,15 @@ module ARR_CTRL_16x16
 
             computedone <= 0;
             clkdiven <= 0;
+	    //done <= 0;
 
             aWEN <= 1;
             wWEN <= 1;
             Dbuf <= 0;
             abufwrites <= 0;
             wbufwrites <= 0;
+	    abufreads <= 0;
+	    wbufreads <= 0;
             abufdin <= 0;
             wbufdin <= 0;
             prefillcnt <= 0;
@@ -168,6 +176,9 @@ module ARR_CTRL_16x16
             lcolcnt <= 0;
             lrowcnt <= 0;
             rowendcnt <= 0;
+            
+    
+            edgecnt <= 0;
 
         end else begin
             if(enable) begin
@@ -177,7 +188,7 @@ module ARR_CTRL_16x16
                         aWEN <= 1;
                         wWEN <= 1;
                         // Load data_in into configs
-                        if (cur_conf < 2'b11 && data_load) begin
+                        if (cur_conf <= 2'b11 && data_load) begin
                             configs[cur_conf] <= data_in;
                             cur_conf <= cur_conf + 1;
                         end
@@ -206,12 +217,16 @@ module ARR_CTRL_16x16
                         // First row/col needs no pad, last row/col needs 15 pad, etc.
                         if(prefillcnt == 4'hF) begin
                             abufwrites <= 0;
+			    wbufwrites <= 0;
                         end else begin
                             for (i=0; i<16; i=i+1) begin
                                 // prefill buffer to appropriately delay compute start
-                                abufwrites[i] = (i > prefillcnt);
-                                wbufwrites[i] = (i > prefillcnt);
+                                abufwrites[i] <= (i > prefillcnt);
+                                wbufwrites[i] <= (i > prefillcnt);
+				abufdin <= 0;
+				wbufdin <= 0; 
                             end
+			    prefillcnt <= prefillcnt + 1;
                         end
                     end
 
@@ -309,7 +324,7 @@ module ARR_CTRL_16x16
                                 // Assume windows span maximum of 2 rows
                                 if (convcnt + peitcnt > (configs[2] - 2) * (configs[3] - 2)) begin
                                     // No window to compute for this pe iteration
-                                    a_addr <= 16'hdedb
+                                    a_addr <= 16'hdedb;
                                 end else if (peitcnt >= rowendcnt) begin
                                     // Window starts in the next row of input
                                     a_addr <= base_addr + peitcnt + 2 + (configs[2]*configs[3])*lchcnt + configs[2]*lrowcnt + lcolcnt;
@@ -367,20 +382,31 @@ module ARR_CTRL_16x16
                             // Write to A and W Buffers //
                             //////////////////////////////
 
-                            for (i=0; i<16; i=i+1) begin
+                            for (j=0; j<16; j=j+1) begin
                                 // Enable write to the appropriate row/col buffers
-                                abufwrites[i] <= (i == peitcnt);
-                                wbufwrites[i] <= (i == peitcnt);
+                                abufwrites[j] <= (j == peitcnt);
+                                wbufwrites[j] <= (j == peitcnt);
+				edgecnt <= edgecnt + 1;
+				if (edgecnt == 0) begin
+					abufreads <= 16'hFFFF;
+					wbufreads <= 16'hFFFF;
+				end else begin
+					abufreads <= 16'h0000;
+					wbufreads <= 16'h0000;
+				end
                             end
                             // sends 0 to a buf if no more conv windows left to compute
                             abufdin <= (convcnt + peitcnt < (configs[2]-2)*(configs[3]-2)) ? amemQ : 0;
                             wbufdin <= wmemQ;
                         end
+
                     end
                 endcase
 
             end
         end
     end
+    assign done = computedone;
+
 
 endmodule

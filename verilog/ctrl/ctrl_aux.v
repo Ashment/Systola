@@ -20,6 +20,8 @@ module RBUF
     reg [4:0] curtail;
     wire empty;
 
+    integer i;
+
     assign empty = (curhead == curtail);
     assign dout = outdat;
 
@@ -39,7 +41,7 @@ module RBUF
             end
             if (write) begin
                 // /!\ NO FULL CHECK
-                bufdat[curtail+1] <= in_dat;
+                bufdat[curtail+1] <= din;
                 curtail <= curtail + 1;
             end
         end
@@ -47,12 +49,12 @@ module RBUF
 endmodule
 
 module CLKDIV
-    #(parameter DIV_CNT = 8, parameter BITS = 3;
-    )(
+    #(parameter DIV_CNT = 8, parameter BITS = 3)
+    (
         input clk,
         input rstn,
         input enable,
-        output clkout,
+        output clkout
     );
     // DIV_CNT is cnt before toggle (e.g. DIV_CNT = 8 is 16x clock period.)
 
@@ -62,11 +64,11 @@ module CLKDIV
 
     always @ (posedge clk) begin
         if(!rstn) begin
-            clkreg <=  0;
+            clkreg <= 1;
             cnt <= 0;
         end else begin
             if(enable) begin
-                if(cnt == (DIV_CNT-1) begin
+                if(cnt == (DIV_CNT-1)) begin
                     clkreg <= ~clkreg;
                     cnt <= 0;
                 end else begin
