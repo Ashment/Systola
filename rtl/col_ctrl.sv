@@ -1,10 +1,9 @@
-module COL_OUTPUT_MODULE #(
+module COL_OUTPUT_CTRL #(
     parameter ROWS=8,
     parameter OUTWIDTH=32)
     (
     input clk,
     input rstn,
-    input fire,
     input [OUTWIDTH-1:0] in_res [0:ROWS-1],
     input in_valids [0:ROWS-1],
     input res_read,
