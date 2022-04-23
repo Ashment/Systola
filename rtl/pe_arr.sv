@@ -73,21 +73,26 @@ module PE_ARR
             end
         end
 
-        wire [OUTWIDTH-1:0] res_transpose [];
+
+        /*
+        wire [OUTWIDTH-1:0] res_transpose [0:ROWS-1];
+        wire rvalid_transpose [0:(ROWS * COLS)-1]
+
         for (i=0; i<COLS; i=i+1) begin
             for (j=0; j<ROWS; j=j+1) begin
-                res_transpose
+                res_transpose[i + j*COLS] = res_o[j + i*COLS];
+                rvalid_transpose[i * j*COLS] = rvalid[j + i*COLS];
             end
         end
 
         for (i=0; i<COLS; i=i+1) begin
             COL_OUTPUT_CTRL #(.ROWS(ROWS), .OUTWIDTH(OUTWIDTH)) col_out (.clk(clk), .rstn(rstn)
-                .in_res(),
-                .in_valids(),
-                .res_read(),
+                .in_res(res_transpose[i*ROWS : (i+1)*ROWS-1]),
+                .in_valids(rvalid_transpose[i*ROWS : (i+1)*ROWS-1]),
+                //.res_read(),
                 .out_r(),
                 .rvalid());
         end
-
+        */
     endgenerate
 endmodule
