@@ -7,17 +7,17 @@ module PE_ARR
     input clk, 
     input rstn,
     input fire,
-    input[7:0] in_w [0:ROWS-1],
-    input[7:0] in_a [0:COLS-1],
-    output wire [31:0] outs [0:(ROWS*COLS)-1]);
+    input[7:0] in_w [0 : ROWS-1],
+    input[7:0] in_a [0 : COLS-1],
+    output [31:0] outs [0 : (ROWS*COLS)-1]);
 
     genvar i, j;
     generate
-        wire [31:0] res_o [0:(ROWS * COLS)-1];
-        wire [7:0] w_o [0:(ROWS * COLS)-1];
-        wire [7:0] a_o [0:(ROWS * COLS)-1];
-        wire f_o [0:(ROWS * COLS)-1];
-        wire rvalid [0:(ROWS * COLS)-1];
+        wire [31:0] res_o [0 : (ROWS * COLS)-1];
+        wire [7:0] w_o [0 : (ROWS * COLS)-1];
+        wire [7:0] a_o [0 : (ROWS * COLS)-1];
+        wire f_o [0 : (ROWS * COLS)-1];
+        wire rvalid [0 : (ROWS * COLS)-1];
 
         // may need to change
         assign outs = res_o;
