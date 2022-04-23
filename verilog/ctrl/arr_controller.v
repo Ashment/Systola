@@ -16,8 +16,8 @@ module ARR_CTRL_16x16
         input data_load,
         input [7:0] data_in,
 
-        output [16*8 - 1 : 0] aouts,
-        output [16*8 - 1 : 0] wouts, 
+        output [0 : 16*8-1] aouts,
+        output [0 : 16*8-1] wouts, 
         output saclk,
         output reg fire,
         output done);
@@ -29,6 +29,7 @@ module ARR_CTRL_16x16
     integer j;
     //reg fire;
     reg computedone;
+    reg computestart;
 
     ///////////////////
     // CLOCK DIVIDER //
@@ -63,8 +64,8 @@ module ARR_CTRL_16x16
     reg [3:0] prefillcnt;
 
     for (gi=0; gi<16; gi=gi+1) begin
-        assign aouts[(gi+1) * 8 - 1 : gi*8] = abufdout[gi];
-        assign wouts[(gi+1) * 8 - 1 : gi*8] = wbufdout[gi];
+        assign aouts[gi*8 : (gi+1) * 8 - 1 ] = abufdout[gi];
+        assign wouts[gi*8 : (gi+1) * 8 - 1] = wbufdout[gi];
     end
 
     generate
@@ -142,8 +143,9 @@ module ARR_CTRL_16x16
             ///////////
 
             computedone <= 0;
+            computestart <= 0;
             clkdiven <= 0;
-	    //done <= 0;
+
 
             aWEN <= 1;
             wWEN <= 1;
@@ -160,8 +162,8 @@ module ARR_CTRL_16x16
             for(i=0; i<4; i=i+1) begin
                configs[i] <= 0; 
             end
-            a_addr <= 0;
-            w_addr <= 0;
+            a_addr <= 16'hFFFF;
+            w_addr <= 16'hFFFF;
 
             base_addr <= 0;
             convcnt <= 0;
@@ -197,21 +199,17 @@ module ARR_CTRL_16x16
                     2'b01: begin    // MODE: Weight Loading
                         aWEN <= 1;
                         Dbuf <= data_in;
-                        if(w_addr < 16'hFFFF) begin
-                            // writes data_in to wmem at w_addr
-                            wWEN <= ~data_load; //Enable write to wmem if data_load high
-                            w_addr <= w_addr + 1;
-                        end
+                        // writes data_in to wmem at w_addr
+                        wWEN <= ~data_load; //Enable write to wmem if data_load high
+                        w_addr <= w_addr + 1;
                     end
 
                     2'b10: begin    // MODE: Data Loading
                         wWEN <= 1;
                         Dbuf <= data_in;
-                        if (a_addr < 16'hFFFF) begin
-                            // writes data_in to amem at a_addr
-                            aWEN <= ~data_load;  // Enable write to amem if data_load high
-                            a_addr <= a_addr + 1;
-                        end
+                        // writes data_in to amem at a_addr
+                        aWEN <= ~data_load;  // Enable write to amem if data_load high
+                        a_addr <= a_addr + 1;
 
                         // Also prefill buffers for inputs
                         // First row/col needs no pad, last row/col needs 15 pad, etc.
@@ -235,7 +233,7 @@ module ARR_CTRL_16x16
                         aWEN <= 1;
                         wWEN <= 1;
 
-                        if(!done) begin
+                        if(!computedone && computestart) begin
                             ///////////////////////////////
                             // Activations Data Movement //
                             ///////////////////////////////
@@ -313,6 +311,7 @@ module ARR_CTRL_16x16
                                 // Begin Compute. Reset base.
                                 base_addr <= 0;
                                 a_addr <= 0;
+                                w_addr <= 0;
                                 basecol <= 0;
                                 baserow <= 0;
                                 basecolnext <= 0;
@@ -387,25 +386,40 @@ module ARR_CTRL_16x16
                                 abufwrites[j] <= (j == peitcnt);
                                 wbufwrites[j] <= (j == peitcnt);
 				edgecnt <= edgecnt + 1;
-				if (edgecnt == 0) begin
+				if (edgecnt + 1 == 16) begin
 					abufreads <= 16'hFFFF;
 					wbufreads <= 16'hFFFF;
 				end else begin
-					abufreads <= 16'h0000;
-					wbufreads <= 16'h0000;
-				end
+                                    abufreads <= 16'h0000;
+	                            wbufreads <= 16'h0000;
+                                end
                             end
                             // sends 0 to a buf if no more conv windows left to compute
                             abufdin <= (convcnt + peitcnt < (configs[2]-2)*(configs[3]-2)) ? amemQ : 0;
                             wbufdin <= wmemQ;
+                        end else begin
+                            computestart <= 1;
+                            // Begin Compute. Reset base.
+                            base_addr <= 0;
+                            a_addr <= 0;
+                            w_addr <= 0;
+                            basecol <= 0;
+                            baserow <= 0;
+                            basecolnext <= 0;
+                            baserowinc <= 0;
+                            clkdiven <= 1;
+                            
                         end
-
                     end
                 endcase
-
             end
         end
     end
+    /*always @ (posedge saclk) begin
+        abufreads <= 16'hFFFF;
+	wbufreads <= 16'hFFFF;
+    end
+    */
     assign done = computedone;
 
 

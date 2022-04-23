@@ -12,37 +12,46 @@ module RBUF
         input [WORDLEN-1 : 0] din,
         output [WORDLEN-1 : 0] dout);
 
-    reg [WORDLEN-1 : 0] bufdat [0:BUFSIZE];
-    reg [WORDLEN-1 : 0] outdat;
+    reg [WORDLEN-1 : 0] bufdat [0:BUFSIZE-1];
+    //reg [WORDLEN-1 : 0] outdat;
 
     // assume buffer no dmore than 32 depth (5 bit pointers)
-    reg [4:0] curhead;
-    reg [4:0] curtail;
+    reg [4:0] curhead; // first valid location
+    reg [4:0] curtail; // first vacant location
     wire empty;
 
     integer i;
 
+    assign dout = read ? bufdat[curhead] : 0;
     assign empty = (curhead == curtail);
-    assign dout = outdat;
 
     always @ (posedge clk) begin
         if(!rstn) begin
             for(i=0; i<BUFSIZE; i=i+1) begin
                bufdat[i] <= 0; 
             end
-            outdat <= 0;
+            //outdat <= 0;
             curhead <= 0;
             curtail <= 0;
         end else begin
             if (read) begin
                 // /!\ NO EMPTY CHECK
-                outdat <= bufdat[curhead];
-                curhead <= curhead + 1;
+                //outdat <= bufdat[curhead];
+                if (curhead+1 == BUFSIZE) begin
+                    curhead <= 0;
+                end else begin
+                    curhead <= curhead + 1;
+                end
             end
             if (write) begin
                 // /!\ NO FULL CHECK
-                bufdat[curtail+1] <= din;
-                curtail <= curtail + 1;
+                if (curtail+1 == BUFSIZE) begin
+                    curtail <= 0;
+                    bufdat[curtail] <= din;
+                end else begin
+                    curtail <= curtail + 1;
+                    bufdat[curtail] <= din;
+                end
             end
         end
     end

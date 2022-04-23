@@ -23,10 +23,10 @@ module INPMEM
 
 
 	`ifdef HOLD_DELAY 
-		always@(*) #5 CEN_sub_d = CEN_sub;
-		always@(*) #5 WEN_d = WEN;
-		always@(*) #5 A_d = A;
-		always@(*) #5 D_d = D;
+		always@(*) #1 CEN_sub_d = CEN_sub;
+		always@(*) #1 WEN_d = WEN;
+		always@(*) #1 A_d = A;
+		always@(*) #1 D_d = D;
 	`else
 		always@(CEN_sub) CEN_sub_d = CEN_sub;
 		always@(WEN) WEN_d = WEN;
