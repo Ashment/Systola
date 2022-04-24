@@ -1,0 +1,352 @@
+# //  Questa Sim
+# //  Version 10.7b_1 linux Jul 26 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do runsim.do
+# QuestaSim vmap 10.7b_1 Lib Mapping Utility 2018.07 Jul 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:09:09 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr ../../verilog/ctrl/ctrl_aux.v 
+# -- Compiling module RBUF
+# -- Compiling module CLKDIV
+# 
+# Top level modules:
+# 	RBUF
+# 	CLKDIV
+# End time: 17:09:09 on Apr 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:09:09 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr tb_rbuf.v 
+# ** Error: (vlog-13036) tb_rbuf.v(33): near "++": Operator only allowed in SystemVerilog.
+# End time: 17:09:10 on Apr 23,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: /tools/mentor/questa_10.7b_1/questasim/linux/vlog failed.
+# Error in macro ./runsim.do line 11
+# /tools/mentor/questa_10.7b_1/questasim/linux/vlog failed.
+#     while executing
+# "vlog +acc -incr tb_rbuf.v "
+do runsim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 10.7b_1 Lib Mapping Utility 2018.07 Jul 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:09:35 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr ../../verilog/ctrl/ctrl_aux.v 
+# -- Skipping module RBUF
+# -- Skipping module CLKDIV
+# 
+# Top level modules:
+# 	RBUF
+# 	CLKDIV
+# End time: 17:09:35 on Apr 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:09:35 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr tb_rbuf.v 
+# -- Compiling module testbench
+# ** Error: tb_rbuf.v(8): The expression for a parameter actual associated with the parameter name ('BUFSIZE') for the module instance ('abuf') must be constant.
+# End time: 17:09:36 on Apr 23,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: /tools/mentor/questa_10.7b_1/questasim/linux/vlog failed.
+# Error in macro ./runsim.do line 11
+# /tools/mentor/questa_10.7b_1/questasim/linux/vlog failed.
+#     while executing
+# "vlog +acc -incr tb_rbuf.v "
+do runsim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 10.7b_1 Lib Mapping Utility 2018.07 Jul 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:10:12 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr ../../verilog/ctrl/ctrl_aux.v 
+# -- Skipping module RBUF
+# -- Skipping module CLKDIV
+# 
+# Top level modules:
+# 	RBUF
+# 	CLKDIV
+# End time: 17:10:12 on Apr 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:10:12 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr tb_rbuf.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 17:10:12 on Apr 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Warning: (vsim-8689) Ignoring plusarg '+acc'.  Did you mean '-voptargs=+acc'?
+# vsim "+acc" -t ps -lib work testbench 
+# Start time: 17:10:13 on Apr 23,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.testbench(fast)
+# Loading work.RBUF(fast)
+do runsim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 10.7b_1 Lib Mapping Utility 2018.07 Jul 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:14:03 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr ../../verilog/ctrl/ctrl_aux.v 
+# -- Skipping module RBUF
+# -- Skipping module CLKDIV
+# 
+# Top level modules:
+# 	RBUF
+# 	CLKDIV
+# End time: 17:14:03 on Apr 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:14:03 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr tb_rbuf.v 
+# ** Error: (vlog-13069) tb_rbuf.v(40): near "begin": syntax error, unexpected begin, expecting '('.
+# ** Error: tb_rbuf.v(45): (vlog-13161) unexpected '$finish'
+# ** Error: (vlog-13069) tb_rbuf.v(46): near "end": syntax error, unexpected end.
+# End time: 17:14:03 on Apr 23,2022, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /tools/mentor/questa_10.7b_1/questasim/linux/vlog failed.
+# Error in macro ./runsim.do line 11
+# /tools/mentor/questa_10.7b_1/questasim/linux/vlog failed.
+#     while executing
+# "vlog +acc -incr tb_rbuf.v "
+do runsim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 10.7b_1 Lib Mapping Utility 2018.07 Jul 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:14:25 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr ../../verilog/ctrl/ctrl_aux.v 
+# -- Skipping module RBUF
+# -- Skipping module CLKDIV
+# 
+# Top level modules:
+# 	RBUF
+# 	CLKDIV
+# End time: 17:14:25 on Apr 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:14:25 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr tb_rbuf.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 17:14:26 on Apr 23,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:14:26 on Apr 23,2022, Elapsed time: 0:04:13
+# Errors: 6, Warnings: 1
+# ** Warning: (vsim-8689) Ignoring plusarg '+acc'.  Did you mean '-voptargs=+acc'?
+# vsim "+acc" -t ps -lib work testbench 
+# Start time: 17:14:26 on Apr 23,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.testbench(fast)
+# Loading work.RBUF(fast)
+# ** Note: $finish    : tb_rbuf.v(45)
+#    Time: 20 ns  Iteration: 1  Instance: /testbench
+# 1
+# Break in Module testbench at tb_rbuf.v line 45
+do runsim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 10.7b_1 Lib Mapping Utility 2018.07 Jul 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:16:28 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr ../../verilog/ctrl/ctrl_aux.v 
+# -- Skipping module RBUF
+# -- Skipping module CLKDIV
+# 
+# Top level modules:
+# 	RBUF
+# 	CLKDIV
+# End time: 17:16:29 on Apr 23,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:16:29 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr tb_rbuf.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 17:16:29 on Apr 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:16:31 on Apr 23,2022, Elapsed time: 0:02:05
+# Errors: 0, Warnings: 1
+# ** Warning: (vsim-8689) Ignoring plusarg '+acc'.  Did you mean '-voptargs=+acc'?
+# vsim "+acc" -t ps -lib work testbench 
+# Start time: 17:16:31 on Apr 23,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.testbench(fast)
+# Loading work.RBUF(fast)
+# ** Note: $finish    : tb_rbuf.v(48)
+#    Time: 650 ns  Iteration: 1  Instance: /testbench
+# 1
+# Break in Module testbench at tb_rbuf.v line 48
+do runsim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 10.7b_1 Lib Mapping Utility 2018.07 Jul 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:19:21 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr ../../verilog/ctrl/ctrl_aux.v 
+# -- Compiling module RBUF
+# -- Skipping module CLKDIV
+# 
+# Top level modules:
+# 	RBUF
+# 	CLKDIV
+# End time: 17:19:21 on Apr 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:19:21 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr tb_rbuf.v 
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 17:19:21 on Apr 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:19:22 on Apr 23,2022, Elapsed time: 0:02:51
+# Errors: 0, Warnings: 1
+# ** Warning: (vsim-8689) Ignoring plusarg '+acc'.  Did you mean '-voptargs=+acc'?
+# vsim "+acc" -t ps -lib work testbench 
+# Start time: 17:19:22 on Apr 23,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.testbench(fast)
+# Loading work.RBUF(fast)
+# ** Note: $finish    : tb_rbuf.v(48)
+#    Time: 650 ns  Iteration: 1  Instance: /testbench
+# 1
+# Break in Module testbench at tb_rbuf.v line 48
+do runsim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 10.7b_1 Lib Mapping Utility 2018.07 Jul 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:21:15 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr ../../verilog/ctrl/ctrl_aux.v 
+# -- Skipping module RBUF
+# -- Skipping module CLKDIV
+# 
+# Top level modules:
+# 	RBUF
+# 	CLKDIV
+# End time: 17:21:16 on Apr 23,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:21:16 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr tb_rbuf.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 17:21:16 on Apr 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:21:18 on Apr 23,2022, Elapsed time: 0:01:56
+# Errors: 0, Warnings: 1
+# ** Warning: (vsim-8689) Ignoring plusarg '+acc'.  Did you mean '-voptargs=+acc'?
+# vsim "+acc" -t ps -lib work testbench 
+# Start time: 17:21:18 on Apr 23,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.testbench(fast)
+# Loading work.RBUF(fast)
+# ** Note: $finish    : tb_rbuf.v(49)
+#    Time: 670 ns  Iteration: 1  Instance: /testbench
+# 1
+# Break in Module testbench at tb_rbuf.v line 49
+do runsim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 10.7b_1 Lib Mapping Utility 2018.07 Jul 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:32:02 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr ../../verilog/ctrl/ctrl_aux.v 
+# -- Compiling module RBUF
+# -- Compiling module CLKDIV
+# 
+# Top level modules:
+# 	RBUF
+# 	CLKDIV
+# End time: 17:32:03 on Apr 23,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:32:03 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr tb_rbuf.v 
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 17:32:03 on Apr 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:32:04 on Apr 23,2022, Elapsed time: 0:10:46
+# Errors: 0, Warnings: 1
+# ** Warning: (vsim-8689) Ignoring plusarg '+acc'.  Did you mean '-voptargs=+acc'?
+# vsim "+acc" -t ps -lib work testbench 
+# Start time: 17:32:04 on Apr 23,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.testbench(fast)
+# Loading work.RBUF(fast)
+# ** Note: $finish    : tb_rbuf.v(49)
+#    Time: 670 ns  Iteration: 1  Instance: /testbench
+# 1
+# Break in Module testbench at tb_rbuf.v line 49
+do runsim.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 10.7b_1 Lib Mapping Utility 2018.07 Jul 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:35:52 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr ../../verilog/ctrl/ctrl_aux.v 
+# -- Compiling module RBUF
+# -- Skipping module CLKDIV
+# 
+# Top level modules:
+# 	RBUF
+# 	CLKDIV
+# End time: 17:35:53 on Apr 23,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim vlog 10.7b_1 Compiler 2018.07 Jul 26 2018
+# Start time: 17:35:53 on Apr 23,2022
+# vlog -reportprogress 300 "+acc" -incr tb_rbuf.v 
+# -- Skipping module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 17:35:53 on Apr 23,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 17:35:54 on Apr 23,2022, Elapsed time: 0:03:50
+# Errors: 0, Warnings: 1
+# ** Warning: (vsim-8689) Ignoring plusarg '+acc'.  Did you mean '-voptargs=+acc'?
+# vsim "+acc" -t ps -lib work testbench 
+# Start time: 17:35:54 on Apr 23,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.testbench(fast)
+# Loading work.RBUF(fast)
+# ** Note: $finish    : tb_rbuf.v(49)
+#    Time: 670 ns  Iteration: 1  Instance: /testbench
+# 1
+# Break in Module testbench at tb_rbuf.v line 49
+# End time: 17:39:28 on Apr 23,2022, Elapsed time: 0:03:34
+# Errors: 0, Warnings: 1

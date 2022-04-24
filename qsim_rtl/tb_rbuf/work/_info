@@ -1,0 +1,86 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/courses/ee6321/Groups/Team5/systola/qsim_rtl/tb_rbuf
+T_opt
+!s110 1650749754
+VVOU1BG4QP?GXhOh5ZYTN32
+04 9 4 work testbench fast 0
+=1-e4b97ae8d411-6264713a-75d7a-737a
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OE;O;10.7b_1;67
+vCLKDIV
+!s10a 1650749749
+!s110 1650749523
+!i10b 1
+!s100 ElP1QX<2;AILkLXXQ3S662
+IP8P:BIb:VZHm`iYW[AIaH1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1650749515
+Z3 8../../verilog/ctrl/ctrl_aux.v
+Z4 F../../verilog/ctrl/ctrl_aux.v
+L0 60
+Z5 OE;L;10.7b_1;67
+r1
+!s85 0
+31
+!s108 1650749522.000000
+Z6 !s107 ../../verilog/ctrl/ctrl_aux.v|
+Z7 !s90 -reportprogress|300|+acc|-incr|../../verilog/ctrl/ctrl_aux.v|
+!i113 0
+Z8 o+acc -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@c@l@k@d@i@v
+vRBUF
+!s110 1650749753
+!i10b 1
+!s100 1hEjEVLMLARJW4gCJ4[:S3
+I2BMn^XAl0D27OjQ[GQ;WM0
+R2
+R0
+w1650749749
+R3
+R4
+L0 3
+R5
+r1
+!s85 0
+31
+!s108 1650749752.000000
+R6
+R7
+!i113 0
+R8
+R1
+n@r@b@u@f
+vtestbench
+!s10a 1650748873
+!s110 1650748876
+!i10b 1
+!s100 <bQVM>bR625=4cjXGP5V11
+Ik[jF6DT^4SG6U_[Fd8W:`1
+R2
+R0
+w1650748873
+8tb_rbuf.v
+Ftb_rbuf.v
+L0 4
+R5
+r1
+!s85 0
+31
+!s108 1650748876.000000
+!s107 tb_rbuf.v|
+!s90 -reportprogress|300|+acc|-incr|tb_rbuf.v|
+!i113 0
+R8
+R1

@@ -1,0 +1,174 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/user/stud/fall21/zs2470/systola/qsim_rtl/tb_ctrl
+T_opt
+!s110 1650836509
+Vhl:4WAV5SeCoAOORZW67N1
+Z1 04 9 4 work testbench fast 0
+=1-b04f130f22ab-6265c41c-daa2b-722c
+Z2 o-quiet -auto_acc_if_foreign -work work
+Z3 tCvgOpt 0
+n@_opt
+Z4 OE;O;10.7b_1;67
+T_opt1
+!s110 1650739752
+V=Ld[OL1_^K[AQ2DmVQ6>M0
+R1
+=1-e4b97ae8d411-62644a26-f17bf-778f
+R2
+R3
+n@_opt1
+R4
+R0
+T_opt2
+!s110 1650750481
+VRfn[dKdf`9Tl?AC[a0g<b0
+R1
+=2-e4b97ae8d411-62647411-3abdc-7b96
+R2
+R3
+n@_opt2
+R4
+R0
+vARR_CTRL_16x16
+!s10a 1650836135
+!s110 1650836463
+!i10b 1
+!s100 4bR[gb>U]Bo_V6L6Ok9WL1
+I93_OLTPUX@nH`JbbQb=2^2
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1650836135
+8../../verilog/ctrl/arr_controller.v
+F../../verilog/ctrl/arr_controller.v
+L0 3
+Z6 OE;L;10.7b_1;67
+r1
+!s85 0
+31
+!s108 1650836463.000000
+!s107 ../../verilog/ctrl/arr_controller.v|
+!s90 -reportprogress|300|+acc|-incr|../../verilog/ctrl/arr_controller.v|
+!i113 0
+Z7 o+acc -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+n@a@r@r_@c@t@r@l_16x16
+vCLKDIV
+Z8 !s10a 1650749891
+Z9 !s110 1650749986
+!i10b 1
+!s100 ElP1QX<2;AILkLXXQ3S662
+IP8P:BIb:VZHm`iYW[AIaH1
+R5
+Z10 d/courses/ee6321/Groups/Team5/systola/qsim_rtl/tb_ctrl
+Z11 w1650749891
+Z12 8../../verilog/ctrl/ctrl_aux.v
+Z13 F../../verilog/ctrl/ctrl_aux.v
+L0 60
+R6
+r1
+!s85 0
+31
+Z14 !s108 1650749986.000000
+Z15 !s107 ../../verilog/ctrl/ctrl_aux.v|
+Z16 !s90 -reportprogress|300|+acc|-incr|../../verilog/ctrl/ctrl_aux.v|
+!i113 0
+R7
+R3
+n@c@l@k@d@i@v
+vINPMEM
+Z17 !s10a 1650830393
+!s110 1650742563
+!i10b 1
+!s100 B_LR0:dEb2<9KMgg`J@UF2
+ICQ_D2cd_N`YSe8G_N>C3Y2
+R5
+R10
+w1650742558
+8../../verilog/mem/inpmem.v
+F../../verilog/mem/inpmem.v
+L0 4
+R6
+r1
+!s85 0
+31
+!s108 1650742563.000000
+!s107 ../../verilog/mem/inpmem.v|
+!s90 -reportprogress|300|+acc|-incr|../../verilog/mem/inpmem.v|
+!i113 0
+R7
+R3
+n@i@n@p@m@e@m
+vmem8
+R17
+!s110 1650412937
+!i10b 1
+!s100 HA2gMFEP:ikzB]0XYVUCg1
+ILz7d:KSUdao0AN4bnRh0S2
+R5
+R0
+w1650216847
+8../../verilog/mem/mem8.v
+F../../verilog/mem/mem8.v
+L0 53
+R6
+r1
+!s85 0
+31
+!s108 1650412937.000000
+!s107 ../../verilog/mem/mem8.v|
+!s90 -reportprogress|300|+acc|-incr|../../verilog/mem/mem8.v|
+!i113 0
+R7
+R3
+vRBUF
+R8
+R9
+!i10b 1
+!s100 1hEjEVLMLARJW4gCJ4[:S3
+I2BMn^XAl0D27OjQ[GQ;WM0
+R5
+R10
+R11
+R12
+R13
+L0 3
+R6
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R7
+R3
+n@r@b@u@f
+vtestbench
+!s110 1650836508
+!i10b 1
+!s100 1;53L>CZ`6a0E5kXI;?hf1
+INTYgeXJZNY94Bda?;N8gI1
+R5
+R0
+w1650836479
+8tb_ctrl.v
+Ftb_ctrl.v
+L0 7
+R6
+r1
+!s85 0
+31
+!s108 1650836508.000000
+!s107 tb_ctrl.v|
+!s90 -reportprogress|300|+acc|-incr|tb_ctrl.v|
+!i113 0
+R7
+R3
