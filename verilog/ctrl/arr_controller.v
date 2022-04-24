@@ -294,6 +294,7 @@ module ARR_CTRL_16x16
                                 basecol <= basecolnext;
                                 convcnt <= convcnt + 16;
                                 baserow <= baserow + baserowinc;
+				//wrap whole thing in if statement, 16 cycles pause
                                 if(configs[2] - (2 + basecolnext) < 5'd16) begin
                                     rowendcnt <= configs[2] - (2 + basecolnext);
                                 end else begin
@@ -407,8 +408,13 @@ module ARR_CTRL_16x16
                             baserow <= 0;
                             basecolnext <= 0;
                             baserowinc <= 0;
-                            clkdiven <= 1;
-                            
+                            clkdiven <= 1;    
+
+		            if(configs[2] - (2 + basecolnext) < 5'd16) begin
+	                        rowendcnt <= configs[2] - (2 + basecolnext);
+	                    end else begin
+	                        rowendcnt <= 5'd20; // row won't end this window cycle
+	                    end
                         end
                     end
                 endcase
