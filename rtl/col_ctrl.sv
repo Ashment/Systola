@@ -4,8 +4,8 @@ module COL_OUTPUT_CTRL #(
     (
     input clk,
     input rstn,
-    input [OUTWIDTH-1:0] in_res [0:ROWS-1],
-    input in_valids [0:ROWS-1],
+    input [OUTWIDTH-1:0] in_r [0:ROWS-1],
+    input in_v [0:ROWS-1],
     input res_read,
     output [OUTWIDTH-1:0] out_r,
     output rvalid);
@@ -26,8 +26,8 @@ module COL_OUTPUT_CTRL #(
 
         end else begin
             for (i=0; i<ROWS; i=i+1) begin
-                if (in_valids[i] == 1) begin
-                    outbuf[i] <= in_res[i];
+                if (in_v[i] == 1) begin
+                    outbuf[i] <= in_r[i];
                     icnt <= icnt + 1;
                 end
             end
