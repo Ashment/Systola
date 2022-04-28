@@ -25,8 +25,6 @@ end
 reg clk, rstn, fire, r_read;
 wire [31 : 0] routport;
 
-
-
 SA_CORE DUT_CORE (.clk(clk), .rstn(rstn),
     .r_read(),
     .routport(),
