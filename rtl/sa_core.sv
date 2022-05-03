@@ -8,8 +8,7 @@ module SA_CORE #(
     input [OUTIWDTH-1 : 0] winport,
     input r_read,
     output [OUTWIDTH-1 : 0] routport,
-    output rvalidport
-    );
+    output rvalidport);
 
     wire f_in;
     wire [7:0] w_in [0 : ROWS-1];
