@@ -129,7 +129,6 @@ module ARR_CTRL_16x16
     reg [2:0] lrowcnt;          // current row of the current kernel
     reg [4:0] rowendcnt;        // num PE row iters before end of row
 
-
     reg [3:0] edgecnt;		// read=1 at poseedge saclk
     reg endwait;                // 1 when on wait cycle between iterations
     ///////////////////
@@ -179,8 +178,8 @@ module ARR_CTRL_16x16
             lcolcnt <= 0;
             lrowcnt <= 0;
             rowendcnt <= 0;
-            
-    
+            endwait <= 0;
+
             edgecnt <= 0;
 
         end else begin
@@ -235,6 +234,7 @@ module ARR_CTRL_16x16
                         wWEN <= 1;
 
                         if(!computedone && computestart && !endwait) begin
+                            fire <= 1;
                             ///////////////////////////////
                             // Activations Data Movement //
                             ///////////////////////////////
@@ -269,6 +269,7 @@ module ARR_CTRL_16x16
                             //  -----------
 
                             // Calculate address for data needed
+                            /*
                             if (convcnt == 0 && peitcnt == 0) begin
                                 // Begin Compute. Reset base.
                                 base_addr <= 0;
@@ -280,7 +281,7 @@ module ARR_CTRL_16x16
                                 baserowinc <= 0;
                                 clkdiven <= 1;
                                 fire <= 1;
-                            end else begin
+                            end else begin*/
                                 // Select appropriate address from amem
                                 // Assume windows span maximum of 2 rows
                                 if (convcnt + peitcnt > (configs[2] - 2) * (configs[3] - 2)) begin
@@ -298,7 +299,7 @@ module ARR_CTRL_16x16
                                     //        |^ - Kernel Base - ^|   |^ - - - - - - - location in current kernel - - - - - - - ^|
                                     basecolnext <= basecolnext + 1;
                                 end
-                            end
+                            //end
                             peitcnt <= peitcnt + 1;
 
                             ///////////////////////////
@@ -407,7 +408,7 @@ module ARR_CTRL_16x16
                             abufdin <= (convcnt + peitcnt < (configs[2]-2)*(configs[3]-2)) ? amemQ : 0;
                             wbufdin <= wmemQ;
                         end else begin
-                                if (!endwait) begin
+                            if (!endwait) begin
                                 computestart <= 1;
                                 // Begin Compute. Reset base.
                                 base_addr <= 0;
@@ -426,9 +427,14 @@ module ARR_CTRL_16x16
 	                        end
                             end else begin
                                 edgecnt <= edgecnt + 1;
-                                if edgecnt + 1 == 16) begin
+                                if (edgecnt == 15) begin
                                     fire <= 1;
                                     endwait <= 0;
+                                    peitcnt <= 0;
+                                    abufwrites <= 16'h0000;
+	                            wbufwrites <= 16'h0000;
+                                    abufreads <= 16'h0000;
+	                            wbufreads <= 16'h0000;
                                 end
                             end
                         end

@@ -9,10 +9,10 @@ z2
 cModel Technology
 Z0 d/user/stud/fall21/zs2470/systola/qsim_rtl/tb_ctrl
 T_opt
-!s110 1650836509
-Vhl:4WAV5SeCoAOORZW67N1
+!s110 1651694834
+VE?ooKOThC`=8db467>[dU2
 Z1 04 9 4 work testbench fast 0
-=1-b04f130f22ab-6265c41c-daa2b-722c
+=1-b04f130e1319-6272dcf0-ba51c-4d3c
 Z2 o-quiet -auto_acc_if_foreign -work work
 Z3 tCvgOpt 0
 n@_opt
@@ -38,14 +38,14 @@ n@_opt2
 R4
 R0
 vARR_CTRL_16x16
-!s10a 1650836135
-!s110 1650836463
+!s10a 1651693323
+!s110 1651693357
 !i10b 1
-!s100 4bR[gb>U]Bo_V6L6Ok9WL1
-I93_OLTPUX@nH`JbbQb=2^2
+!s100 jCLNdO13mj`69UGkmo4BF3
+If>FKMGRIe=8aYdDVPTQ5L1
 Z5 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1650836135
+w1651693323
 8../../verilog/ctrl/arr_controller.v
 F../../verilog/ctrl/arr_controller.v
 L0 3
@@ -53,7 +53,7 @@ Z6 OE;L;10.7b_1;67
 r1
 !s85 0
 31
-!s108 1650836463.000000
+!s108 1651693355.000000
 !s107 ../../verilog/ctrl/arr_controller.v|
 !s90 -reportprogress|300|+acc|-incr|../../verilog/ctrl/arr_controller.v|
 !i113 0
@@ -61,7 +61,7 @@ Z7 o+acc -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R3
 n@a@r@r_@c@t@r@l_16x16
 vCLKDIV
-Z8 !s10a 1650749891
+Z8 !s10a 1651685866
 Z9 !s110 1650749986
 !i10b 1
 !s100 ElP1QX<2;AILkLXXQ3S662
@@ -152,13 +152,13 @@ R7
 R3
 n@r@b@u@f
 vtestbench
-!s110 1650836508
+!s110 1651694818
 !i10b 1
-!s100 1;53L>CZ`6a0E5kXI;?hf1
-INTYgeXJZNY94Bda?;N8gI1
+!s100 oePkY<C=JS>35BmTSh1Gf2
+IeicAFGjeDYU@C@Iid3TQl1
 R5
 R0
-w1650836479
+w1651694799
 8tb_ctrl.v
 Ftb_ctrl.v
 L0 7
@@ -166,7 +166,7 @@ R6
 r1
 !s85 0
 31
-!s108 1650836508.000000
+!s108 1651694816.000000
 !s107 tb_ctrl.v|
 !s90 -reportprogress|300|+acc|-incr|tb_ctrl.v|
 !i113 0
