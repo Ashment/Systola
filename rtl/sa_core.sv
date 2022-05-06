@@ -23,24 +23,25 @@ module SA_CORE #(
         .outs(r_outs),
         .outvalids(r_valids));
 
-    // Need to instantiate col_ctrl to capture outputs
+    // Instantiate col_ctrl block to capture outputs
+    // transpose output wires for output control.
     wire [7:0] r_t [0 : (ROWS*COLS)-1];
     wire       v_t [0 : (ROWS*COLS)-1];
     genvar i, j;
     generate
-        for (i=0; i<ROWS; i=i+1) begin
-            for (j=0; j<COLS; j=j+1) begin
-                assign r_t[j + i*(ROWS)] = r_outs[i + j*ROWS];
-                assign v_t[j + i*(ROWS)] = r_valids[i + j*ROWS];
-            end
+    for (i=0; i<ROWS; i=i+1) begin
+        for (j=0; j<COLS; j=j+1) begin
+            assign r_t[j + i*(ROWS)] = r_outs[i + j*ROWS];
+            assign v_t[j + i*(ROWS)] = r_valids[i + j*ROWS];
         end
+    end
     endgenerate
 
     // Need to instantiate buffers to control inputs
     COL_OUTPUT_CTRL (.clk(), .rstn(),
         .in_r(r_t),
         .in_v(v_t),
-        .res_read(r_read),
+        .rread(r_read),
         .out_r(routport),
         .rvalid(rvalidport));
 

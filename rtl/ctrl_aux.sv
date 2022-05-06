@@ -1,7 +1,7 @@
 module INBUF
     #(
     parameter WORDLEN = 8,
-    parameter BUFSIZE = 16,
+    parameter BUFSIZE = 8,
     parameter PADDING = 0)
     (
     input clk,
@@ -9,8 +9,8 @@ module INBUF
     input read,
     input write,
     input [WORDLEN-1 : 0] din,
-    //output empty,
-    //output full,
+    output empty,
+    output full,
     output [WORDLEN-1 : 0] dout);
 
     // Circular FIFO buffer.
@@ -22,6 +22,9 @@ module INBUF
     reg [4:0] curhead, curtail;
     integer i;
 
+    // full and empty for signaling only. Doesn't prevent overwrite or empty read.
+    assign empty = (curtail == curhead);
+    assign full = (curtail+1 == curhead) || (curhead == 0 && curtail == BUFSIZE-1);
     assign dout = bufdat[curhead];
 
     always @ (posedge clk) begin
