@@ -6,9 +6,12 @@ module COL_OUTPUT_CTRL #(
     input rstn,
     input [OUTWIDTH-1:0] in_r [0:ROWS-1],
     input in_v [0:ROWS-1],
-    input res_read,
+    input rread,
     output [OUTWIDTH-1:0] out_r,
     output rvalid);
+
+    // Takes output from a column of PEs
+    // and buffers + outputs them to top level.
 
     reg [OUTWIDTH-1:0] outbuf [0:ROWS-1];
     // cnt widths need to change if rows=/=8
@@ -31,7 +34,7 @@ module COL_OUTPUT_CTRL #(
                     icnt <= icnt + 1;
                 end
             end
-            if (res_read) begin
+            if (rread) begin
                 ocnt <= ocnt + 1;
                 outbuf
             end

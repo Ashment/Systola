@@ -25,6 +25,7 @@ add wave -noupdate /testbench/ARR_CTRL_16x16_0/edgecnt
 add wave -noupdate /testbench/ARR_CTRL_16x16_0/abufreads
 
 add wave -noupdate /testbench/ARR_CTRL_16x16_0/convcnt
+add wave -noupdate -radix unsigned /testbench/ARR_CTRL_16x16_0/base_addr
 add wave -noupdate -radix unsigned /testbench/ARR_CTRL_16x16_0/peitcnt
 add wave -noupdate -radix unsigned /testbench/ARR_CTRL_16x16_0/lchcnt
 add wave -noupdate -radix unsigned /testbench/ARR_CTRL_16x16_0/lrowcnt
@@ -36,9 +37,11 @@ add wave -noupdate /testbench/ARR_CTRL_16x16_0/clkdiven
 add wave -noupdate /testbench/ARR_CTRL_16x16_0/clkdiv/clkreg
 add wave -noupdate /testbench/fire
 add wave -noupdate /testbench/done
+add wave -noupdate /testbench/ARR_CTRL_16x16_0/computestart
 add wave -noupdate /testbench/ARR_CTRL_16x16_0/computedone
 add wave -noupdate /testbench/ARR_CTRL_16x16_0/inpscnt
-
+add wave -noupdate /testbench/ARR_CTRL_16x16_0/windowendwait
+add wave -noupdate /testbench/ARR_CTRL_16x16_0/iterationwait
 
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {3 ns} 0}

@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
-`define HALF_CLOCK_PERIOD #10
-`define SIM_CYCLES 512
+`define HALF_CLOCK_PERIOD #5
+`define SIM_CYCLES 2048
 //`define QSIM_OUT_FN "./lfsr1_rtl.result"
 //`define MATLAB_OUT_FN "../../matlab/lfsr1/lfsr1_matlab.result"
 
@@ -59,16 +59,22 @@ module testbench();
 		data_in = 8'd16;
 		@(posedge clk);
 
+		mode = 2'b01;
+		data_in = 8'd0;
+                //@(posedge clk); 
+
 		for (i=0; i<3*3*3*16; i=i+1) begin
-			mode = 2'b01;
-			data_in = 8'd1;
 			@(posedge clk);
+			data_in = data_in +1;
 		end
 
+                mode = 2'b10;
+		data_in = 8'd0;
+                //@(posedge clk); 
+
 		for (i=0; i<3*16*16; i=i+1) begin
-			mode = 2'b10;
-			data_in = 8'd2;
 			@(posedge clk);
+			data_in = data_in +1;
 		end
 
 		for (i=0; i<`SIM_CYCLES; i=i+1) begin

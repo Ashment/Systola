@@ -29,7 +29,7 @@ module ARR_CTRL_16x16
     integer j;
     //reg fire;
     reg computedone;
-    reg computestart;
+    reg [1:0] computestart;
 
     ///////////////////
     // CLOCK DIVIDER //
@@ -37,7 +37,7 @@ module ARR_CTRL_16x16
 
     wire clkdivo;
     reg clkdiven;
-    CLKDIV #(.DIV_CNT(8), .BITS(3)) clkdiv (.clk(clk), .rstn(rstn), .enable(clkdiven), .clkout(clkdivo));
+    CLKDIV #(.DIV_CNT(9), .BITS(4)) clkdiv (.clk(clk), .rstn(rstn), .enable(clkdiven), .clkout(clkdivo));
     assign saclk = clkdivo;
 
     ////////////////////
@@ -123,14 +123,15 @@ module ARR_CTRL_16x16
     reg [7:0] basecolnext;      // global col at next iter
     reg baserowinc;             // If row need increase at next iter
 
-    reg [3:0] peitcnt;         // current PE row of current ARR iteration
+    reg [3:0] peitcnt;          // current PE row of current ARR iteration
     reg [7:0] lchcnt;           // current channel of current kernel
     reg [2:0] lcolcnt;          // current column location of current kernel
     reg [2:0] lrowcnt;          // current row of the current kernel
     reg [4:0] rowendcnt;        // num PE row iters before end of row
 
-
-    reg [3:0] edgecnt;		//read=1 at poseedge saclk
+    reg [3:0] edgecnt;		    // read=1 at poseedge saclk
+    reg windowendwait;          // 1 when on wait cycle between iterations
+    reg iterationwait;          // pe it over and ready to write.
     ///////////////////
     // CLOCKED LOGIC //
     ///////////////////
@@ -152,8 +153,8 @@ module ARR_CTRL_16x16
             Dbuf <= 0;
             abufwrites <= 0;
             wbufwrites <= 0;
-	    abufreads <= 0;
-	    wbufreads <= 0;
+            abufreads <= 0;
+            wbufreads <= 0;
             abufdin <= 0;
             wbufdin <= 0;
             prefillcnt <= 0;
@@ -178,8 +179,11 @@ module ARR_CTRL_16x16
             lcolcnt <= 0;
             lrowcnt <= 0;
             rowendcnt <= 0;
-            
-    
+
+            windowendwait <= 0;
+            iterationwait <= 0;
+            fire <= 0;
+
             edgecnt <= 0;
 
         end else begin
@@ -215,16 +219,16 @@ module ARR_CTRL_16x16
                         // First row/col needs no pad, last row/col needs 15 pad, etc.
                         if(prefillcnt == 4'hF) begin
                             abufwrites <= 0;
-			    wbufwrites <= 0;
+			                wbufwrites <= 0;
                         end else begin
                             for (i=0; i<16; i=i+1) begin
                                 // prefill buffer to appropriately delay compute start
                                 abufwrites[i] <= (i > prefillcnt);
                                 wbufwrites[i] <= (i > prefillcnt);
-				abufdin <= 0;
-				wbufdin <= 0; 
+                                abufdin <= 0;
+                                wbufdin <= 0; 
                             end
-			    prefillcnt <= prefillcnt + 1;
+			                    prefillcnt <= prefillcnt + 1;
                         end
                     end
 
@@ -233,7 +237,9 @@ module ARR_CTRL_16x16
                         aWEN <= 1;
                         wWEN <= 1;
 
-                        if(!computedone && computestart) begin
+                        if(!computedone && computestart >= 2'b01 && !windowendwait && !iterationwait) begin
+                            fire <= 1;
+                            clkdiven <= 1;
                             ///////////////////////////////
                             // Activations Data Movement //
                             ///////////////////////////////
@@ -267,47 +273,8 @@ module ARR_CTRL_16x16
                             // | 6 | 7 | 8 |---
                             //  -----------
 
-                            // Update local info if cur PE iteration is over
-                            if (peitcnt == 4'hF) begin
-                                peitcnt <= 0;
-                                if (lcolcnt == 2) begin
-                                    // End of row in kernel
-                                    lcolcnt <= 0;
-                                    if(lrowcnt == 2) begin
-                                        // Also end of ch in kernel
-                                        lrowcnt <= 0;
-                                        lchcnt <= 1;
-                                    end else begin
-                                        lrowcnt <= lrowcnt + 1;
-                                    end
-                                end else begin
-                                    // increment x position
-                                    lcolcnt <= lcolcnt + 1;
-                                end
-
-                                inpscnt <= inpscnt + 1;
-                            end
-
-                            // Update base if current conv windows are completed.
-                            if (inpscnt == (9 * configs[1]) - 1) begin
-                                inpscnt <= 0;
-                                basecol <= basecolnext;
-                                convcnt <= convcnt + 16;
-                                baserow <= baserow + baserowinc;
-				//wrap whole thing in if statement, 16 cycles pause
-                                if(configs[2] - (2 + basecolnext) < 5'd16) begin
-                                    rowendcnt <= configs[2] - (2 + basecolnext);
-                                end else begin
-                                    rowendcnt <= 5'd20; // row won't end this window cycle
-                                end
-                            end
-
-                            if (convcnt > (configs[2]-2)*(configs[3]-2)) begin
-                                computedone <= 1;
-                                fire <= 0;
-                            end
-
                             // Calculate address for data needed
+                            /*
                             if (convcnt == 0 && peitcnt == 0) begin
                                 // Begin Compute. Reset base.
                                 base_addr <= 0;
@@ -319,25 +286,28 @@ module ARR_CTRL_16x16
                                 baserowinc <= 0;
                                 clkdiven <= 1;
                                 fire <= 1;
-                            end else begin
+                            end else begin*/
                                 // Select appropriate address from amem
                                 // Assume windows span maximum of 2 rows
                                 if (convcnt + peitcnt > (configs[2] - 2) * (configs[3] - 2)) begin
                                     // No window to compute for this pe iteration
+                                    //$display("No Compute this iteration");
                                     a_addr <= 16'hdedb;
                                 end else if (peitcnt >= rowendcnt) begin
+                                    //$display("Next row");
                                     // Window starts in the next row of input
                                     a_addr <= base_addr + peitcnt + 2 + (configs[2]*configs[3])*lchcnt + configs[2]*lrowcnt + lcolcnt;
                                     //        |^ -  Kernel Base  - ^|   |^ - - - - - - - location in current kernel - - - - - - - ^|
                                     basecolnext <= 0;
                                     baserowinc <= 1;
                                 end else begin
+                                    //$display("Same Row and Ch");
                                     // Window starts on same row and same ch as base address
                                     a_addr <= base_addr + peitcnt + (configs[2]*configs[3])*lchcnt + configs[2]*lrowcnt + lcolcnt;
                                     //        |^ - Kernel Base - ^|   |^ - - - - - - - location in current kernel - - - - - - - ^|
                                     basecolnext <= basecolnext + 1;
                                 end
-                            end
+                            //end
                             peitcnt <= peitcnt + 1;
 
                             ///////////////////////////
@@ -378,43 +348,124 @@ module ARR_CTRL_16x16
                             w_addr <= peitcnt*(9*configs[1]) + (lchcnt * 9) + (lrowcnt * 3) + lcolcnt;
                             //        |^ -  Kernel base  - ^|   |^ -- location in current kernel -- ^|
                             
+                            ///////////////////////
+                            // Check Loop Things //
+                            ///////////////////////
+
+                            // Update local info if cur PE iteration is over
+                            if (peitcnt == 4'hF) begin
+                                iterationwait <= 1;
+                                peitcnt <= 0;
+                                if (lcolcnt == 2) begin
+                                    // End of row in kernel
+                                    lcolcnt <= 0;
+                                    if(lrowcnt == 2) begin
+                                        // Also end of ch in kernel
+                                        lrowcnt <= 0;
+                                        lchcnt <= lchcnt + 1;
+                                    end else begin
+                                        lrowcnt <= lrowcnt + 1;
+                                    end
+                                end else begin
+                                    // increment x position
+                                    lcolcnt <= lcolcnt + 1;
+                                end
+                                inpscnt <= inpscnt + 1;
+                            end
+
+                            // Update base if current conv windows are completed.
+                            if (inpscnt == (9 * configs[1]) - 1) begin
+                                // trigger end wait to give fire <= 0 for a cycle
+                                fire <= 0;
+                                windowendwait <= 1;
+                                inpscnt <= 0;
+                                basecol <= basecolnext;
+                                convcnt <= convcnt + 16;
+                                baserow <= baserow + baserowinc;
+                                // Calculate rowendcnt
+                                if(configs[2] - (2 + basecolnext) < 5'd16) begin
+                                    rowendcnt <= configs[2] - (2 + basecolnext);
+                                end else begin
+                                    rowendcnt <= 5'd20; // row won't end this window cycle
+                                end
+                            end
+
+                            if (convcnt > (configs[2]-2)*(configs[3]-2)) begin
+                                computedone <= 1;
+                                fire <= 0;
+                            end
+
                             //////////////////////////////
                             // Write to A and W Buffers //
                             //////////////////////////////
 
-                            for (j=0; j<16; j=j+1) begin
-                                // Enable write to the appropriate row/col buffers
-                                abufwrites[j] <= (j == peitcnt);
-                                wbufwrites[j] <= (j == peitcnt);
-				edgecnt <= edgecnt + 1;
-				if (edgecnt + 1 == 16) begin
-					abufreads <= 16'hFFFF;
-					wbufreads <= 16'hFFFF;
-				end else begin
-                                    abufreads <= 16'h0000;
-	                            wbufreads <= 16'h0000;
+ 
+
+                            // Enable write to the appropriate row/col buffers
+                            if (abufwrites == 0) begin
+                                if (computestart < 2'b11) begin
+                                    computestart <= computestart + 1;
+                                end else begin
+                                    abufwrites <= 1;
+                                    wbufwrites <= 1;
                                 end
+                            end else begin
+                                abufwrites <= abufwrites << 1;
+                                wbufwrites <= wbufwrites << 1;
                             end
+                                
+                            edgecnt <= edgecnt + 1;
+                            abufreads <= 16'h0000;
+                            wbufreads <= 16'h0000;
+
                             // sends 0 to a buf if no more conv windows left to compute
                             abufdin <= (convcnt + peitcnt < (configs[2]-2)*(configs[3]-2)) ? amemQ : 0;
                             wbufdin <= wmemQ;
                         end else begin
-                            computestart <= 1;
-                            // Begin Compute. Reset base.
-                            base_addr <= 0;
-                            a_addr <= 0;
-                            w_addr <= 0;
-                            basecol <= 0;
-                            baserow <= 0;
-                            basecolnext <= 0;
-                            baserowinc <= 0;
-                            clkdiven <= 1;    
-
-		            if(configs[2] - (2 + basecolnext) < 5'd16) begin
-	                        rowendcnt <= configs[2] - (2 + basecolnext);
-	                    end else begin
-	                        rowendcnt <= 5'd20; // row won't end this window cycle
-	                    end
+                            if (!windowendwait && !iterationwait) begin
+                                computestart <= computestart + 1;
+                                // Begin Compute. Reset base.
+                                base_addr <= 0;
+                                a_addr <= 0;
+                                w_addr <= 0;
+                                basecol <= 0;
+                                baserow <= 0;
+                                basecolnext <= 0;
+                                baserowinc <= 0;
+                                if(computestart > 2'b00) begin
+                                    clkdiven <= 1;
+                                end
+				if(configs[2] - (2 + basecolnext) < 5'd16) begin
+                                    rowendcnt <= configs[2] - (2 + basecolnext);
+                                end else begin
+                                    rowendcnt <= 5'd20; // row won't end this window cycle
+                                end
+                            end else begin
+                                if (windowendwait) begin
+                                    $display("in window end wait.");
+                                    // Window Ended
+                                    fire <= 0;
+                                    edgecnt <= edgecnt + 1;
+                                    if (edgecnt == 15) begin
+					$display("Window End Wait Over.");
+                                        fire <= 1;
+                                        windowendwait <= 0;
+                                        peitcnt <= 0;
+                                        abufwrites <= 16'h0000;
+                                        wbufwrites <= 16'h0000;
+                                        abufreads <= 16'h0000;
+                                        wbufreads <= 16'h0000;
+                                    end
+                                end
+                                if (iterationwait) begin
+                                    // Iteration ended, but window hasn't ended
+				    abufwrites <= 16'h0000;
+                                    wbufwrites <= 16'h0000;
+                                    abufreads <= 16'hFFFF;
+                                    wbufreads <= 16'hFFFF;
+                                    iterationwait <= 0;
+                                end
+                            end
                         end
                     end
                 endcase
