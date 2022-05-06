@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 `define HALF_CLOCK_PERIOD #5
-`define SIM_CYCLES 512
+`define SIM_CYCLES 2048
 //`define QSIM_OUT_FN "./lfsr1_rtl.result"
 //`define MATLAB_OUT_FN "../../matlab/lfsr1/lfsr1_matlab.result"
 
