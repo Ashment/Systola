@@ -30,7 +30,7 @@ module SA_CORE_TB #(
     end
 
     wire [31:0] routport [0 : ROWS-1];
-    wire resvalid [0 : ROWS-1];
+    wire [0 : ROWS-1] resvalid;
 
     SA_CORE DUT_CORE (.clk(clk), .rstn(rstn),
         .ainport(a_in),

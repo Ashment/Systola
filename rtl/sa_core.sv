@@ -11,7 +11,7 @@ module SA_CORE #(
     input [INWIDTH-1 : 0] ainport [0 : ROWS-1],
     input [INWIDTH-1 : 0] winport [0 : ROWS-1],
     output [OUTWIDTH-1 : 0] routport [0 : ROWS-1],
-    output rvalidport [0 : ROWS-1]);
+    output [0 : ROWS-1] rvalidport);
 
     //////////////
     // PE Array //
