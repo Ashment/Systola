@@ -57,6 +57,7 @@ module SA_CORE #(
     endgenerate
 
     // INPUT CONTROL
+    wire [0 : ROWS-1] aemptys, wemptys;
     wire inpwrite;
     wire inpread;
     assign inpread = fire;
