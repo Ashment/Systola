@@ -16,11 +16,11 @@ parameter test_count = 10;
 reg clk;
 reg rstn;
 reg fire;
-reg[7:0] in_w [0:COL - 1];
-reg[7:0] in_a [0:ROW - 1];
-wire[11:0] outs [0:COL * ROW - 1];
+reg [7 : 0] in_w [0 : COL - 1];
+reg [7 : 0] in_a [0 : ROW - 1];
+wire [11 : 0] outs [0:COL * ROW - 1];
 
-reg[11:0] python_results [0:15];
+reg [11 : 0] python_results [0 : 15];
 
 integer i;
 integer j;

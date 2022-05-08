@@ -1,17 +1,17 @@
 module SA_CORE #(
     parameter ROWS=8,
     parameter INWIDTH=8,
-    parameter OUTWIDTH=32
-    )(
+    parameter OUTWIDTH=32)
+    (
     input clk,
     input rstn,
     // A and W inputs from the testbench or wrapper
-    input [INWIDTH-1 : 0] ainport [0 : ROWS-1],
-    input [INWIDTH-1 : 0] winport [0 : ROWS-1],
     input inpvalid,     // all inputs valid.
     input outread,      // all current buffered outputs have been read.
+    input [INWIDTH-1 : 0] ainport [0 : ROWS-1],
+    input [INWIDTH-1 : 0] winport [0 : ROWS-1],
     output [OUTWIDTH-1 : 0] routport [0 : ROWS-1],
-    output rvalidport[i]);
+    output rvalidport [0 : ROWS-1]);
 
     //////////////
     // PE Array //
