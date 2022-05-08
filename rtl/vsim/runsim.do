@@ -8,6 +8,7 @@ vmap work work
 # Include rtl and testbench
 vlog +acc ../pe.sv
 vlog +acc ../pe_arr.sv
+vlog +acc ../sa_core.sv
 vlog +acc ../col_output_ctrl.sv
 vlog +acc ../core_input_ctrl.sv
 vlog +acc ../ctrl_aux.sv
