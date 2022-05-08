@@ -29,7 +29,7 @@ module SA_CORE_TB #(
         simCyclesElapsed <= simCyclesElapsed + 1;
     end
 
-    wire [31:0] routport [0 : ROWS-1];
+    wire [31:0] coreout [0 : ROWS-1];
     wire [0 : ROWS-1] resvalid;
 
     SA_CORE DUT_CORE (.clk(clk), .rstn(rstn),
@@ -37,8 +37,8 @@ module SA_CORE_TB #(
         .winport(w_in),
         .inpvalid(inpvalid),
         .outread(outread),
-        .routport(resvalid),
-        .rvalidport(routport));
+        .routport(coreout),
+        .rvalidport(resvalid));
 
 
     initial begin

@@ -10,7 +10,7 @@ module INBUF
     input write,
     input [WORDLEN-1 : 0] din,
     output empty,
-    output full,
+    //output full,
     output [WORDLEN-1 : 0] dout);
 
     // Circular FIFO buffer.
