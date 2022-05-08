@@ -34,8 +34,8 @@ module INBUF
             for(i=0; i<BUFSIZE; i=i+1) begin
                bufdat[i] <= 0; 
             end
-            curhead <= PADDING;
-            curtail <= 0;
+            curhead <= 0;
+            curtail <= PADDING;
         end else begin
             if (read) begin
                 // Output has been read. Increment head.
