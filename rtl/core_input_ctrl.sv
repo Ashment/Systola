@@ -23,14 +23,14 @@ module CORE_INPUT_CTRL #(
     genvar i, j;
     generate
     for (i=0; i<ROWS; i=i+1) begin
-        INBUF #(PADDING=i) ainbuf (.clk(clk), .rstn(rstn),
+        INBUF #(.PADDING(i)) ainbuf (.clk(clk), .rstn(rstn),
             .read(read),
             .write(write),
             .din(abufdins[i]),
             .empty(aemptys[i]),
             .dout(bufouts[i]));
 
-        INBUF #(PADDING=i) winbuf (.clk(clk), .rstn(rstn),
+        INBUF #(.PADDING(i)) winbuf (.clk(clk), .rstn(rstn),
             .read(read),
             .write(write),
             .din(wbufdins[i]),
