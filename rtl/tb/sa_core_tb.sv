@@ -2,7 +2,7 @@
 
 module SA_CORE_TB #(
     parameter ROWS = 8,
-    parameter SIMCYCLES = 160)
+    parameter SIMCYCLES = 16)
     ();
 
     /////////////////////////
