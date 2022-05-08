@@ -11,7 +11,7 @@ module PE_ARR
     input[INWIDTH-1 : 0] in_w [0 : ROWS-1],
     input[INWIDTH-1 : 0] in_a [0 : COLS-1],
     output [OUTWIDTH-1 : 0] outs [0 : (ROWS*COLS)-1],
-    output [OUTWIDTH-1 : 0] outvalids [0 : (ROWS*COLS)-1]);
+    output outvalids [0 : (ROWS*COLS)-1]);
 
     wire [OUTWIDTH-1 : 0] res_o [0 : (ROWS * COLS)-1];
     wire [INWIDTH-1: 0] w_o [0 : (ROWS * COLS)-1];

@@ -20,7 +20,7 @@ module SA_CORE #(
     wire f_in;
     wire [INWIDTH-1 : 0] arr_w_in [0 : ROWS-1];
     wire [INWIDTH-1 : 0] arr_a_in [0 : ROWS-1];
-    wire [INWIDTH-1 : 0] r_outs [0 : (ROWS*ROWS)-1];
+    wire [OUTWIDTH-1 : 0] r_outs [0 : (ROWS*ROWS)-1];
     wire                 pe_valids [0 : (ROWS*ROWS)-1];
 
     PE_ARR #(.ROWS(ROWS), .COLS(ROWS)) sysarr (.clk(clk), .rstn(rstn),
