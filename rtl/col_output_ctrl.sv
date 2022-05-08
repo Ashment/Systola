@@ -29,7 +29,7 @@ module COL_OUTPUT_CTRL #(
     always_ff @ (posedge clk) begin
         if (!rstn) begin
             for (i=0; i<ROWS; i=i+1) begin
-                outbuf <= 0;
+                outbuf[i] <= 0;
             end
         end else begin
             // for each res input from PE, write to the
