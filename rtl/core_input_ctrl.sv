@@ -9,8 +9,8 @@ module CORE_INPUT_CTRL #(
     input [INWIDTH-1 : 0] winport [0 : ROWS-1],
     input write,    // write goes high when inputs are ready. Writes to buffers.
     input read,     // read goes high when buffers have been read.
-    output aemptys [0 : ROWS-1],
-    output wemptys [0 : ROWS-1],
+    output [0 : ROWS-1] aemptys,
+    output [0 : ROWS-1] wemptys,
     output [INWIDTH-1 : 0] ws [0 : ROWS-1],
     output [INWIDTH-1 : 0] as [0 : ROWS-1]);
 
