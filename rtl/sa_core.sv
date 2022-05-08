@@ -20,10 +20,10 @@ module SA_CORE #(
     wire f_in;
     wire [INWIDTH-1 : 0] arr_w_in [0 : ROWS-1];
     wire [INWIDTH-1 : 0] arr_a_in [0 : ROWS-1];
-    wire [INWIDTH-1 : 0] r_outs [0 : (ROWS*COLS)-1];
-    wire                 pe_valids [0 : (ROWS*COLS)-1];
+    wire [INWIDTH-1 : 0] r_outs [0 : (ROWS*ROWS)-1];
+    wire                 pe_valids [0 : (ROWS*ROWS)-1];
 
-    PE_ARR #(.ROWS(ROWS), .COLS(COLS)) sysarr (.clk(clk), .rstn(rstn),
+    PE_ARR #(.ROWS(ROWS), .COLS(ROWS)) sysarr (.clk(clk), .rstn(rstn),
         .fire(fire),
         .in_w(arr_w_in),
         .in_a(arr_a_in),
@@ -36,12 +36,12 @@ module SA_CORE #(
     // OUTPUT CONTROL
     // transpose output wire orders for the control blocks
     // and instantiate control block for each column
-    wire [OUTWIDTH-1 : 0] r_t [0 : (ROWS*COLS)-1];
-    wire       v_t [0 : (ROWS*COLS)-1];
+    wire [OUTWIDTH-1 : 0] r_t [0 : (ROWS*ROWS)-1];
+    wire       v_t [0 : (ROWS*ROWS)-1];
     genvar i, j;
     generate
     for (i=0; i<ROWS; i=i+1) begin
-        for (j=0; j<COLS; j=j+1) begin
+        for (j=0; j<ROWS; j=j+1) begin
             assign r_t[j + i*(ROWS)] = r_outs[i + j*ROWS];
             assign v_t[j + i*(ROWS)] = pe_valids[i + j*ROWS];
         end
