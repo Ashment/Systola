@@ -12,6 +12,9 @@ module SA_CORE_TB #(
 integer i,j;
 integer simCyclesElapsed;
 
+reg clk;
+reg readout;
+
 always begin
     #10
     clk = ~clk;
