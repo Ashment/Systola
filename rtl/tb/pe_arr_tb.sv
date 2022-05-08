@@ -61,7 +61,7 @@ begin    // File Configuration
         @(posedge clk);
     end
 
-    $display("SIMULATION ENDED.")
+    $display("SIMULATION ENDED.");
     $finish;
 end
 
