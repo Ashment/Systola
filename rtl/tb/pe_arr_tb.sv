@@ -36,8 +36,8 @@ begin    // File Configuration
     clk <= 1;
     rstn <= 0;
     for(i=0; i<COL; i=i+1) begin
-        in_w <= 1;
-        in_a <= 0;
+        in_w[i] <= 1;
+        in_a[i] <= 0;
     end
     
     @(posedge clk);
@@ -54,7 +54,7 @@ begin    // File Configuration
 
     fire <= 0;
 
-    for(i=0; i<ROW*2; i++) begin
+    for(i=0; i<ROW*2; i=i+1) begin
         @(posedge clk);
     end
 end
