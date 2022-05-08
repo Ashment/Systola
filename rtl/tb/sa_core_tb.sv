@@ -2,7 +2,7 @@
 
 module SA_CORE_TB #(
     parameter ROWS=8
-    parameter SIMCYCLES=100)
+    parameter SIMCYCLES=160)
     ();
 
 /////////////////////////
@@ -66,14 +66,15 @@ initial begin
 
         @(posedge clk);
         for (j=0; j<ROWS-1; j=j+1) begin
-            a_in[j] <= 0;
-            w_in[j] <= 1;
+            a_in[j] <= i % 16;
         end
+        $display("Current Sim Cycle: %d", i);
     end
 
-    for (i=0; i<ROWS-1; i=i+1) begin
+    for (i=0; i<ROWS*2; i=i+1) begin
         inpvalid <= 0;
     end
 
-
+    $display("SIMULATION ENDED.");
+    $finish;
 end
