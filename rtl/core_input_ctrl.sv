@@ -20,6 +20,11 @@ module CORE_INPUT_CTRL #(
     wire [INWIDTH-1 : 0] abufouts [0 : ROWS-1];
     wire [INWIDTH-1 : 0] wbufouts [0 : ROWS-1];
     
+    assign abufdins = ainport;
+    assign wbufdins = winport;
+    assign as = abufouts;
+    assign ws = wbufouts;
+
     genvar i, j;
     generate
     for (i=0; i<ROWS; i=i+1) begin
@@ -28,14 +33,14 @@ module CORE_INPUT_CTRL #(
             .write(write),
             .din(abufdins[i]),
             .empty(aemptys[i]),
-            .dout(bufouts[i]));
+            .dout(abufouts[i]));
 
         INBUF #(.PADDING(i)) winbuf (.clk(clk), .rstn(rstn),
             .read(read),
             .write(write),
             .din(wbufdins[i]),
             .empty(wemptys[i]),
-            .dout(bufouts[i]));
+            .dout(wbufouts[i]));
     end
     endgenerate
     
