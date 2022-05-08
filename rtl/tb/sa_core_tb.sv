@@ -50,7 +50,7 @@ module SA_CORE_TB #(
         end
         inpvalid <= 0;
         outread <= 0;
-        $$display("INITIALZIED.");
+        $display("INITIALZIED.");
 
         #25;
         rstn <= 1;
@@ -71,8 +71,9 @@ module SA_CORE_TB #(
             $display("Current Sim Cycle: %d", i);
         end
 
-        for (i=0; i<ROWS*2; i=i+1) begin
+        for (i=0; i<ROWS*ROWS*2; i=i+1) begin
             inpvalid <= 0;
+            @(posedge clk);
         end
 
         $display("SIMULATION ENDED.");
