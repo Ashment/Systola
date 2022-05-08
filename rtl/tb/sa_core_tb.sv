@@ -12,14 +12,6 @@ module SA_CORE_TB #(
     integer i,j;
     integer simCyclesElapsed;
 
-    reg clk;
-    reg readout;
-
-    always begin
-        #10
-        clk = ~clk;
-    end
-
     always @ (posedge clk) begin
         simCyclesElapsed <= simCyclesElapsed + 1;
     end
@@ -31,6 +23,11 @@ module SA_CORE_TB #(
     reg clk, rstn, inpvalid, outread;
     reg [7:0] a_in [0 : ROWS-1];
     reg [7:0] w_in [0 : ROWS-1];
+
+    always begin
+        #10
+        clk = ~clk;
+    end
 
     wire [31:0] routport [0 : ROWS-1];
     wire resvalid [0 : ROWS-1];
@@ -62,9 +59,9 @@ module SA_CORE_TB #(
             inpvalid <= 1;
 
             if(resvalid != 0) begin
-                readout <= 1;
+                outread <= 1;
             end else begin
-                readout <= 0;
+                outread <= 0;
             end
 
             @(posedge clk);
