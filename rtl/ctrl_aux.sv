@@ -34,7 +34,6 @@ module INBUF
             for(i=0; i<BUFSIZE; i=i+1) begin
                bufdat[i] <= 0; 
             end
-            outdat <= 0;
             curhead <= PADDING;
             curtail <= 0;
         end else begin
