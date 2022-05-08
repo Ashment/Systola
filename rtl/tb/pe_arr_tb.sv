@@ -18,7 +18,7 @@ wire outvalids [0 : (ROW*COL)-1];
 
 integer i,j;
 
-PE_ARR #(.rows(ROW), .cols(COL)) 
+PE_ARR #(.ROWS(ROW), .COLS(COL)) 
 	dut (.clk(clk), .rstn(rstn), 
         .fire(fire), 
         .in_w(in_w), 
