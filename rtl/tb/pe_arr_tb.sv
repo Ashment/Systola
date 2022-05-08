@@ -39,12 +39,15 @@ begin    // File Configuration
         in_w[i] <= 1;
         in_a[i] <= 0;
     end
+
+    $$display("INITIALIZED.");
     
     @(posedge clk);
     
     fire <= 1;
     rstn <= 1;
 
+    $display("STARTING SIMULATION");
     for (i=0; i<SIMCYCLES; i=i+1) begin
         for (j=0; j<COL; j=j+1) begin
             in_a[j] <= in_a[j] + 1;
@@ -57,6 +60,9 @@ begin    // File Configuration
     for(i=0; i<ROW*2; i=i+1) begin
         @(posedge clk);
     end
+
+    $display("SIMULATION ENDED.")
+    $finish;
 end
 
 endmodule

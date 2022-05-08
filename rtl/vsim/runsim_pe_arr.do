@@ -19,6 +19,7 @@ onerror {resume}
 quietly WaveActivateNextPane {} 0
 add wave -noupdate /pe_arr_tb/clk
 add wave -noupdate /pe_arr_tb/rstn
+add wave -noupdate /pe_arr_tb/fire
 add wave -noupdate /pe_arr_tb/in_w
 add wave -noupdate /pe_arr_tb/in_a
 add wave -noupdate /pe_arr_tb/outs
