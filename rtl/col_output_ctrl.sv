@@ -9,6 +9,7 @@ module COL_OUTPUT_CTRL #(
     input rread,
     output [OUTWIDTH-1 : 0] out_r,
     output rvalid);
+    integer i;
 
     // Takes output from a column of PEs
     // and buffers + outputs them to top level.
