@@ -2,19 +2,20 @@ module PE_ARR
     #(
     parameter ROWS = 8,
     parameter COLS = 8,
+    parameter INWIDTH = 8,
     parameter OUTWIDTH = 32) 
     (
     input clk, 
     input rstn,
     input fire,
-    input[7:0] in_w [0 : ROWS-1],
-    input[7:0] in_a [0 : COLS-1],
+    input[INWIDTH-1 : 0] in_w [0 : ROWS-1],
+    input[INWIDTH-1 : 0] in_a [0 : COLS-1],
     output [OUTWIDTH-1 : 0] outs [0 : (ROWS*COLS)-1]
     output [OUTWIDTH-1 : 0] outvalids [0 : (ROWS*COLS)-1]);
 
     wire [OUTWIDTH-1 : 0] res_o [0 : (ROWS * COLS)-1];
-    wire [7:0] w_o [0 : (ROWS * COLS)-1];
-    wire [7:0] a_o [0 : (ROWS * COLS)-1];
+    wire [INWIDTH-1: 0] w_o [0 : (ROWS * COLS)-1];
+    wire [INWIDTH-1 : 0] a_o [0 : (ROWS * COLS)-1];
     wire f_o [0 : (ROWS * COLS)-1];
     wire rvalid [0 : (ROWS * COLS)-1];
 
@@ -74,27 +75,5 @@ module PE_ARR
 
             end
         end
-
-
-        /*
-        wire [OUTWIDTH-1:0] res_transpose [0:ROWS-1];
-        wire rvalid_transpose [0:(ROWS * COLS)-1]
-
-        for (i=0; i<COLS; i=i+1) begin
-            for (j=0; j<ROWS; j=j+1) begin
-                res_transpose[i + j*COLS] = res_o[j + i*COLS];
-                rvalid_transpose[i * j*COLS] = rvalid[j + i*COLS];
-            end
-        end
-
-        for (i=0; i<COLS; i=i+1) begin
-            COL_OUTPUT_CTRL #(.ROWS(ROWS), .OUTWIDTH(OUTWIDTH)) col_out (.clk(clk), .rstn(rstn)
-                .in_res(res_transpose[i*ROWS : (i+1)*ROWS-1]),
-                .in_valids(rvalid_transpose[i*ROWS : (i+1)*ROWS-1]),
-                //.res_read(),
-                .out_r(),
-                .rvalid());
-        end
-        */
     endgenerate
 endmodule

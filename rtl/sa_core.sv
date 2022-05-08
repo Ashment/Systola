@@ -1,51 +1,102 @@
 module SA_CORE #(
     parameter ROWS=8,
+    parameter INWIDTH=8,
     parameter OUTWIDTH=32
     )(
     input clk,
     input rstn,
-    input [OUTWIDTH-1 : 0] ainport,
-    input [OUTIWDTH-1 : 0] winport,
-    input r_read,
-    output [OUTWIDTH-1 : 0] routport,
-    output rvalidport);
+    // A and W inputs from the testbench or wrapper
+    input [INWIDTH-1 : 0] ainport [0 : ROWS-1],
+    input [INWIDTH-1 : 0] winport [0 : ROWS-1],
+    input inpvalid,     // all inputs valid.
+    input outread,      // all current buffered outputs have been read.
+    output [OUTWIDTH-1 : 0] routport [0 : ROWS-1],
+    output rvalidport[i]);
 
+    //////////////
+    // PE Array //
+    //////////////
+    reg fire;
     wire f_in;
-    wire [7:0] w_in [0 : ROWS-1];
-    wire [7:0] a_in [0 : ROWS-1];
-    wire [7:0] r_outs [0 : (ROWS*COLS)-1];
-    wire       r_valids [0 : (ROWS*COLS)-1];
+    wire [INWIDTH-1 : 0] arr_w_in [0 : ROWS-1];
+    wire [INWIDTH-1 : 0] arr_a_in [0 : ROWS-1];
+    wire [INWIDTH-1 : 0] r_outs [0 : (ROWS*COLS)-1];
+    wire                 pe_valids [0 : (ROWS*COLS)-1];
 
     PE_ARR #(.ROWS(ROWS), .COLS(COLS)) sysarr (.clk(clk), .rstn(rstn),
         .fire(fire),
-        .in_w(w_in),
-        .in_a(a_in),
+        .in_w(arr_w_in),
+        .in_a(arr_a_in),
         .outs(r_outs),
-        .outvalids(r_valids));
+        .outvalids(pe_valids));
 
-    // Instantiate col_ctrl block to capture outputs
-    // transpose output wires for output control.
-    wire [7:0] r_t [0 : (ROWS*COLS)-1];
+    ////////////////
+    // Aux Blocks //
+    ////////////////
+    // OUTPUT CONTROL
+    // transpose output wire orders for the control blocks
+    // and instantiate control block for each column
+    wire [OUTWIDTH-1 : 0] r_t [0 : (ROWS*COLS)-1];
     wire       v_t [0 : (ROWS*COLS)-1];
     genvar i, j;
     generate
     for (i=0; i<ROWS; i=i+1) begin
         for (j=0; j<COLS; j=j+1) begin
             assign r_t[j + i*(ROWS)] = r_outs[i + j*ROWS];
-            assign v_t[j + i*(ROWS)] = r_valids[i + j*ROWS];
+            assign v_t[j + i*(ROWS)] = pe_valids[i + j*ROWS];
         end
+    end
+    for (i=0; i<ROWS; i=i+1) begin
+        COL_OUTPUT_CTRL output_ctrl(.clk(clk), .rstn(rstn),
+            .in_r(r_t[ROWS*i : ROWS*(i+1)-1]),
+            .in_v(v_t[ROWS*i : ROWS*(i+1)-1]),
+            .rread(outread),
+            .out_r(routport[i]),
+            .rvalid(rvalidport[i]));
     end
     endgenerate
 
-    // Need to instantiate buffers to control inputs
-    COL_OUTPUT_CTRL (.clk(), .rstn(),
-        .in_r(r_t),
-        .in_v(v_t),
-        .rread(r_read),
-        .out_r(routport),
-        .rvalid(rvalidport));
+    // INPUT CONTROL
+    wire inpwrite;
+    wire inpread;
+    assign inpread = fire;
+    assign inpwrite = inpvalid;
+    // a and w inputs are the top module's a and w ports.
+    // inpwrite when inputs are valid.
+    CORE_INPUT_CTRL input_ctrl(.clk(clk), .rstn(rstn),
+        .ainport(ainport),
+        .winport(winport),
+        .write(inpwrite),
+        .read(inpread),
+        .aemptys(aemptys),
+        .wemptys(wemptys),
+        .ws(arr_w_in),
+        .as(arr_a_in));
 
-    // + ESP Interface
-    
+    ///////////////////
+    // CONTROl LOGIC //
+    ///////////////////
+    reg start;
+    always_ff @ (posedge clk) begin
+        if (!rstn) begin
+            fire <= 0;
+            start <= 0;
+        end else begin
+            if (start) begin
+                if (aemptys != 0 && wemptys != 0) begin
+                    // buffers not empty = fire
+                    fire <= 1;
+                end else begin
+                    fire <= 0;
+                end
+            end else begin
+                // wait for first valid input before starting
+                if (inpvalid <= 1) begin
+                    fire <= 1;
+                    start <= 1;
+                end
+            end
+        end
+    end
 
 endmodule
