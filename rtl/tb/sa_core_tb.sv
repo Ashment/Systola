@@ -12,10 +12,6 @@ module SA_CORE_TB #(
     integer i,j;
     integer simCyclesElapsed;
 
-    always @ (posedge clk) begin
-        simCyclesElapsed <= simCyclesElapsed + 1;
-    end
-
     /////////////////
     // DUT Signals //
     /////////////////
@@ -27,6 +23,10 @@ module SA_CORE_TB #(
     always begin
         #10
         clk = ~clk;
+    end
+
+    always @ (posedge clk) begin
+        simCyclesElapsed <= simCyclesElapsed + 1;
     end
 
     wire [31:0] routport [0 : ROWS-1];
