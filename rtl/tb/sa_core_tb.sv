@@ -64,14 +64,14 @@ module SA_CORE_TB #(
             end
 
             @(posedge clk);
-            for (j=0; j<ROWS-1; j=j+1) begin
+            for (j=0; j<ROWS; j=j+1) begin
                 a_in[j] <= (i) % 16;
                 w_in[j] <= (i) % 8;
             end
             $display("Current Sim Cycle: %d", i);
         end
 
-        for (i=0; i<ROWS*ROWS*2; i=i+1) begin
+        for (i=0; i<ROWS*4; i=i+1) begin
             inpvalid <= 0;
             @(posedge clk);
         end
