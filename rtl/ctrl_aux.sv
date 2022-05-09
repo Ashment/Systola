@@ -36,7 +36,6 @@ module INBUF
             end
             curhead <= 0;
             curtail <= PADDING;
-            empty <= 1;
         end else begin
             if (read && !empty) begin
                 // Output has been read. Increment head.
