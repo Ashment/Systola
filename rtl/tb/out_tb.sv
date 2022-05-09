@@ -37,6 +37,7 @@ module OUT_TB #(
         clk <= 0;
         rstn <= 0;
         read <= 0;
+        in_v <= 0;
         
         for (i=0; i<8 ; i=i+1) begin
             din[i] <= (i*100)+1;
@@ -52,7 +53,7 @@ module OUT_TB #(
         // Main simulation loop
         for (i=0; i<20; i=i+1) begin
             for (j=0; j<8; j=j+1) begin
-                din[j] = i==j;
+                in_v[j] = i==j;
             end
 
             @(posedge clk);
