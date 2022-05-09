@@ -44,7 +44,7 @@ module CORE_INPUT_CTRL #(
     end
     endgenerate
     
-    // We use padding function of the buffers to help schedule inputs
+    // We use padding of the buffers to help schedule inputs
     // Padding pads buffers with 0 as appropriate.
     //                .  .  .  .  .
     //                W  W  W
