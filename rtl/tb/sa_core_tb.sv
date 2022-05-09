@@ -61,7 +61,7 @@ module SA_CORE_TB #(
         for (i=0; i<SIMCYCLES; i=i+1) begin
             inpvalid <= 1;
 
-            if(resvalid != 0) begin
+            if (resvalid) begin
                 outread <= 1;
             end else begin
                 outread <= 0;
