@@ -51,19 +51,18 @@ module OUT_TB #(
         @(posedge clk);
 
         // Main simulation loop
-        for (i=0; i<8; i=i+1) begin
-            
+        for (i=0; i<16; i=i+1) begin
+            for (j=0; j<8; j=j+1) begin
+                in[j] = i==j;
+            end
 
             @(posedge clk);
 
-            din <= din + 1;
-        end
-
-        // End
-        for (i=0; i<8; i=i+1) begin
-            write <= 0;
-            read <= 0;
-            @(posedge clk);
+            if (rvalid) begin
+                read <= 1;
+            end else begin
+                read <= 0;
+            end
         end
 
         $display("SIMULATION ENDED.");
