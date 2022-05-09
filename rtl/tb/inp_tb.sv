@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module BUF_TB #(
+module INP_TB #(
     parameter SIMCYCLES = 16)
     ();
 

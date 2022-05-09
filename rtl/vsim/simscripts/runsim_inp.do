@@ -18,25 +18,16 @@ onerror {resume}
 quietly WaveActivateNextPane {} 0
 
 add wave -radix unsigned /BUF_TB/simCyclesElapsed
-add wave /BUF_TB/clk
-add wave /BUF_TB/rstn
-add wave /BUF_TB/read
-add wave /BUF_TB/write
-add wave /BUF_TB/din
-add wave /BUF_TB/empty
-add wave /BUF_TB/douts
-
-add wave /BUF_TB/DUT1/bufdat
-add wave /BUF_TB/DUT1/curhead
-add wave /BUF_TB/DUT1/curtail
-
-add wave /BUF_TB/DUT2/bufdat
-add wave /BUF_TB/DUT2/curhead
-add wave /BUF_TB/DUT2/curtail
-
-add wave /BUF_TB/DUT3/bufdat
-add wave /BUF_TB/DUT3/curhead
-add wave /BUF_TB/DUT3/curtail
+add wave /INP_TB/clk
+add wave /INP_TB/rstn
+add wave /INP_TB/read
+add wave /INP_TB/write
+add wave /INP_TB/ain
+add wave /INP_TB/win
+add wave /INP_TB/aemptys
+add wave /INP_TB/wemptys
+add wave /INP_TB/as
+add wave /INP_TB/ws
 
 # Run Simulation
 run -all
