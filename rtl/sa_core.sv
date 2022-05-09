@@ -84,7 +84,7 @@ module SA_CORE #(
             start <= 0;
         end else begin
             if (start) begin
-                if (aemptys && wemptys) begin
+                if (~aemptys && ~wemptys) begin
                     // buffers not empty = fire
                     fire <= 1;
                 end else begin
