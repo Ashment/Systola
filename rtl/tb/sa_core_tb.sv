@@ -44,7 +44,7 @@ module SA_CORE_TB #(
     initial begin
         clk <= 0;
         rstn <= 0;
-        for (i=0; i<ROWS-1; i=i+1) begin
+        for (i=0; i<ROWS; i=i+1) begin
             a_in[i] <= 0;
             w_in[i] <= 1;
         end
