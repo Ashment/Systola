@@ -34,7 +34,7 @@ module COL_OUTPUT_CTRL #(
                 outbuf[i] <= 0;
             end
             ocnt <= 0;
-            ictn <= 0;
+            icnt <= 0;
         end else begin
             // for each res input from PE, write to the
             // corresponding buffer when it becomes valid.
