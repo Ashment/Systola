@@ -40,7 +40,7 @@ module PE_ARR
                         .resvalid(rvalid[j + i*COLS]));
                     end else begin  // Rest of first column
                         PE PEL (.clk(clk), .rstn(rstn), 
-                        .fire(f_o[j + (i-1)*COLS-1]), 
+                        .fire(f_o[j + (i-1)*COLS]), 
                         .in_w(w_o[j + (i-1)*COLS]), 
                         .in_a(in_a[i]),
                         .out_f(f_o[j + i*COLS]), 
@@ -52,7 +52,7 @@ module PE_ARR
                 end else begin // Not first column
                     if(i == 0) begin // First Row
                         PE PER (.clk(clk), .rstn(rstn), 
-                        .fire(f_o[j + i*COLS-1]), 
+                        .fire(f_o[j - 1]), 
                         .in_w(in_w[j]), 
                         .in_a(in_a[j - 1]), 
                         .out_f(f_o[j + i*COLS]), 
