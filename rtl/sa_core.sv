@@ -88,6 +88,7 @@ module SA_CORE #(
                     // buffers not empty = fire
                     fire <= 1;
                 end else begin
+                    // buffers are all empty. No more fire.
                     fire <= 0;
                 end
             end else begin

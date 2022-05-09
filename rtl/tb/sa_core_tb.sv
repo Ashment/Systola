@@ -44,8 +44,8 @@ module SA_CORE_TB #(
         clk <= 0;
         rstn <= 0;
         for (i=0; i<ROWS; i=i+1) begin
-            a_in[i] <= 0;
-            w_in[i] <= 1;
+            a_in[i] <= 1;
+            w_in[i] <= 2;
         end
         inpvalid <= 0;
         outread <= 0;
