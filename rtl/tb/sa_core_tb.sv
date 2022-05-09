@@ -40,6 +40,14 @@ module SA_CORE_TB #(
         .routport(coreout),
         .rvalidport(resvalid));
 
+    always @ (posedge clk) begin
+        if (resvalid) begin
+            outread <= 1;
+        end else begin
+            outread <= 0;
+        end
+    end
+
     initial begin
         clk <= 0;
         rstn <= 0;
@@ -60,12 +68,6 @@ module SA_CORE_TB #(
 
         for (i=0; i<SIMCYCLES; i=i+1) begin
             inpvalid <= 1;
-
-            if (resvalid) begin
-                outread <= 1;
-            end else begin
-                outread <= 0;
-            end
 
             @(posedge clk);
 
