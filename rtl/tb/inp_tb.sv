@@ -27,10 +27,6 @@ module INP_TB #(
         clk = ~clk;
     end
 
-    always @ (posedge clk) begin
-        simCyclesElapsed <= simCyclesElapsed + 1;
-    end
-
     CORE_INPUT_CTRL DUT (.clk(clk), .rstn(rstn),
         .ainport(ain),
         .winport(win),
