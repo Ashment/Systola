@@ -37,7 +37,7 @@ module SA_CORE #(
     // transpose output wire orders for the control blocks
     // and instantiate control block for each column
     wire [OUTWIDTH-1 : 0] r_t [0 : (ROWS*ROWS)-1];
-    wire       v_t [0 : (ROWS*ROWS)-1];
+    wire [0 : (ROWS*ROWS)-1] v_t;
     genvar i, j;
     generate
     for (i=0; i<ROWS; i=i+1) begin

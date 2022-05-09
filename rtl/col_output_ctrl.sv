@@ -5,10 +5,11 @@ module COL_OUTPUT_CTRL #(
     input clk,
     input rstn,
     input [OUTWIDTH-1 : 0] in_r [0 : ROWS-1],
-    input in_v [0:ROWS-1],
+    input [0:ROWS-1] in_v,
     input rread,
     output [OUTWIDTH-1 : 0] out_r,
     output rvalid);
+
     integer i;
 
     // Takes output from a column of PEs
