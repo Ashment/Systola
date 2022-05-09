@@ -44,8 +44,8 @@ module INP_TB #(
         write <= 0;
 
         for (i=0; i<8; i=i+1) begin
-            ain <= 0;
-            win <= 0;
+            ain[i] <= 0;
+            win[i] <= 0;
         end
 
         $display("INITIALZIED.");
@@ -59,8 +59,8 @@ module INP_TB #(
             
             @(posedge clk);
             for (i=0; i<8; i=i+1) begin
-                ain <= ain + 1;
-                win <= win + 1;
+                ain[i] <= ain[i] + 1;
+                win[i] <= win[i] + 1;
             end
         end
 
