@@ -41,9 +41,6 @@ add wave -noupdate /SA_CORE_TB/DUT_CORE/wemptys
 add wave -noupdate /SA_CORE_TB/DUT_CORE/fire
 add wave -noupdate /SA_CORE_TB/DUT_CORE/start
 
-add wave -noupdate /SA_CORE_TB/DUT_CORE/input_ctrl/ainbuf/bufdat
-add wave -noupdate /SA_CORE_TB/DUT_CORE/input_ctrl/winbuf/bufdat
-
 add wave -noupdate /SA_CORE_TB/DUT_CORE/sysarr/outs
 
 # Run Simulation

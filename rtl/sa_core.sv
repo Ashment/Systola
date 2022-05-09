@@ -90,6 +90,7 @@ module SA_CORE #(
                 end else begin
                     // buffers are all empty. No more fire.
                     fire <= 0;
+                    start <= 0;
                 end
             end else begin
                 // wait for first valid input before starting

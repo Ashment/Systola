@@ -57,8 +57,6 @@ module SA_CORE_TB #(
         @(posedge clk);
         inpvalid <= 0;
         @(posedge clk);
-        inpvalid <= 0;
-        @(posedge clk);
 
         for (i=0; i<SIMCYCLES; i=i+1) begin
             inpvalid <= 1;
