@@ -37,7 +37,7 @@ module INBUF
             curhead <= 0;
             curtail <= PADDING;
         end else begin
-            if (read) begin
+            if (read && !empty) begin
                 // Output has been read. Increment head.
                 // /!\ NO EMPTY CHECK; Can still read when empty.
                 if (curhead == BUFSIZE-1) begin
