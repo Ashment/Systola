@@ -25,10 +25,6 @@ module BUF_TB #(
         clk = ~clk;
     end
 
-    always @ (posedge clk) begin
-        simCyclesElapsed <= simCyclesElapsed + 1;
-    end
-
     INBUF #(.PADDING(0)) DUT1 (.clk(clk), .rstn(rstn),
         .read(read),
         .write(write),
