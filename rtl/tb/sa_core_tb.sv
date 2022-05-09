@@ -55,6 +55,7 @@ module SA_CORE_TB #(
         rstn <= 1;
 
         @(posedge clk);
+        @(posedge clk);
 
         for (i=0; i<SIMCYCLES; i=i+1) begin
             inpvalid <= 1;
@@ -66,6 +67,7 @@ module SA_CORE_TB #(
             end
 
             @(posedge clk);
+
             for (j=0; j<ROWS; j=j+1) begin
                 if (a_in[j] == 15) begin
                     a_in[j] <= 0;
@@ -78,7 +80,6 @@ module SA_CORE_TB #(
                     w_in[j] <= w_in[j] + 1;
                 end
             end
-            $display("Current Sim Cycle: %d", i);
         end
 
         for (i=0; i<ROWS*4; i=i+1) begin
