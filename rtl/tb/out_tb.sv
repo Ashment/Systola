@@ -16,7 +16,7 @@ module OUT_TB #(
 
     reg clk, rstn;
     reg [7:0] din [0:7];
-    reg in_v [0:7];
+    reg [0:7] in_v;
     reg read;
     wire [31:0] dout;
     wire rvalid;
@@ -36,7 +36,6 @@ module OUT_TB #(
     initial begin
         clk <= 0;
         rstn <= 0;
-        in_v <= 0;
         read <= 0;
         
         for (i=0; i<8 ; i=i+1) begin
