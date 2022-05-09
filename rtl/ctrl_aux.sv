@@ -9,7 +9,7 @@ module INBUF
     input read,
     input write,
     input [WORDLEN-1 : 0] din,
-    output reg empty,
+    output empty,
     output [WORDLEN-1 : 0] dout);
 
     // Circular FIFO buffer.
@@ -26,6 +26,7 @@ module INBUF
     // empty for signaling only. Doesn't prevent overwrite or empty read.
     //assign empty = (curtail == curhead);
     assign dout = empty ? 0 : bufdat[curhead];
+    assign empty = curhead == curtail;
 
     always @ (posedge clk) begin
         if(!rstn) begin
@@ -37,7 +38,6 @@ module INBUF
             curtail <= PADDING;
             empty <= 1;
         end else begin
-            empty <= (curtail == curhead);
             if (read && !empty) begin
                 // Output has been read. Increment head.
                 // /!\ NO EMPTY CHECK; Can still read when empty.
