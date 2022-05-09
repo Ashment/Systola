@@ -94,7 +94,7 @@ module SA_CORE #(
                 end
             end else begin
                 // wait for first valid input before starting
-                if (aemptys != 0 && wemptys != 0) begin
+                if (inpvalid <= 1) begin
                     fire <= 1;
                     start <= 1;
                 end
