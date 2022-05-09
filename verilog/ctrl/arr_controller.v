@@ -382,6 +382,14 @@ module ARR_CTRL_16x16
                                 basecol <= basecolnext;
                                 convcnt <= convcnt + 16;
                                 baserow <= baserow + baserowinc;
+
+                                // update base addr
+                                if (base_addr+16 < rowendcnt) begin
+                                    base_addr <= base_addr + 16;
+                                end else begin
+                                    base_addr <= base_addr + 16 + 2;
+                                end
+
                                 // Calculate rowendcnt
                                 if(configs[2] - (2 + basecolnext) < 5'd16) begin
                                     rowendcnt <= configs[2] - (2 + basecolnext);
