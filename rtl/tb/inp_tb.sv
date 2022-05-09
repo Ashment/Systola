@@ -54,7 +54,11 @@ module INP_TB #(
         rstn <= 1;
 
         write <= 1;
-        @(posedge clk)
+        @(posedge clk);
+        write <= 0;
+
+        @(posedge clk);
+        @(posedge clk);   
 
         for (i=0; i<SIMCYCLES; i=i+1) begin
             write <= 1;
