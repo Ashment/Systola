@@ -8,7 +8,7 @@ vmap work work
 # Include rtl and testbench
 vlog +acc ../ctrl_aux.sv
 vlog +acc ../core_input_ctrl.sv
-vlog +acc ../tb/inp_tb.sv
+vlog +acc ../tb/inpc_tb.sv
 
 # Start vsim
 vsim +acc -t ps -lib work BUF_TB
