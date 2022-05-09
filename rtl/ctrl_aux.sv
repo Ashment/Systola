@@ -26,7 +26,7 @@ module INBUF
 
     // empty for signaling only. Doesn't prevent overwrite or empty read.
     assign empty = (curtail == curhead);
-    assign dout = ~empty ? bufdat[curhead] : (read && write) ? din : 0;
+    assign dout = empty ? 0 : bufdat[curhead];
 
     always @ (posedge clk) begin
         if(!rstn) begin

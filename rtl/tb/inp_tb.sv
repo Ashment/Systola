@@ -53,6 +53,9 @@ module INP_TB #(
         #25;
         rstn <= 1;
 
+        write <= 1;
+        @(posedge clk)
+
         for (i=0; i<SIMCYCLES; i=i+1) begin
             write <= 1;
             read <= 1;
@@ -60,7 +63,7 @@ module INP_TB #(
             @(posedge clk);
             for (i=0; i<8; i=i+1) begin
                 ain[i] <= ain[i] + 1;
-                win[i] <= win[i] + 1;
+                win[i] <= win[i] + 2;
             end
         end
 
