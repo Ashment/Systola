@@ -57,6 +57,11 @@ module INP_TB #(
         @(posedge clk);
         write <= 0;
 
+        for (i=0; i<8; i=i+1) begin
+            ain[i] <= ain[i] + 1;
+            win[i] <= win[i] + 1;
+        end
+
         @(posedge clk);
         @(posedge clk);   
 
@@ -66,8 +71,8 @@ module INP_TB #(
             
             @(posedge clk);
             for (j=0; j<8; j=j+1) begin
-                ain[j] <= ain[j] + 1;
-                win[j] <= win[j] + 2;
+                ain[j] <= ain[j] + 2;
+                win[j] <= win[j] + 1;
             end
         end
 
