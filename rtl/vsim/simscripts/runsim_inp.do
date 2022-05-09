@@ -8,16 +8,15 @@ vmap work work
 # Include rtl and testbench
 vlog +acc ../ctrl_aux.sv
 vlog +acc ../core_input_ctrl.sv
-vlog +acc ../tb/inpc_tb.sv
+vlog +acc ../tb/inp_tb.sv
 
 # Start vsim
-vsim +acc -t ps -lib work BUF_TB
+vsim +acc -t ps -lib work INP_TB
 
 # Waveformat
 onerror {resume}
 quietly WaveActivateNextPane {} 0
 
-add wave -radix unsigned /BUF_TB/simCyclesElapsed
 add wave /INP_TB/clk
 add wave /INP_TB/rstn
 add wave /INP_TB/read
