@@ -36,6 +36,8 @@ add wave -noupdate /SA_CORE_TB/DUT_CORE/arr_w_in
 add wave -noupdate /SA_CORE_TB/DUT_CORE/arr_a_in
 add wave -noupdate /SA_CORE_TB/DUT_CORE/r_outs
 add wave -noupdate /SA_CORE_TB/DUT_CORE/inpvalid
+add wave -noupdate /SA_CORE_TB/DUT_CORE/aemptys
+add wave -noupdate /SA_CORE_TB/DUT_CORE/wemptys
 add wave -noupdate /SA_CORE_TB/DUT_CORE/fire
 add wave -noupdate /SA_CORE_TB/DUT_CORE/start
 

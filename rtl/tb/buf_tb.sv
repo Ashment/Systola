@@ -9,7 +9,6 @@ module BUF_TB #(
     /////////////////////////
 
     integer i,j;
-    integer simCyclesElapsed;
 
     /////////////////
     // DUT Signals //

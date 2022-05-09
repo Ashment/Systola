@@ -22,6 +22,8 @@ module COL_OUTPUT_CTRL #(
     reg [OUTWIDTH-1:0] outbuf [0:ROWS-1];
     // cnt widths need to change if rows=/=8
     reg [2:0] icnt, ocnt;
+    // icnt is # of results written in
+    // ocnt is # of results read out
 
     assign rvalid = (ocnt < icnt);
     assign out_r = outbuf[ocnt];
@@ -31,6 +33,8 @@ module COL_OUTPUT_CTRL #(
             for (i=0; i<ROWS; i=i+1) begin
                 outbuf[i] <= 0;
             end
+            ocnt <= 0;
+            ictn <= 0;
         end else begin
             // for each res input from PE, write to the
             // corresponding buffer when it becomes valid.
