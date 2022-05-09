@@ -15,7 +15,7 @@ module OUT_TB #(
     /////////////////
 
     reg clk, rstn;
-    reg [7:0] din [0:7];
+    reg [31:0] din [0:7];
     reg [0:7] in_v;
     reg read;
     wire [31:0] dout;
@@ -39,7 +39,7 @@ module OUT_TB #(
         read <= 0;
         
         for (i=0; i<8 ; i=i+1) begin
-            din[i] <= i+1;
+            din[i] <= (i*100)+1;
         end
 
         $display("INITIALZIED.");
