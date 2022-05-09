@@ -55,6 +55,9 @@ module SA_CORE_TB #(
         rstn <= 1;
 
         @(posedge clk);
+        inpvalid <= 0;
+        @(posedge clk);
+        inpvalid <= 0;
         @(posedge clk);
 
         for (i=0; i<SIMCYCLES; i=i+1) begin
