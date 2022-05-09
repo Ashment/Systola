@@ -51,7 +51,7 @@ module OUT_TB #(
         @(posedge clk);
 
         // Main simulation loop
-        for (i=0; i<16; i=i+1) begin
+        for (i=0; i<20; i=i+1) begin
             for (j=0; j<8; j=j+1) begin
                 in[j] = i==j;
             end
