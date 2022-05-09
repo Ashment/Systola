@@ -40,7 +40,6 @@ module SA_CORE_TB #(
         .routport(coreout),
         .rvalidport(resvalid));
 
-
     initial begin
         clk <= 0;
         rstn <= 0;
