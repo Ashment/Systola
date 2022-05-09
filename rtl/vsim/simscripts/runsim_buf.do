@@ -19,6 +19,8 @@ quietly WaveActivateNextPane {} 0
 add wave -radix unsigned /BUF_TB/simCyclesElapsed
 add wave /BUF_TB/clk
 add wave /BUF_TB/rstn
+add wave /BUF_TB/read
+add wave /BUF_TB/write
 add wave /BUF_TB/din
 add wave /BUF_TB/empty
 add wave /BUF_TB/douts
