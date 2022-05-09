@@ -37,7 +37,7 @@ module BUF_TB #(
         .empty(empty[0]),
         .dout(douts[0]));
 
-    IBUF #(.PADDING(3)) DUT2 (.clk(clk), .rstn(rstn),
+    INBUF #(.PADDING(3)) DUT2 (.clk(clk), .rstn(rstn),
         .read(read),
         .write(write),
         .din(din),
