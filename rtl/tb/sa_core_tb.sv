@@ -65,7 +65,8 @@ module SA_CORE_TB #(
 
             @(posedge clk);
             for (j=0; j<ROWS-1; j=j+1) begin
-                a_in[j] <= i % 16;
+                a_in[j] <= (i) % 16;
+                w_in[j] <= (i) % 8;
             end
             $display("Current Sim Cycle: %d", i);
         end
