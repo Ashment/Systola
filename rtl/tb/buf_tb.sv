@@ -48,8 +48,8 @@ module BUF_TB #(
         .read(read),
         .write(write),
         .din(din),
-        .empty(empty[1]),
-        .dout(douts[1]));
+        .empty(empty[2]),
+        .dout(douts[2]));
 
     initial begin
         clk <= 0;
