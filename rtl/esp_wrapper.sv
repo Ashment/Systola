@@ -190,7 +190,7 @@ dma_write_chnl_valid, dma_write_chnl_data, dma_write_chnl_ready);
 
                                 if(dma_read_ctrl_valid && dma_read_ctrl_ready) begin
                                     dmabuf <= dma_read_chnl_data;
-                                    dma_read_chnl_ready <= 0;   //deasser ready until buffered data written to PLM
+                                    dma_read_chnl_ready <= 0;   //deassert ready until buffered data written to PLM
                                     
                                 end
                             end 
